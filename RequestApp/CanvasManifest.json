@@ -129,7 +129,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
+    "Home",
+    "Chat_box",
     "Note"
   ]
 }
