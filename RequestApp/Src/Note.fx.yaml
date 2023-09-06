@@ -89,7 +89,7 @@ Note As screen:
         ZIndex: =2
 
     TextInput1 As text:
-        Default: =""
+        Default: ="chat box "
         HintText: ="Chat box no."
         X: =700
         Y: =134
