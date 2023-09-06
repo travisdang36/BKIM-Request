@@ -15,3 +15,9 @@ Screen1 As screen:
         Y: =40
         ZIndex: =2
 
+    Label3 As label:
+        Text: ="TEST 123456"
+        X: =204
+        Y: =276
+        ZIndex: =3
+
