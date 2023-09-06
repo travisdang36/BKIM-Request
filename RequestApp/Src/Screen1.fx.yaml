@@ -3,7 +3,7 @@ Screen1 As screen:
     Label1 As label:
         Align: =Align.Center
         Height: =445
-        Text: ="HELLO IM HẢI"
+        Text: ="111111"
         Width: =1179
         X: =100
         Y: =165
