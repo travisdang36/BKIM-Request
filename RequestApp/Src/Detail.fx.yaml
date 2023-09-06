@@ -36,8 +36,7 @@ Detail As screen:
             ZIndex: =3
 
         HtmlText1 As htmlViewer:
-            AutoHeight: =true
-            Height: =107
+            Height: =119
             HtmlText: |-
                 =//ThisItem.Chat
                 If(
