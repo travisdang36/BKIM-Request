@@ -1,9 +1,10 @@
 New As screen:
 
     Label8 As label:
+        FontWeight: =FontWeight.Bold
         Height: =38
-        Text: ="Tam thoi dung form luc sau doi thanh Patch()"
-        Width: =412
+        Text: ="**Tam thoi dung form luc sau doi thanh Patch()"
+        Width: =420
         Y: =70
         ZIndex: =1
 
