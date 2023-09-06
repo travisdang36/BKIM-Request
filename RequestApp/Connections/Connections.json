@@ -1,1 +1,52 @@
-{}
+{
+  "cefcc3df-98b2-4082-a847-a0cff2a56098": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/master/1.0.1653.3400/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://bkimsg.sharepoint.com/sites/BKIMCenter": {
+        "dataSources": {
+          "3000 Records": {
+            "tableName": "74c700b5-7db3-4e20-8f29-c85cd09a9426"
+          },
+          "BKIM_REQ_Approval_Condition": {
+            "tableName": "574a4e76-3ffe-4da7-8a57-fae7fb0902f3"
+          },
+          "BKIM_REQ_Approval_Condition_Result": {
+            "tableName": "73a5b433-326f-4e60-bcd3-fafbf1aa31ae"
+          },
+          "BKIM_REQ_Approval_Result": {
+            "tableName": "5184b2f6-ceb2-4269-82c6-cf5fc41eb5e5"
+          },
+          "BKIM_REQ_Chat_List": {
+            "tableName": "ba5cae04-b2e4-4c51-9bf9-ebf580c08c63"
+          },
+          "BKIM_REQ_Expenditure_Approval": {
+            "tableName": "a3743268-89dc-48fc-9933-465c6f4556f6"
+          },
+          "BKIM_REQ_List": {
+            "tableName": "a0516745-9e68-496b-a868-a6fec4918013"
+          },
+          "BKIM_REQ_Payment_Approval": {
+            "tableName": "9b39e11a-3ad3-4d2a-a8c8-f5715a60fe26"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BKIM_REQ_Approval_Condition",
+      "BKIM_REQ_Approval_Condition_Result",
+      "BKIM_REQ_Approval_Result",
+      "BKIM_REQ_Chat_List",
+      "BKIM_REQ_Expenditure_Approval",
+      "BKIM_REQ_List",
+      "BKIM_REQ_Payment_Approval",
+      "3000 Records"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "cefcc3df-98b2-4082-a847-a0cff2a56098"
+  }
+}
