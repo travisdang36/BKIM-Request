@@ -4,8 +4,8 @@ Screen1 As screen:
         Align: =Align.Center
         Height: =445
         Text: ="111111"
-        Width: =1179
-        X: =100
+        Width: =731
+        X: =548
         Y: =165
         ZIndex: =1
 
