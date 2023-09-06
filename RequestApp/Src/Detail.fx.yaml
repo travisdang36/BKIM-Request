@@ -126,7 +126,7 @@ Detail As screen:
         Height: =45
         Icon: =Icon.NextArrow
         OnSelect: |
-            =If(!IsBlank(TextInput1), Patch(BKIM_REQ_Chat_List, Defaults(BKIM_REQ_Chat_List), {Chat: TextInput1.Text, Req_ID:varItem.ID});Reset(TextInput1), Notify("Input Message"))
+            =If(!IsBlank(TextInput2), Patch(BKIM_REQ_Chat_List, Defaults(BKIM_REQ_Chat_List), {Chat: TextInput2.Text, Req_ID:varItem.ID});Reset(TextInput2), Notify("Input Message"))
         Width: =45
         X: =1213
         Y: =625
