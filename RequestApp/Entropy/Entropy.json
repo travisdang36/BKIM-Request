@@ -91,7 +91,6 @@
     "Payment_Process_DataCard1": 105,
     "Payment_Process_DataCard2": 42,
     "Rectangle1": 75,
-    "Rectangle3": 27,
     "Rectangle5": 12,
     "Rectangle6": 5,
     "Rectangle6_1": 83,
@@ -132,7 +131,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/06/2023 10:10:34",
+  "HeaderLastSavedDateTimeUTC": "09/06/2023 10:15:24",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "cefcc3df-98b2-4082-a847-a0cff2a56098": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5cfa839abf7c4946a3a42a97b16252c7\""
@@ -284,7 +283,6 @@
     "Payment_Process_DataCard1": {},
     "Payment_Process_DataCard2": {},
     "Rectangle1": {},
-    "Rectangle3": {},
     "Rectangle5": {},
     "Rectangle6": {},
     "Rectangle6_1": {},
@@ -415,7 +413,6 @@
     "Payment_Process_DataCard1": 36,
     "Payment_Process_DataCard2": 82,
     "Rectangle1": 113,
-    "Rectangle3": 67,
     "Rectangle5": 8,
     "Rectangle6": 0,
     "Rectangle6_1": 13,
