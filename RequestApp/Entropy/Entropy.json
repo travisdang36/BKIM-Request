@@ -1,107 +1,26 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "Gallery1": 10,
-    "galleryTemplate1": 11,
-    "Host": 3,
-    "Image1": 12,
-    "Label1": 7,
-    "Label2": 8,
-    "Label3": 9,
-    "Label4": 5,
-    "NextArrow1": 15,
-    "Note": 4,
-    "Rectangle1": 17,
-    "Screen1": 6,
-    "Separator1": 16,
-    "Subtitle1": 14,
-    "Title1": 13
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/06/2023 03:23:16",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {
-    "cefcc3df-98b2-4082-a847-a0cff2a56098": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5cfa839abf7c4946a3a42a97b16252c7\""
-  },
+  "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {
-    "3000 Records": 7,
-    "BKIM_REQ_Approval_Condition": 0,
-    "BKIM_REQ_Approval_Condition_Result": 1,
-    "BKIM_REQ_Approval_Result": 2,
-    "BKIM_REQ_Chat_List": 3,
-    "BKIM_REQ_Expenditure_Approval": 4,
-    "BKIM_REQ_List": 5,
-    "BKIM_REQ_Payment_Approval": 6,
-    "CustomGallerySample": 8
-  },
+  "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "gallery": 0,
-    "icon": 3,
-    "image": 1,
-    "label": 2,
-    "rectangle": 4
-  },
-  "OverridablePropertiesEntry": {
-    "App": {},
-    "Gallery1": {},
-    "galleryTemplate1": {},
-    "Host": {},
-    "Image1": {},
-    "Label1": {},
-    "Label2": {},
-    "Label3": {},
-    "Label4": {},
-    "NextArrow1": {},
-    "Note": {},
-    "Rectangle1": {},
-    "Screen1": {},
-    "Separator1": {},
-    "Subtitle1": {},
-    "Title1": {}
-  },
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {},
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {
-    "App": 0,
-    "Gallery1": 0,
-    "galleryTemplate1": 0,
-    "Host": 0,
-    "Image1": 0,
-    "Label1": 6,
-    "Label2": 7,
-    "Label3": 8,
-    "Label4": 4,
-    "NextArrow1": 0,
-    "Note": 3,
-    "Rectangle1": 0,
-    "Screen1": 5,
-    "Separator1": 0,
-    "Subtitle1": 0,
-    "Title1": 0
-  },
-  "ResourcesJsonIndices": {
-    "Image-SampleImage": 0
-  },
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.0153745,
-    "ControlCount": {
-      "label": 4,
-      "screen": 2
-    },
-    "DeserializationLoadTime": 0.0150236
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
