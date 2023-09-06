@@ -10,6 +10,7 @@ Detail As screen:
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
         ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.'Created By'.Email = User().Email, Color.White,RGBA( 169, 169, 169, 10%))
         TemplatePadding: =4
         TemplateSize: =207
         Width: =502
@@ -19,6 +20,7 @@ Detail As screen:
 
         Label2 As label:
             Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+            AutoHeight: =true
             FontWeight: =FontWeight.Semibold
             Height: =28
             OnSelect: =Select(Parent)
@@ -28,6 +30,7 @@ Detail As screen:
 
         Label2_2 As label:
             Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+            AutoHeight: =true
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Created
