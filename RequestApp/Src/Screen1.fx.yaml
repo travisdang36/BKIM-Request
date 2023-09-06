@@ -9,3 +9,9 @@ Screen1 As screen:
         Y: =165
         ZIndex: =1
 
+    Label2 As label:
+        Text: ="HELLO IM TRAVIS"
+        X: =40
+        Y: =40
+        ZIndex: =2
+
