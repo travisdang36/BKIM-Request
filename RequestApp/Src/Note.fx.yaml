@@ -9,28 +9,16 @@ Note As screen:
         Y: =40
         ZIndex: =1
 
-    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Items: ='3000 Records'
+        Items: =Filter('3000 Records',StartsWith(Title,TextInput1.Text))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =104
+        TemplateSize: =90
         X: =60
         Y: =100
-        ZIndex: =2
-
-        Image1 As image:
-            Height: =72
-            OnSelect: =Select(Parent)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =72
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
+        ZIndex: =1
 
         Title1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -42,10 +30,10 @@ Note As screen:
             PaddingTop: =0
             Text: =ThisItem.Chat_box
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
-            X: =103
+            Width: =Parent.TemplateWidth - 86
+            X: =16
             Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
-            ZIndex: =2
+            ZIndex: =1
 
         Subtitle1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -60,7 +48,7 @@ Note As screen:
             Width: =Title1.Width
             X: =Title1.X
             Y: =Title1.Y + Title1.Height
-            ZIndex: =3
+            ZIndex: =2
 
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
@@ -76,19 +64,34 @@ Note As screen:
             Width: =50
             X: =Parent.TemplateWidth - Self.Width - 12
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
+            ZIndex: =3
 
         Separator1 As rectangle:
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
+            ZIndex: =4
 
         Rectangle1 As rectangle:
             Height: =Parent.TemplateHeight - Separator1.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
             Width: =4
-            ZIndex: =6
+            ZIndex: =5
+
+    Label5 As label:
+        Height: =34
+        Text: ="Change gallery layout from Image Title Subtitle to Title Subtitle"
+        Width: =524
+        X: =700
+        Y: =100
+        ZIndex: =2
+
+    TextInput1 As text:
+        Default: =""
+        HintText: ="Chat box no."
+        X: =700
+        Y: =134
+        ZIndex: =3
 
