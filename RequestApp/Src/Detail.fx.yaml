@@ -1,74 +1,49 @@
 Detail As screen:
 
-    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+    Gallery4 As gallery.variableTemplateHeightGallery:
+        BorderColor: =RGBA(39, 113, 194, 1)
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =505
         Items: =Sort(Filter(BKIM_REQ_Chat_List, Req_ID = varItem.ID), Created, SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =90
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =4
+        TemplateSize: =171
         Width: =502
         X: =778
         Y: =92
         ZIndex: =1
 
-        Title3 As label:
-            Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
-            FontWeight: =
-            Height: =43
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =20
-            PaddingRight: =20
-            PaddingTop: =0
-            Text: =ThisItem.Chat
-            VerticalAlign: =VerticalAlign.Top
-            Width: =498
-            X: =4
-            Y: =25
-            ZIndex: =1
-
-        Subtitle3 As label:
-            Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
-            FontWeight: |
-                =
-            Height: =21
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Created
-            VerticalAlign: =VerticalAlign.Top
-            Width: =498
-            X: =4
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =2
-
-        Separator3 As rectangle:
-            Fill: =RGBA(9, 33, 98, 1)
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =4
-
-        Title3_1 As label:
+        Label2 As label:
             Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
             FontWeight: =FontWeight.Semibold
-            Height: =25
+            Height: =28
             OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingTop: =0
             Text: =ThisItem.'Created By'.DisplayName
-            VerticalAlign: =VerticalAlign.Top
-            Width: =498
-            X: =4
-            Y: =Parent.TemplateHeight*0
-            ZIndex: =6
+            Width: =494
+            ZIndex: =1
+
+        Label2_2 As label:
+            Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Created
+            Width: =494
+            Y: =Label2.Height + HtmlText1.Height
+            ZIndex: =3
+
+        HtmlText1 As htmlViewer:
+            AutoHeight: =true
+            Height: =107
+            HtmlText: =ThisItem.Chat
+            OnSelect: =Select(Parent)
+            Size: =13
+            Width: =494
+            Y: =28
+            ZIndex: =4
 
     TextInput2 As text:
         Default: =""
@@ -646,4 +621,74 @@ Detail As screen:
         X: =1172
         Y: =710
         ZIndex: =11
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderThickness: =1
+        DelayItemLoading: =true
+        Height: =505
+        Items: =Sort(Filter(BKIM_REQ_Chat_List, Req_ID = varItem.ID), Created, SortOrder.Descending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =90
+        Width: =502
+        X: =165
+        Y: =194
+        ZIndex: =12
+
+        Title3 As label:
+            Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+            FontWeight: =
+            Height: =43
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =20
+            PaddingRight: =20
+            PaddingTop: =0
+            Text: =ThisItem.Chat
+            VerticalAlign: =VerticalAlign.Top
+            Width: =498
+            X: =4
+            Y: =25
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+            FontWeight: |
+                =
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Created
+            VerticalAlign: =VerticalAlign.Top
+            Width: =498
+            X: =4
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =2
+
+        Separator3 As rectangle:
+            Fill: =RGBA(9, 33, 98, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        Title3_1 As label:
+            Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Created By'.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =498
+            X: =4
+            Y: =Parent.TemplateHeight*0
+            ZIndex: =6
 
