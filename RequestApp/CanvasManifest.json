@@ -130,6 +130,7 @@
   },
   "ScreenOrder": [
     "Home",
+    "New",
     "Chat_box",
     "Note"
   ]

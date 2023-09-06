@@ -1,16 +1,18 @@
 Home As screen:
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+        BorderColor: =RGBA(39, 113, 194, 1)
+        BorderThickness: =1
         DelayItemLoading: =true
-        Height: =566
+        Height: =543
         Items: =BKIM_REQ_List
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =80
-        Width: =1178
-        X: =100
-        Y: =136
+        Width: =1298
+        X: =34
+        Y: =164
         ZIndex: =1
 
         Title5 As label:
@@ -45,7 +47,8 @@ Home As screen:
             ZIndex: =2
 
         Separator5 As rectangle:
-            Height: =8
+            Fill: =RGBA(39, 113, 194, 1)
+            Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - Self.Height
@@ -57,4 +60,58 @@ Home As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =4
+
+    Rectangle6 As rectangle:
+        BorderColor: =RGBA(102, 182, 227, 1)
+        Fill: =RGBA(39, 113, 194, 1)
+        Height: =70
+        Width: =1366
+        ZIndex: =2
+
+    Label6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =16
+        Text: ="Request"
+        Width: =1366
+        ZIndex: =3
+
+    Image7 As image:
+        Height: =38
+        Image: ='BKIM logo_clean_white'
+        X: =20
+        Y: =16
+        ZIndex: =4
+
+    Image9 As image:
+        Height: =61
+        Image: =User().Image
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =61
+        X: =1297
+        Y: =4
+        ZIndex: =5
+
+    Label7 As label:
+        Align: =Align.Right
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =66
+        Text: =User().FullName
+        Width: =270
+        X: |
+            =1020
+        Y: =4
+        ZIndex: =6
+
+    Button1 As button:
+        Fill: =RGBA(39, 113, 194, 1)
+        Text: ="New"
+        X: =1172
+        Y: =718
+        ZIndex: =7
 
