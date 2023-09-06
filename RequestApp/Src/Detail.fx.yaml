@@ -11,7 +11,7 @@ Detail As screen:
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplatePadding: =4
-        TemplateSize: =152
+        TemplateSize: =207
         Width: =502
         X: =778
         Y: =92
@@ -23,7 +23,7 @@ Detail As screen:
             Height: =28
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Created By'.DisplayName
-            Width: =494
+            Width: =493
             ZIndex: =1
 
         Label2_2 As label:
@@ -36,6 +36,7 @@ Detail As screen:
             ZIndex: =3
 
         HtmlText1 As htmlViewer:
+            AutoHeight: =true
             Height: =119
             HtmlText: |-
                 =//ThisItem.Chat
@@ -46,7 +47,8 @@ Detail As screen:
                 )
             OnSelect: =Select(Parent)
             Size: =13
-            Width: =494
+            Width: =451
+            X: =22
             Y: =28
             ZIndex: =4
 
