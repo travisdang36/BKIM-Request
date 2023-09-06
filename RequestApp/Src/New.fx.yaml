@@ -556,7 +556,7 @@ New As screen:
 
     Button2_1 As button:
         Fill: =RGBA(39, 113, 194, 1)
-        OnSelect: =SubmitForm(Form1);Navigate(Home)
+        OnSelect: =SubmitForm(Form1);Navigate(Detail)
         Text: ="Submit"
         X: =940
         Y: =700

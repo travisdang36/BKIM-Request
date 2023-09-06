@@ -4,7 +4,7 @@ Detail As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =505
-        Items: =BKIM_REQ_Chat_List
+        Items: =Sort(Filter(BKIM_REQ_Chat_List, Req_ID = varItem.ID), Created, SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -63,6 +63,7 @@ Detail As screen:
         Default: =""
         Height: =102
         HintText: ="Messages goes here"
+        Mode: =TextMode.MultiLine
         Width: =502
         X: =778
         Y: =597
@@ -124,6 +125,8 @@ Detail As screen:
     Icon1 As icon.NextArrow:
         Height: =45
         Icon: =Icon.NextArrow
+        OnSelect: |
+            =If(!IsBlank(TextInput1), Patch(BKIM_REQ_Chat_List, Defaults(BKIM_REQ_Chat_List), {Chat: TextInput1.Text, Req_ID:varItem.ID});Reset(TextInput1), Notify("Input Message"))
         Width: =45
         X: =1213
         Y: =625
@@ -133,6 +136,7 @@ Detail As screen:
         DataSource: =BKIM_REQ_List
         DefaultMode: =FormMode.View
         Height: =572
+        Item: =varItem
         NumberOfColumns: =2
         Width: =692
         X: =85
