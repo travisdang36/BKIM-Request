@@ -17,7 +17,7 @@ Screen1 As screen:
 
     Label3 As label:
         Text: ="TEST 123456"
-        X: =204
-        Y: =276
+        X: =40
+        Y: =80
         ZIndex: =3
 

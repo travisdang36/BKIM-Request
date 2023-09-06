@@ -1,0 +1,11 @@
+Note As screen:
+
+    Label4 As label:
+        Height: =667
+        Text: ="Text"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =634
+        X: =40
+        Y: =40
+        ZIndex: =1
+

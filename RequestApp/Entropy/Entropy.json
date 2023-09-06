@@ -7,11 +7,13 @@
     "Label1": 5,
     "Label2": 6,
     "Label3": 7,
+    "Label4": 9,
+    "Note": 8,
     "Screen1": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/06/2023 02:57:42",
+  "HeaderLastSavedDateTimeUTC": "09/06/2023 03:00:00",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -32,6 +34,8 @@
     "Label1": {},
     "Label2": {},
     "Label3": {},
+    "Label4": {},
+    "Note": {},
     "Screen1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
@@ -42,6 +46,8 @@
     "Label1": 0,
     "Label2": 0,
     "Label3": 0,
+    "Label4": 0,
+    "Note": 0,
     "Screen1": 0
   },
   "ResourcesJsonIndices": {},
