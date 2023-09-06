@@ -38,7 +38,13 @@ Detail As screen:
         HtmlText1 As htmlViewer:
             AutoHeight: =true
             Height: =107
-            HtmlText: =ThisItem.Chat
+            HtmlText: |-
+                =//ThisItem.Chat
+                If(
+                    ThisItem.'Created By'.Email = User().Email,
+                    "<p style='text-align:right'>" & ThisItem.Chat & "</p>",
+                    "<p style='text-align:left'>" & ThisItem.Chat & "</p>"
+                )
             OnSelect: =Select(Parent)
             Size: =13
             Width: =494
