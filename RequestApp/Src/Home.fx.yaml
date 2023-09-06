@@ -8,7 +8,7 @@ Home As screen:
         Items: =BKIM_REQ_List
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =Set(varItem,ThisItem);Navigate(Chat_box)
+        OnSelect: =Set(varItem,ThisItem);Navigate(Detail)
         TemplatePadding: =0
         TemplateSize: =80
         Width: =1298

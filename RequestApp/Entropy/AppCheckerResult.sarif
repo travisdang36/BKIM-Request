@@ -1648,19 +1648,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Gallery2.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Gallery2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Gallery2.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Gallery2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Gallery2"
+                "module": "Detail",
+                "type": "Detail.Gallery2"
               }
             }
           ],
@@ -1678,19 +1678,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Gallery2.TabIndex"
+                  "fullyQualifiedName": "Detail.Gallery2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Gallery2.TabIndex",
+                  "fullyQualifiedName": "Detail.Gallery2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Chat_box",
-                "type": "Chat_box.Gallery2"
+                "module": "Detail",
+                "type": "Detail.Gallery2"
               }
             }
           ],
@@ -1948,19 +1948,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.TextInput2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.TextInput2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.TextInput2"
+                "module": "Detail",
+                "type": "Detail.TextInput2"
               }
             }
           ],
@@ -1978,19 +1978,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Form2.Title_DataCard2.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Form2.Title_DataCard2.DataCardValue9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Form2.Title_DataCard2.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Form2.Title_DataCard2.DataCardValue9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Form2.Title_DataCard2.DataCardValue9"
+                "module": "Detail",
+                "type": "Detail.Form2.Title_DataCard2.DataCardValue9"
               }
             }
           ],
@@ -2008,19 +2008,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Form2.Description_DataCard2.DataCardValue10.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Form2.Description_DataCard2.DataCardValue10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Form2.Description_DataCard2.DataCardValue10.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Form2.Description_DataCard2.DataCardValue10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Form2.Description_DataCard2.DataCardValue10"
+                "module": "Detail",
+                "type": "Detail.Form2.Description_DataCard2.DataCardValue10"
               }
             }
           ],
@@ -2038,19 +2038,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Form2.Payment_Process_DataCard2.DataCardValue11.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Form2.Payment_Process_DataCard2.DataCardValue11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Form2.Payment_Process_DataCard2.DataCardValue11.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Form2.Payment_Process_DataCard2.DataCardValue11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Form2.Payment_Process_DataCard2.DataCardValue11"
+                "module": "Detail",
+                "type": "Detail.Form2.Payment_Process_DataCard2.DataCardValue11"
               }
             }
           ],
@@ -2068,19 +2068,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Form2.Status_DataCard2.DataCardValue12.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Form2.Status_DataCard2.DataCardValue12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Form2.Status_DataCard2.DataCardValue12.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Form2.Status_DataCard2.DataCardValue12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Form2.Status_DataCard2.DataCardValue12"
+                "module": "Detail",
+                "type": "Detail.Form2.Status_DataCard2.DataCardValue12"
               }
             }
           ],
@@ -2098,19 +2098,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Form2.Request_Status_DataCard2.DataCardValue13.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Form2.Request_Status_DataCard2.DataCardValue13.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Form2.Request_Status_DataCard2.DataCardValue13.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Form2.Request_Status_DataCard2.DataCardValue13.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Form2.Request_Status_DataCard2.DataCardValue13"
+                "module": "Detail",
+                "type": "Detail.Form2.Request_Status_DataCard2.DataCardValue13"
               }
             }
           ],
@@ -2128,19 +2128,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Form2.Request_Case_DataCard2.DataCardValue14.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Form2.Request_Case_DataCard2.DataCardValue14.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Form2.Request_Case_DataCard2.DataCardValue14.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Form2.Request_Case_DataCard2.DataCardValue14.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Form2.Request_Case_DataCard2.DataCardValue14"
+                "module": "Detail",
+                "type": "Detail.Form2.Request_Case_DataCard2.DataCardValue14"
               }
             }
           ],
@@ -2158,19 +2158,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Chat_box.Form2.Amount_DataCard2.DataCardValue15.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Form2.Amount_DataCard2.DataCardValue15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Chat_box.Form2.Amount_DataCard2.DataCardValue15.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Form2.Amount_DataCard2.DataCardValue15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Chat_box",
-                "type": "Chat_box.Form2.Amount_DataCard2.DataCardValue15"
+                "module": "Detail",
+                "type": "Detail.Form2.Amount_DataCard2.DataCardValue15"
               }
             }
           ],

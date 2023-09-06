@@ -1,4 +1,4 @@
-Chat_box As screen:
+Detail As screen:
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         BorderThickness: =1
@@ -88,7 +88,7 @@ Chat_box As screen:
             FontWeight: =FontWeight.Semibold
             Height: =70
             Size: =16
-            Text: ="Request"
+            Text: ="Detail"
             Width: =1366
             ZIndex: =3
 
