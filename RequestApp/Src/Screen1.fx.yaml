@@ -1,2 +1,11 @@
 Screen1 As screen:
 
+    Label1 As label:
+        Align: =Align.Center
+        Height: =445
+        Text: ="HELLO IM HẢI"
+        Width: =1179
+        X: =100
+        Y: =165
+        ZIndex: =1
+
