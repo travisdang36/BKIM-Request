@@ -64,6 +64,7 @@ Home As screen:
 
     Button1 As button:
         Fill: =RGBA(39, 113, 194, 1)
+        OnSelect: =NewForm(Form1);Navigate(New)
         Text: ="New"
         X: =1172
         Y: =700
