@@ -11,7 +11,7 @@ Note As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Items: =Filter('3000 Records',StartsWith(Title,TextInput1.Text))
+        Items: =Filter('3000 Records',StartsWith(Chat_box,TextInput1.Text))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
