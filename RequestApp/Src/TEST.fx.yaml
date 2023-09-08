@@ -11,7 +11,7 @@ TEST As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =506
-        Items: =BKIM_REQ_Expenditure_Approval
+        Items: =LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
