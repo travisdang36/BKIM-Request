@@ -190,7 +190,7 @@ TEST As screen:
 
     Dropdown1_1 As dropdown:
         Items: |-
-            =Distinct(BKIM_REQ_Expenditure_Approval,Title)
+            =Distinct(BKIM_REQ_Expenditure_Approval,DoA_Type)
             //Distinct(Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max),Exp_Case)
         Width: =330
         X: =724
@@ -203,6 +203,7 @@ TEST As screen:
                     BKIM_REQ_Expenditure_Approval,
                     Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
                 ).ID_Case
+        Width: =253
         X: =442
         Y: =112
         ZIndex: =5

@@ -1756,16 +1756,12 @@
             }
           ],
           "message": {
-            "arguments": [
-              "Table",
-              "Void"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleId": "app-ErrTypeError",
           "ruleIndex": 0
         },
         {
@@ -3368,46 +3364,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TEST.Label3.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TEST.Label3.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 145,
-                  "snippet": {
-                    "text": ".ID_Case"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "TEST",
-                "type": "TEST.Label3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ID_Case"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "TEST.TextInput3.AccessibleLabel"
                 }
               ],
@@ -4310,16 +4266,16 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+              "id": "app-ErrTypeError",
               "messageStrings": {
                 "issue": {
-                  "text": "Expected {0} value."
+                  "text": "Incompatible type. We can't evaluate your formula because of a type error."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Change the rule to produce a {0} value."
+                  "Check the types of the values involved in the formula and ensure the types match."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
