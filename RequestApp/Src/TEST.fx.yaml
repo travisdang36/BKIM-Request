@@ -15,7 +15,7 @@ TEST As screen:
             =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
             If(
                 IsBlank(Dropdown1.SelectedText),
-                Filter(
+                LookUp(
                     BKIM_REQ_Expenditure_Approval,
                     Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
                 ),
@@ -196,4 +196,14 @@ TEST As screen:
         X: =724
         Y: =112
         ZIndex: =4
+
+    Label3 As label:
+        Text: |-
+            =LookUp(
+                    BKIM_REQ_Expenditure_Approval,
+                    Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
+                ).ID_Case
+        X: =442
+        Y: =112
+        ZIndex: =5
 

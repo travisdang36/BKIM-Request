@@ -83,6 +83,7 @@
     "Label10": 21,
     "Label2": 24,
     "Label2_2": 26,
+    "Label3": 144,
     "Label4": 82,
     "Label5": 90,
     "Label6": 69,
@@ -147,7 +148,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/11/2023 04:44:22",
+  "HeaderLastSavedDateTimeUTC": "09/11/2023 04:50:17",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "cefcc3df-98b2-4082-a847-a0cff2a56098": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5cfa839abf7c4946a3a42a97b16252c7\""
@@ -208,9 +209,9 @@
     "htmlViewer": 7,
     "icon": 5,
     "image": 6,
-    "label": 1,
+    "label": 0,
     "rectangle": 4,
-    "text": 0
+    "text": 1
   },
   "OverridablePropertiesEntry": {
     "Amount_DataCard1": {},
@@ -294,6 +295,7 @@
     "Label10": {},
     "Label2": {},
     "Label2_2": {},
+    "Label3": {},
     "Label4": {},
     "Label5": {},
     "Label6": {},
@@ -440,6 +442,7 @@
     "Label10": 64,
     "Label2": 67,
     "Label2_2": 69,
+    "Label3": 0,
     "Label4": 109,
     "Label5": 117,
     "Label6": 1,
