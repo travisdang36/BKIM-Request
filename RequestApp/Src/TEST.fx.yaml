@@ -127,7 +127,7 @@ TEST As screen:
         Items: |-
             =//Distinct(BKIM_REQ_Expenditure_Approval,Exp_Case)
             Distinct(Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max),Exp_Case)
-        Width: =255
+        Width: =330
         X: =724
         Y: =46
         ZIndex: =3
