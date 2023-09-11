@@ -201,7 +201,7 @@ TEST As screen:
         Text: |-
             =LookUp(
                     BKIM_REQ_Expenditure_Approval,
-                    Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
+                    Exp_Case = Dropdown1.SelectedText.Value
                 ).ID_Case
         Width: =253
         X: =442
