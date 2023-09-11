@@ -13,7 +13,7 @@ TEST As screen:
         Height: =506
         Items: |-
             =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
-            Filter(BKIM_REQ_Expenditure_Approval, Value(TextInput3.Text) > Condition_Min)
+            Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
