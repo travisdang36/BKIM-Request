@@ -67,7 +67,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"DoA_Case\"}",
+          "NameMap": "{\"Value\":\"Value\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
