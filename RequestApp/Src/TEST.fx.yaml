@@ -15,7 +15,7 @@ TEST As screen:
             =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
             If(
                 IsBlank(Dropdown1.SelectedText),
-                LookUp(
+                Filter(
                     BKIM_REQ_Expenditure_Approval,
                     Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
                 ),
