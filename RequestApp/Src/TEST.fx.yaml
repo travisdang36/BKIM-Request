@@ -11,7 +11,9 @@ TEST As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =506
-        Items: =LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
+        Items: |-
+            =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
+            Filter(BKIM_REQ_Expenditure_Approval, Value(TextInput3.Text) > Condition_Min)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -124,7 +126,7 @@ TEST As screen:
     Dropdown1 As dropdown:
         Items: |-
             =//Distinct(BKIM_REQ_Expenditure_Approval,Exp_Case)
-            Filter(BKIM_REQ_Expenditure_Approval, Value(TextInput3.Text) > Condition_Min)
+            Filter(BKIM_REQ_Expenditure_Approval, Value(TextInput3.Text) > Condition_Min).Exp_Case
         Width: =255
         X: =724
         Y: =46
