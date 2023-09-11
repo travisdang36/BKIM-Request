@@ -122,7 +122,9 @@ TEST As screen:
         ZIndex: =2
 
     Dropdown1 As dropdown:
-        Items: =Distinct(BKIM_REQ_Expenditure_Approval,Exp_Case)
+        Items: |-
+            =//Distinct(BKIM_REQ_Expenditure_Approval,Exp_Case)
+            Filter(BKIM_REQ_Expenditure_Approval, Value(TextInput3.Text) > Condition_Min)
         Width: =255
         X: =724
         Y: =46

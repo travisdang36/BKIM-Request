@@ -67,7 +67,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Value\"}",
+          "NameMap": "{\"Value\":\"Approval_Level\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
