@@ -114,3 +114,17 @@ TEST As screen:
             Y: =36
             ZIndex: =7
 
+    Label1 As label:
+        Text: ="Filter dua tren text input de ra duoc >=5%"
+        Width: =282
+        X: =442
+        Y: =46
+        ZIndex: =2
+
+    Dropdown1 As dropdown:
+        Items: =Distinct(BKIM_REQ_Expenditure_Approval,Exp_Case)
+        Width: =255
+        X: =724
+        Y: =46
+        ZIndex: =3
+
