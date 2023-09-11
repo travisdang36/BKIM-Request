@@ -15,14 +15,13 @@ TEST As screen:
             =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
             If(
                 IsBlank(Dropdown1.SelectedText),
-                Filter(
+                LookUp(
                     BKIM_REQ_Expenditure_Approval,
                     Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
                 ),
-                Filter(
+                LookUp(
                     BKIM_REQ_Expenditure_Approval,
-                    Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
-                    //Dropdown1.SelectedText = Exp_Case
+                    Dropdown1.SelectedText.Value = Exp_Case
                 )
             )
         Layout: =Layout.Vertical
