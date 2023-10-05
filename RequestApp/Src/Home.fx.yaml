@@ -30,6 +30,40 @@ Home As screen:
             X: =324
             ZIndex: =1
 
+        "payment_status As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =request.TemplateHeight
+            Items: =BKIM_REQ_Payment_Approval
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =request.TemplateHeight/2
+            Width: =162
+            X: =1136
+            ZIndex: =1
+
+            Title6 As label:
+                Align: =Align.Center
+                FontWeight: =
+                Height: =25
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                Width: =162
+                Y: =
+                ZIndex: =1
+
+            Separator7 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =3
+
         created As label:
             Align: =Align.Center
             FontWeight: =
@@ -99,40 +133,6 @@ Home As screen:
             X: =810
             ZIndex: =6
 
-        "payment_status As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-            DelayItemLoading: =true
-            Height: =80
-            Items: =BKIM_REQ_Payment_Approval
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            ShowScrollbar: =false
-            TemplatePadding: =0
-            TemplateSize: =80
-            Width: =162
-            X: =1136
-            ZIndex: =7
-
-            Title2 As label:
-                Align: =Align.Center
-                FontWeight: =
-                Height: =25
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.Title
-                Width: =162
-                Y: =
-                ZIndex: =2
-
-            Separator2 As rectangle:
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - Self.Height
-                ZIndex: =5
-
         "payment_request As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =request.TemplateHeight
@@ -141,7 +141,7 @@ Home As screen:
             LoadingSpinner: =LoadingSpinner.Data
             ShowScrollbar: =false
             TemplatePadding: =0
-            TemplateSize: =100
+            TemplateSize: =request.TemplateHeight/2
             Width: =162
             X: =972
             ZIndex: =8
@@ -149,7 +149,7 @@ Home As screen:
             Title5 As label:
                 Align: =Align.Center
                 FontWeight: =
-                Height: =payment_request.TemplateHeight/3
+                Height: =payment_request.TemplateHeight/2
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -191,7 +191,7 @@ Home As screen:
         Y: =176
         ZIndex: =8
 
-        Label9 As label:
+        Label9_created As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
@@ -201,7 +201,7 @@ Home As screen:
             Width: =Container1.Width/8
             ZIndex: =1
 
-        Label9_1 As label:
+        Label9_1_created_by As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
@@ -211,7 +211,7 @@ Home As screen:
             Width: =Container1.Width/8
             ZIndex: =2
 
-        Label9_2 As label:
+        Label9_2_title As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
@@ -221,7 +221,7 @@ Home As screen:
             Width: =Container1.Width/8
             ZIndex: =3
 
-        Label9_3 As label:
+        Label9_3_status_request As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
@@ -231,7 +231,7 @@ Home As screen:
             Width: =Container1.Width/8
             ZIndex: =4
 
-        Label9_4 As label:
+        Label9_4_approval_stage As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
@@ -243,7 +243,7 @@ Home As screen:
             Width: =Container1.Width/8
             ZIndex: =5
 
-        Label9_5 As label:
+        Label9_5_pic As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
@@ -253,7 +253,7 @@ Home As screen:
             Width: =Container1.Width/8
             ZIndex: =6
 
-        Label9_6 As label:
+        Label9_6_payment_request As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
@@ -263,7 +263,7 @@ Home As screen:
             Width: =Container1.Width/8
             ZIndex: =7
 
-        Label9_7 As label:
+        Label9_7_status_payment As label:
             Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =1
