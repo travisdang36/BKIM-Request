@@ -10,7 +10,7 @@ Home As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Set(varItem,ThisItem);Navigate(Detail)
         TemplatePadding: =0
-        TemplateSize: =80
+        TemplateSize: =100
         Width: =1298
         X: =34
         Y: =244
@@ -19,7 +19,7 @@ Home As screen:
         title As label:
             Align: =Align.Center
             FontWeight: =
-            Height: =80
+            Height: =request.TemplateHeight
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -33,7 +33,7 @@ Home As screen:
         created As label:
             Align: =Align.Center
             FontWeight: =
-            Height: =80
+            Height: =request.TemplateHeight
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -46,7 +46,7 @@ Home As screen:
         created_by As label:
             Align: =Align.Center
             FontWeight: =
-            Height: =80
+            Height: =request.TemplateHeight
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -60,7 +60,7 @@ Home As screen:
         status_request As label:
             Align: =Align.Center
             FontWeight: =
-            Height: =80
+            Height: =request.TemplateHeight
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -74,7 +74,7 @@ Home As screen:
         approval_stage As label:
             Align: =Align.Center
             FontWeight: =
-            Height: =80
+            Height: =request.TemplateHeight
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -88,7 +88,7 @@ Home As screen:
         person_in_charge As label:
             Align: =Align.Center
             FontWeight: =
-            Height: =80
+            Height: =request.TemplateHeight
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -99,7 +99,7 @@ Home As screen:
             X: =810
             ZIndex: =6
 
-        "payment_approval1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "payment_status As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =80
             Items: =BKIM_REQ_Payment_Approval
@@ -133,23 +133,23 @@ Home As screen:
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =5
 
-        "payment_request As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "payment_request As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =80
+            Height: =request.TemplateHeight
             Items: =BKIM_REQ_Payment_Approval
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             ShowScrollbar: =false
             TemplatePadding: =0
-            TemplateSize: =80
+            TemplateSize: =100
             Width: =162
-            X: =973
+            X: =972
             ZIndex: =8
 
-            Title2_1 As label:
+            Title5 As label:
                 Align: =Align.Center
                 FontWeight: =
-                Height: =25
+                Height: =payment_request.TemplateHeight/3
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -157,15 +157,14 @@ Home As screen:
                 PaddingTop: =0
                 Text: =ThisItem.Title
                 Width: =162
-                Y: =2
-                ZIndex: =2
+                Y: =
+                ZIndex: =1
 
-            Separator2_1 As rectangle:
-                Fill: =RGBA(39, 113, 194, 1)
+            Separator6 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
-                Y: =Title2_1.Height
+                Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =3
 
         Separator5 As rectangle:

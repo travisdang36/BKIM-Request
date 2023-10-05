@@ -955,19 +955,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.request.payment_approval1.AccessibleLabel"
+                  "fullyQualifiedName": "Home.request.payment_status.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.request.payment_approval1.AccessibleLabel",
+                  "fullyQualifiedName": "Home.request.payment_status.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.request.payment_approval1"
+                "type": "Home.request.payment_status"
               }
             }
           ],
@@ -985,19 +985,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.request.payment_approval1.TabIndex"
+                  "fullyQualifiedName": "Home.request.payment_status.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.request.payment_approval1.TabIndex",
+                  "fullyQualifiedName": "Home.request.payment_status.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Home",
-                "type": "Home.request.payment_approval1"
+                "type": "Home.request.payment_status"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.request.payment_request.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.request.payment_request.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.request.payment_request"
               }
             }
           ],
@@ -1039,36 +1069,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.request.payment_request.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.request.payment_request.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home",
-                "type": "Home.request.payment_request"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
         },
         {
           "locations": [
