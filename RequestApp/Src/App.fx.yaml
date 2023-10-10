@@ -1,5 +1,9 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =//Lay email cua nguoi dung
+        
+        //Collection cho tat ca cac nguoi duyet cua nguoi dung
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
