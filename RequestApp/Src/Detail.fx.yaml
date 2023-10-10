@@ -482,7 +482,7 @@ Detail As screen:
         Request_Case_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Request_Case"
-            Default: =ThisItem.Request_Case
+            Default: =ThisItem.CaseID
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@BKIM_REQ_List],DataSourceInfo.DisplayName,"Request_Case")
             Fill: =RGBA(0, 0, 0, 0)

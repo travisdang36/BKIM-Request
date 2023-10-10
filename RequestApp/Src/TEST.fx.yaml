@@ -41,7 +41,7 @@ TEST As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.DoA_Type
+            Text: =ThisItem.Exp_Type
             VerticalAlign: =VerticalAlign.Top
             Width: =194
             X: =10
@@ -189,7 +189,7 @@ TEST As screen:
 
     Dropdown1_1 As dropdown:
         Items: |-
-            =Distinct(BKIM_REQ_Expenditure_Approval,DoA_Type)
+            =Distinct(BKIM_REQ_Expenditure_Approval,Exp_Type)
             //Distinct(Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max),Exp_Case)
         Width: =330
         X: =724
