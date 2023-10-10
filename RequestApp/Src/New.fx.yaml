@@ -16,6 +16,14 @@ New As screen:
         Y: =700
         ZIndex: =7
 
+    Container2_Aprroval_Stage As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(240, 255, 255, 1)
+        Height: =577
+        Width: =648
+        X: =695
+        Y: =96
+        ZIndex: =8
+
     Header_1 As group:
         Height: =5
         Width: =5
@@ -68,14 +76,6 @@ New As screen:
             X: =1020
             Y: =4
             ZIndex: =5
-
-    Container2_Aprroval_Stage As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(240, 255, 255, 1)
-        Height: =577
-        Width: =648
-        X: =695
-        Y: =96
-        ZIndex: =8
 
     Container_Input As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240, 255, 255, 1)

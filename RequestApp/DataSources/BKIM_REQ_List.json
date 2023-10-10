@@ -35,7 +35,7 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Payment_Process": "Payment_Process",
-      "Request_Case": "Request_Case",
+      "Request_Case": "CaseID",
       "Request_Status": "Request_Status",
       "Status": "Status",
       "Title": "Title"
