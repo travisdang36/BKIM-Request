@@ -1,43 +1,27 @@
 New As screen:
 
-    "Gallery6 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =491
-        Items: =BKIM_REQ_Expenditure_Approval
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =80
-        X: =700
-        Y: =180
-        ZIndex: =1
-
-        Title8 As label:
-            FontWeight: =
-            Height: =80
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Exp_Type
-            VerticalAlign: =VerticalAlign.Top
-            Width: =250
-            ZIndex: =1
-
-        Separator9 As rectangle:
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =3
-
-    Button2 As button:
+    Button2_Cancel As button:
         Fill: =RGBA(39, 113, 194, 1)
         OnSelect: =Navigate(Home)
         Text: ="Cancel"
-        X: =940
+        X: =997
         Y: =700
+        ZIndex: =6
+
+    Button2_Submit As button:
+        Fill: =RGBA(39, 113, 194, 1)
+        OnSelect: =Navigate(Detail)
+        Text: ="Submit"
+        X: =1183
+        Y: =700
+        ZIndex: =7
+
+    Container2_Aprroval_Stage As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(240, 255, 255, 1)
+        Height: =577
+        Width: =648
+        X: =695
+        Y: =96
         ZIndex: =8
 
     Header_1 As group:
@@ -52,7 +36,7 @@ New As screen:
             Fill: =RGBA(39, 113, 194, 1)
             Height: =70
             Width: =1366
-            ZIndex: =3
+            ZIndex: =1
 
         Label6_1 As label:
             Align: =Align.Center
@@ -62,14 +46,14 @@ New As screen:
             Size: =16
             Text: ="New"
             Width: =1366
-            ZIndex: =4
+            ZIndex: =2
 
         Image7_1 As image:
             Height: =38
             Image: ='BKIM logo_clean_white'
             X: =20
             Y: =16
-            ZIndex: =5
+            ZIndex: =3
 
         Image9_1 As image:
             Height: =61
@@ -81,7 +65,7 @@ New As screen:
             Width: =61
             X: =1297
             Y: =4
-            ZIndex: =6
+            ZIndex: =4
 
         Label7_1 As label:
             Align: =Align.Right
@@ -91,28 +75,66 @@ New As screen:
             Width: =270
             X: =1020
             Y: =4
-            ZIndex: =7
+            ZIndex: =5
 
-    Button2_1 As button:
-        Fill: =RGBA(39, 113, 194, 1)
-        OnSelect: =Navigate(Detail)
-        Text: ="Submit"
-        X: =1130
-        Y: =700
+    Container_Input As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(240, 255, 255, 1)
+        Height: =577
+        Width: =648
+        X: =20
+        Y: =95
         ZIndex: =9
 
-    Container2 As groupContainer.horizontalAutoLayoutContainer:
-        Height: =53
-        LayoutMode: =LayoutMode.Auto
-        Width: =640
-        X: =700
-        Y: =126
-        ZIndex: =10
-
-        Label11 As label:
-            Align: =Align.Center
-            Height: =Container2.Height
-            Text: ="Level"
-            Width: =200
+        Dropdown2 As dropdown:
+            Default: =
+            Items: =["DoA_Type"]
+            Width: =Parent.Width/2.5
+            X: =16
+            Y: =12
             ZIndex: =1
+
+        TextInput4 As text:
+            Default: =""
+            Height: =41
+            HintText: ="Amount (VND)"
+            Width: =259
+            X: =16
+            Y: =66
+            ZIndex: =2
+
+        Dropdown2_1 As dropdown:
+            Default: =
+            Items: =["18 Loại"]
+            Width: |
+                =Parent.Width/2.5
+            X: =368
+            Y: =12
+            ZIndex: =3
+
+        Dropdown2_2 As dropdown:
+            Default: =
+            Items: =["40 Case"]
+            Width: |
+                =Parent.Width/2.5
+            X: =368
+            Y: =66
+            ZIndex: =4
+
+        TextInput8 As text:
+            Default: =""
+            HintText: ="Title"
+            Width: =611
+            X: =16
+            Y: =133
+            ZIndex: =5
+
+        TextInput8_1 As text:
+            Default: =""
+            Height: =243
+            HintText: ="Detail"
+            Mode: =TextMode.MultiLine
+            Width: =611
+            X: =16
+            Y: =195
+            ZIndex: =6
 
