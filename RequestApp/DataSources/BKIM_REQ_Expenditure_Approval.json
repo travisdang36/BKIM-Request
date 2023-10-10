@@ -33,6 +33,7 @@
       "Condition_Max": "Condition_Max",
       "Created": "Created",
       "DoA_Case": "Exp_Case",
+      "DoA_Type": "DoA_Type",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
@@ -40,7 +41,7 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Person_Approve_Exp": "Person_Approve_Exp",
-      "Title": "DoA_Type"
+      "Title": "Exp_Type"
     },
     "DatasetName": "https://bkimsg.sharepoint.com/sites/BKIMCenter",
     "EncodeDataset": true,
