@@ -138,3 +138,12 @@ New As screen:
             Y: =195
             ZIndex: =6
 
+        TextInput4_1 As text:
+            Default: =""
+            Height: =41
+            HintText: ="File đính kèm"
+            Width: =259
+            X: =16
+            Y: =455
+            ZIndex: =7
+
