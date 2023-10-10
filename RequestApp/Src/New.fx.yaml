@@ -14,7 +14,7 @@ New As screen:
 
         Title8 As label:
             FontWeight: =
-            Height: =Self.Size * 1.8
+            Height: =80
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -22,9 +22,7 @@ New As screen:
             PaddingTop: =0
             Text: =ThisItem.DoA_Type
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 86
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Width: =250
             ZIndex: =1
 
         Separator9 As rectangle:
