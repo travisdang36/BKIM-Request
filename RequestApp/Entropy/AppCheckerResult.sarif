@@ -706,19 +706,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2.AccessibleLabel"
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_DoA.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2.AccessibleLabel",
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_DoA.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "New",
-                "type": "New.Container_Input.Dropdown2"
+                "type": "New.Container_Input.Dropdown2_DoA"
               }
             }
           ],
@@ -766,19 +766,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2_1.AccessibleLabel"
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Type.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2_1.AccessibleLabel",
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Type.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "New",
-                "type": "New.Container_Input.Dropdown2_1"
+                "type": "New.Container_Input.Dropdown2_Type"
               }
             }
           ],
@@ -796,19 +796,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2_2.AccessibleLabel"
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Case.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2_2.AccessibleLabel",
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Case.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "New",
-                "type": "New.Container_Input.Dropdown2_2"
+                "type": "New.Container_Input.Dropdown2_Case"
               }
             }
           ],
@@ -826,19 +826,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "New.Container_Input.TextInput8.AccessibleLabel"
+                  "fullyQualifiedName": "New.Container_Input.TextInput8_Title.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "New.Container_Input.TextInput8.AccessibleLabel",
+                  "fullyQualifiedName": "New.Container_Input.TextInput8_Title.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "New",
-                "type": "New.Container_Input.TextInput8"
+                "type": "New.Container_Input.TextInput8_Title"
               }
             }
           ],
@@ -856,19 +856,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "New.Container_Input.TextInput8_1.AccessibleLabel"
+                  "fullyQualifiedName": "New.Container_Input.TextInput8_1_Detail.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "New.Container_Input.TextInput8_1.AccessibleLabel",
+                  "fullyQualifiedName": "New.Container_Input.TextInput8_1_Detail.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "New",
-                "type": "New.Container_Input.TextInput8_1"
+                "type": "New.Container_Input.TextInput8_1_Detail"
               }
             }
           ],
@@ -886,19 +886,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "New.Container_Input.TextInput4_1.AccessibleLabel"
+                  "fullyQualifiedName": "New.Container_Input.TextInput4_1_Attachment.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "New.Container_Input.TextInput4_1.AccessibleLabel",
+                  "fullyQualifiedName": "New.Container_Input.TextInput4_1_Attachment.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "New",
-                "type": "New.Container_Input.TextInput4_1"
+                "type": "New.Container_Input.TextInput4_1_Attachment"
               }
             }
           ],

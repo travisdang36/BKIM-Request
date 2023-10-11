@@ -29,7 +29,7 @@ New As screen:
             Height: =Parent.Height
             Items: |-
                 =If(
-                    IsBlank(Dropdown1.SelectedText),
+                    IsBlank(Dropdown2_Case.SelectedText),
                     LookUp(
                         BKIM_REQ_Expenditure_Approval,
                         Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
@@ -179,7 +179,7 @@ New As screen:
         Y: =95
         ZIndex: =9
 
-        Dropdown2 As dropdown:
+        Dropdown2_DoA As dropdown:
             Default: =
             Items: =["DoA_Type"]
             Width: =Parent.Width/2.2
@@ -196,7 +196,7 @@ New As screen:
             Y: =73
             ZIndex: =2
 
-        Dropdown2_1 As dropdown:
+        Dropdown2_Type As dropdown:
             Default: =
             Items: =Distinct(Expenditure_Approval,Type)
             Width: =Parent.Width/2.2
@@ -204,7 +204,7 @@ New As screen:
             Y: =12
             ZIndex: =3
 
-        Dropdown2_2 As dropdown:
+        Dropdown2_Case As dropdown:
             Default: =
             Items: =Distinct(Filter(Expenditure_Approval, Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
             Width: =Parent.Width/2.2
@@ -212,7 +212,7 @@ New As screen:
             Y: =73
             ZIndex: =4
 
-        TextInput8 As text:
+        TextInput8_Title As text:
             Default: =""
             HintText: ="Title"
             Width: =611
@@ -220,7 +220,7 @@ New As screen:
             Y: =133
             ZIndex: =5
 
-        TextInput8_1 As text:
+        TextInput8_1_Detail As text:
             Default: =""
             Height: =243
             HintText: ="Detail"
@@ -230,7 +230,7 @@ New As screen:
             Y: =195
             ZIndex: =6
 
-        TextInput4_1 As text:
+        TextInput4_1_Attachment As text:
             Default: =""
             Height: =41
             HintText: ="File đính kèm"
