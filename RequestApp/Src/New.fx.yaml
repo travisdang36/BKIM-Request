@@ -30,11 +30,11 @@ New As screen:
             Items: |-
                 =If(
                     IsBlank(Dropdown2_Case.SelectedText),
-                    LookUp(
+                    Filter(
                         BKIM_REQ_Expenditure_Approval,
                         Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
                     ),
-                    LookUp(
+                    Filter(
                         BKIM_REQ_Expenditure_Approval,
                         Dropdown2_Case.SelectedText.Value = Exp_Case
                     )
