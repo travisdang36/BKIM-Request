@@ -53,7 +53,7 @@ New As screen:
                     RGBA(240, 240, 240, 1),RGBA(255, 255, 255, 1)
                 )
             TemplatePadding: =0
-            TemplateSize: =80
+            TemplateSize: =40
             Width: =Parent.Width
             Y: =70
             ZIndex: =1
