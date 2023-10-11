@@ -1059,6 +1059,35 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Note.DataCardValue8_2"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Note.DataCardValue8_2",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Note",
+                "type": "Note.DataCardValue8_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -1163,6 +1192,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
+              }
+            },
+            {
+              "id": "app-NumericPropertySizeWarning",
+              "messageStrings": {
+                "issue": {
+                  "text": "Allowing upload of large files up to 10 MB"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Consider whether you need attachments of this size."
+                ],
+                "level": "Low",
+                "primaryCategory": "performance",
+                "whyFix": "We recommend testing on all supported platforms to ensure that attachments of this size can be uploaded successfully."
               }
             }
           ],

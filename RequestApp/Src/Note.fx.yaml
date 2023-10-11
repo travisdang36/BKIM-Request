@@ -101,7 +101,7 @@ Note As screen:
         Height: =200
         IsInDataCard: =true
         Items: =
-        MaxAttachmentSize: =1
+        MaxAttachmentSize: =10000
         PaddingBottom: =5
         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
         PaddingRight: =5
