@@ -28,7 +28,7 @@ New As screen:
             DelayItemLoading: =true
             Height: =Parent.Height
             Items: |-
-                =f(
+                =If(
                     IsBlank(Dropdown1.SelectedText),
                     LookUp(
                         BKIM_REQ_Expenditure_Approval,
@@ -66,7 +66,7 @@ New As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Case
+                Text: =ThisItem.Level_Exp
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 173
                 X: =103
@@ -81,7 +81,7 @@ New As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.CaseID
+                Text: =ThisItem.'Compliance Asset Id'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Title2.Width
                 X: =Title2.X
