@@ -132,7 +132,7 @@ Note As screen:
 
     Label4 As label:
         Height: =227
-        Text: =Concatenate(ForAll(Gallery3_1.AllItems,Email),",")
+        Text: =Concat(ForAll(Gallery3_1.AllItems,Email),",")
         Width: =364
         X: =806
         Y: =306

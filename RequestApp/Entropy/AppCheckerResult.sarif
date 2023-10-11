@@ -215,47 +215,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Note.Label4.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Note.Label4.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 50,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Concatenate(ForAll(Gallery3_1.AllItems,Email),\",\")"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Note",
-                "type": "Note.Label4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text",
-              "Table"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "TEST.TextInput3.AccessibleLabel"
                 }
               ],
