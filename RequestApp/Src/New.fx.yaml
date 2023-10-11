@@ -91,6 +91,7 @@ New As screen:
                 Text: |-
                     =//ThisItem.Person_Approve
                     LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName)
+                Visible: =false
                 Width: =250
                 X: =398
                 ZIndex: =3
@@ -101,7 +102,53 @@ New As screen:
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
                 Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =4
+
+            "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =120
+                Items: |-
+                    =Filter(Expenditure_Approval,
+                    
+                        //Lay nguoi duyet cap 1
+                    
+                    
+                        //Lay nguoi duyet cap 2
+                    
+                    
+                        //Lay nguoi duyet cap 3
+                    
+                    
+                        //Lay nguoi duyet cap 4
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =80
+                Width: =250
+                X: =398
                 ZIndex: =5
+
+                Title2 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Person.DisplayName
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 86
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                Separator2 As rectangle:
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =3
 
         Container2 As groupContainer.horizontalAutoLayoutContainer:
             Height: =70
