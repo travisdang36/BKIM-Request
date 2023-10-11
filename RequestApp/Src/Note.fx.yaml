@@ -96,7 +96,7 @@ Note As screen:
             PaddingRight: =0
             PaddingTop: =0
             Text: |-
-                =ThisItem.Em
+                =ThisItem.Email
                 /*
                 Switch(ThisItem.Person_Approve,
                     "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
@@ -129,4 +129,12 @@ Note As screen:
         X: =893
         Y: =666
         ZIndex: =9
+
+    Label4 As label:
+        Height: =227
+        Text: =Concatenate(ForAll(Gallery3_1.AllItems,Email),",")
+        Width: =364
+        X: =806
+        Y: =306
+        ZIndex: =10
 

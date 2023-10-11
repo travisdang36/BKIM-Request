@@ -215,40 +215,41 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Note.Gallery3_1.text_person_in_charge_1.Text"
+                  "fullyQualifiedName": "Note.Label4.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Note.Gallery3_1.text_person_in_charge_1.Text",
+                  "fullyQualifiedName": "Note.Label4.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 3,
-                  "charOffset": 8,
+                  "charLength": 50,
+                  "charOffset": 0,
                   "snippet": {
-                    "text": ".Em"
+                    "text": "Concatenate(ForAll(Gallery3_1.AllItems,Email),\",\")"
                   }
                 }
               },
               "properties": {
                 "member": "Text",
                 "module": "Note",
-                "type": "Note.Gallery3_1.text_person_in_charge_1"
+                "type": "Note.Label4"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Em"
+              "Text",
+              "Table"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleIndex": 0
         },
         {
           "locations": [
