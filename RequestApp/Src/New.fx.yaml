@@ -291,7 +291,7 @@ New As screen:
                 =Launch("https://bkimsg.sharepoint.com/sites/BKIMCenter/Request%20Document/Forms/AllItems.aspx?id=%2Fsites%2FBKIMCenter%2FRequest%20Document%2F"&varSharePointLink)
             Text: |-
                 ="SharePoint Folder: " & varSharePointLink
-            Width: =609
+            Width: =257
             X: =16
             Y: =511
             ZIndex: =9
