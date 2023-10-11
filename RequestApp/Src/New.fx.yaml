@@ -30,6 +30,7 @@ New As screen:
             Height: =Parent.Height - Container2.Height
             Items: |-
                 =If(
+                    SortByColumns(
                     IsBlank(Dropdown2_Case.SelectedText),
                     Filter(
                         Expenditure_Approval,
@@ -38,6 +39,9 @@ New As screen:
                     Filter(
                         Expenditure_Approval,
                         Dropdown2_Case.SelectedText.Value = Case
+                    ),
+                    level,
+                    SortOrder.Ascending
                     )
                 )
             Layout: =Layout.Vertical
