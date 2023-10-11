@@ -177,7 +177,13 @@ Home As screen:
 
     Button1 As button:
         Fill: =RGBA(39, 113, 194, 1)
-        OnSelect: =Navigate(New)
+        OnSelect: |-
+            =Navigate(New);
+            
+            //Data cho
+            Clear(Expenditure_Approval);
+            Collect(Expenditure_Approval,{Case:"Case",Type:"Type"});
+            ForAll(BKIM_REQ_Expenditure_Approval,Collect(Expenditure_Approval,{Case: Exp_Case,Type:Exp_Type,CaseID:ID_Case,Condition_Min:Condition_Min,Condition_Max:Condition_Max}))
         Text: ="New"
         X: =1172
         Y: =700
