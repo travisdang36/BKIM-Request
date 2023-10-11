@@ -26,11 +26,7 @@ New As screen:
 
         "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
             DelayItemLoading: =true
-            Fill: |-
-                =
-                
-                
-                RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height - Container2.Height
             Items: |-
                 =If(
