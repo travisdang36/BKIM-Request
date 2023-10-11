@@ -91,8 +91,8 @@ New As screen:
                 Text: |-
                     =//ThisItem.Person_Approve
                     If(ThisItem.Person_Approve = "Relevant Head of Department (Vietnam)",
-                    LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName)
-                    
+                    LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
+                    ThisItem.Person_Approve
                     )
                 Width: =250
                 X: =398
