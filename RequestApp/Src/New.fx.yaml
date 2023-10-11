@@ -40,7 +40,7 @@ New As screen:
                         Expenditure_Approval,
                         Dropdown2_Case.SelectedText.Value = Case
                     ),
-                    level,
+                    Level,
                     SortOrder.Ascending
                     )
                 )
