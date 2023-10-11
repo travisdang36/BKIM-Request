@@ -137,10 +137,11 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/11/2023 08:12:12",
+  "HeaderLastSavedDateTimeUTC": "10/11/2023 08:15:30",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "10590b5e-5249-4164-ba0c-46bf9b0d8c77": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/FF3135C5E9894D758E897D3126E4525A-AB5C902D38D2494A\"",
+    "4248efca-ae32-46f5-9de3-729987c19a76": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/427b23ad32a14cb3b2b8292cdd628874\"",
     "cefcc3df-98b2-4082-a847-a0cff2a56098": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5cfa839abf7c4946a3a42a97b16252c7\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
@@ -155,19 +156,20 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "3000 Records": 1,
-    "BKIM_REQ_Approval_Condition": 2,
-    "BKIM_REQ_Approval_Condition_Result": 3,
-    "BKIM_REQ_APPROVAL_PERSON_LIST": 11,
-    "BKIM_REQ_Approval_Result": 4,
-    "BKIM_REQ_Chat_List": 5,
-    "BKIM_REQ_Expenditure_Approval": 6,
-    "BKIM_REQ_List": 7,
-    "BKIM_REQ_Payment_Approval": 8,
+    "3000 Records": 2,
+    "BKIM_REQ_Approval_Condition": 3,
+    "BKIM_REQ_Approval_Condition_Result": 4,
+    "BKIM_REQ_APPROVAL_PERSON_LIST": 12,
+    "BKIM_REQ_Approval_Result": 5,
+    "BKIM_REQ_Chat_List": 6,
+    "BKIM_REQ_Expenditure_Approval": 7,
+    "BKIM_REQ_List": 8,
+    "BKIM_REQ_Payment_Approval": 9,
     "BKIM_REQ_SharePoint_GenFolder": 0,
-    "CustomGallerySample": 9,
-    "DropDownSample": 10,
-    "Expenditure_Approval": 12
+    "CustomGallerySample": 10,
+    "DropDownSample": 11,
+    "Expenditure_Approval": 13,
+    "Office365Users": 1
   },
   "OrderGroupControls": {
     "Header": {
