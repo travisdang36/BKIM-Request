@@ -608,6 +608,7 @@ Note As screen:
                 DisplayMode: =Parent.DisplayMode
                 IsInDataCard: =true
                 Items: =Parent.Default
+                MaxAttachmentSize: =1
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
