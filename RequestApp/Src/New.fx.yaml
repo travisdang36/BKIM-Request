@@ -281,7 +281,7 @@ New As screen:
                 BKIM_REQ_SharePoint_GenFolder.Run(varSharePointLink);
                 
                 //Visible
-                Set(boolSharePointVisible, false)
+                Set(boolSharePointVisible, false);
             Text: ="SharePoint"
             Visible: =varSharePointVisible
             X: =17
