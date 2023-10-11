@@ -43,7 +43,7 @@ New As screen:
                     )
                     
                 ),
-                level,
+                Level,
                 SortOrder.Ascending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data

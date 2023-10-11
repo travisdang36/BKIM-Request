@@ -191,7 +191,7 @@ Home As screen:
                 Condition_Max:Condition_Max,
                 Condition_Min:Condition_Min,
                 Person_Approve:Person_Approve_Exp,
-                Level:Level_Exp,
+                Level_Exp:Level_Exp,
                 Approve_Type:Approve_Type_Exp    
             }));
         Text: ="New"
