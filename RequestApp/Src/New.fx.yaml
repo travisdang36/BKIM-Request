@@ -93,7 +93,7 @@ New As screen:
                     Switch(ThisItem.Person_Approve,
                         "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
                         "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
-                        "BP (BKIM Representative)", Filter(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,),
+                        "BP (BKIM Representative)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
                         "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
                         
                     )
