@@ -110,7 +110,9 @@ New As screen:
                 Items: |-
                     =Filter(Expenditure_Approval,
                         //Lay nguoi duyet cap 1
-                        If(level.Text = "1",/*LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName)*/Person_Approve
+                        If(level.Text = "1" && Dropdown2_Case.Selected.Value = Case,
+                        /*LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName)*/
+                        Person_Approve
                     
                         //Lay nguoi duyet cap 2
                     
