@@ -279,7 +279,11 @@ New As screen:
                 
                 //Gen new folder in sharepoint
                 BKIM_REQ_SharePoint_GenFolder.Run(varSharePointLink);
+                
+                //Visible
+                Set(boolSharePointVisible, false)
             Text: ="SharePoint"
+            Visible: =varSharePointVisible
             X: =17
             Y: =455
             ZIndex: =8
