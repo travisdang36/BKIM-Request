@@ -112,7 +112,7 @@ New As screen:
 
         Dropdown2_2 As dropdown:
             Default: =
-            Items: =["40 Case"]
+            Items: =Distinct(Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max),Exp_Case)
             Width: =Parent.Width/2.2
             X: =332
             Y: =73
