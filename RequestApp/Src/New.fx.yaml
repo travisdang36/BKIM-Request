@@ -117,9 +117,8 @@ New As screen:
                     )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
-                ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =120
+                TemplateSize: =52
                 Width: =250
                 X: =398
                 ZIndex: =4
