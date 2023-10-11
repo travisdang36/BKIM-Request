@@ -10,7 +10,7 @@ TEST As screen:
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =506
+        Height: =146
         Items: |-
             =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
             If(
