@@ -26,21 +26,27 @@ New As screen:
 
         "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
             DelayItemLoading: =true
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height - Container2.Height
             Items: |-
                 =If(
                     IsBlank(Dropdown2_Case.SelectedText),
                     Filter(
-                        BKIM_REQ_Expenditure_Approval,
+                        Expenditure_Approval,
                         Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
                     ),
                     Filter(
-                        BKIM_REQ_Expenditure_Approval,
-                        Dropdown2_Case.SelectedText.Value = Exp_Case
+                        Expenditure_Approval,
+                        Dropdown2_Case.SelectedText.Value = Case
                     )
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
+            TemplateFill: |-
+                =If(
+                    Mod(ThisItem.rowNum,2) = 0,
+                    RGBA(240, 240, 240, 1),RGBA(255, 255, 255, 1)
+                )
             TemplatePadding: =0
             TemplateSize: =120
             Width: =Parent.Width
@@ -49,40 +55,40 @@ New As screen:
 
             level As label:
                 Align: =Align.Center
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                FontWeight: =
                 Height: =Gallery3.TemplateHeight
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Level_Exp
+                Text: =ThisItem.Level
                 ZIndex: =1
 
             type_of_approval As label:
                 Align: =Align.Center
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                FontWeight: =
                 Height: =Gallery3.TemplateHeight
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Approve_Type_Exp.Value
+                Text: =ThisItem.Approve_Type.Value
                 Width: =248
                 X: =150
                 ZIndex: =2
 
             text_person_in_charge As label:
                 Align: =Align.Center
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                FontWeight: =
                 Height: =Gallery3.TemplateHeight
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Person_Approve_Exp
+                Text: =ThisItem.Person_Approve
                 Width: =250
                 X: =398
                 ZIndex: =3

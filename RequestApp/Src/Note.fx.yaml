@@ -95,3 +95,20 @@ Note As screen:
         Y: =134
         ZIndex: =3
 
+    DataCardValue8_2 As attachments:
+        BorderColor: =
+        DisplayMode: =
+        Height: =200
+        IsInDataCard: =true
+        Items: =
+        MaxAttachmentSize: =10000
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        Tooltip: =
+        Width: =576
+        X: =700
+        Y: =191
+        ZIndex: =5
+
