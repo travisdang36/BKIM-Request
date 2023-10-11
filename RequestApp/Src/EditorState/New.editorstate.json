@@ -587,7 +587,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container_Input",
-      "ParentIndex": 0,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -747,7 +747,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container2_Aprroval_Stage",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1236,7 +1236,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Dropdown2_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1843,7 +1843,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image7_1",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2094,7 +2094,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image9_1",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2341,7 +2341,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_1",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2624,7 +2624,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label7_1",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2944,7 +2944,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle6_1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3060,7 +3060,14 @@
         "Align",
         "X",
         "Y",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "259",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -3100,7 +3107,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput4",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

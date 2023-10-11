@@ -88,7 +88,7 @@ New As screen:
         Dropdown2 As dropdown:
             Default: =
             Items: =["DoA_Type"]
-            Width: =Parent.Width/2.5
+            Width: =Parent.Width/2.2
             X: =16
             Y: =12
             ZIndex: =1
@@ -97,27 +97,25 @@ New As screen:
             Default: =""
             Height: =41
             HintText: ="Amount (VND)"
-            Width: =259
+            Width: =Parent.Width/2.2
             X: =16
-            Y: =66
+            Y: =73
             ZIndex: =2
 
         Dropdown2_1 As dropdown:
             Default: =
             Items: =["18 Loại"]
-            Width: |
-                =Parent.Width/2.5
-            X: =368
+            Width: =Parent.Width/2.2
+            X: =332
             Y: =12
             ZIndex: =3
 
         Dropdown2_2 As dropdown:
             Default: =
             Items: =["40 Case"]
-            Width: |
-                =Parent.Width/2.5
-            X: =368
-            Y: =66
+            Width: =Parent.Width/2.2
+            X: =332
+            Y: =73
             ZIndex: =4
 
         TextInput8 As text:
