@@ -286,7 +286,8 @@ New As screen:
 
         Label9_Link As label:
             Fill: =RGBA(255, 255, 255, 1)
-            Text: ="Link SharePoint"
+            Text: |-
+                ="https://bkimsg.sharepoint.com/sites/BKIMCenter/Request%20Document/Forms/AllItems.aspx?id=%2Fsites%2FBKIMCenter%2FRequest%20Document%2F"&varSharePointLink
             Width: =425
             X: =16
             Y: =519
