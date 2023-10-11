@@ -36,7 +36,7 @@ New As screen:
                     ),
                     LookUp(
                         BKIM_REQ_Expenditure_Approval,
-                        Dropdown1.SelectedText.Value = Exp_Case
+                        Dropdown2_Case.SelectedText.Value = Exp_Case
                     )
                 )
             Layout: =Layout.Vertical
