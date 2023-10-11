@@ -98,7 +98,7 @@ Note As screen:
     DataCardValue8_2 As attachments:
         BorderColor: =
         DisplayMode: =
-        Height: =200
+        Height: =401
         IsInDataCard: =true
         Items: =
         MaxAttachments: =100
