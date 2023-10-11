@@ -42,7 +42,7 @@ New As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =116
+            TemplateSize: =120
             Width: =Parent.Width
             Y: =70
             ZIndex: =1
