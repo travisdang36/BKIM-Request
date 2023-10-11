@@ -209,7 +209,7 @@ New As screen:
             ZIndex: =5
 
     Container_Input As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(240,240,240,1)
+        Fill: =RGBA(240,240,240,0.8)
         Height: =577
         Width: =648
         X: =20
