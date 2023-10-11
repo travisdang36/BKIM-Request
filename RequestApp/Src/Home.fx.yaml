@@ -188,8 +188,8 @@ Home As screen:
                 Case: Exp_Case,
                 Type:Exp_Type,
                 CaseID:ID_Case,
-                Condition_Min:Condition_Min,
                 Condition_Max:Condition_Max,
+                Condition_Min:Condition_Min,
                 Person_Approve:Person_Approve_Exp,
                 Level:Level_Exp,
                 Approve_Type:Approve_Type_Exp
