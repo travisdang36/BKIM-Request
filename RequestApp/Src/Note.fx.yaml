@@ -45,23 +45,7 @@ Note As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height - Container2.Height
-        Items: |-
-            =SortByColumns(
-            If(
-                
-                IsBlank(Dropdown2_Case.SelectedText),
-                Filter(
-                    Expenditure_Approval,
-                    Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
-                ),
-                Filter(
-                    Expenditure_Approval,
-                    Dropdown2_Case.SelectedText.Value = Case
-                )
-                
-            ),
-            "Level_Exp",
-            SortOrder.Ascending)
+        Items: =Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP" = Department)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: |-
@@ -85,7 +69,7 @@ Note As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Level_Exp
+            Text: =ThisItem.Title
             ZIndex: =1
 
         type_of_approval_1 As label:
@@ -97,7 +81,7 @@ Note As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Approve_Type.Value
+            Text: =ThisItem.Department
             Width: =248
             X: =150
             ZIndex: =2
@@ -112,7 +96,8 @@ Note As screen:
             PaddingRight: =0
             PaddingTop: =0
             Text: |-
-                =//ThisItem.Person_Approve
+                =ThisItem.Em
+                /*
                 Switch(ThisItem.Person_Approve,
                     "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
                     "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
@@ -125,7 +110,7 @@ Note As screen:
                 
                     "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
                     
-                )
+                )*/
             Width: =250
             X: =398
             ZIndex: =3
@@ -139,7 +124,7 @@ Note As screen:
             ZIndex: =5
 
     Button7 As button:
-        OnSelect: =Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP (BKIM Representative)" = Title,Email)
+        OnSelect: =Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP (BKIM Representative)" = Title)
         Text: ="Button"
         X: =893
         Y: =666
