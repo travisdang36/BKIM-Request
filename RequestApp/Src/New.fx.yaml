@@ -259,7 +259,7 @@ New As screen:
 
         TextInput8_1_Detail As text:
             Default: =""
-            Height: =243
+            Height: =164
             HintText: ="Detail"
             Mode: =TextMode.MultiLine
             Width: =611
@@ -298,20 +298,34 @@ New As screen:
             Text: ="SharePoint"
             Visible: =boolSharePointVisible
             X: =17
-            Y: =455
+            Y: =371
             ZIndex: =8
 
         Label9_Link As label:
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =48
+            Height: =41
             OnSelect: |-
                 =Launch("https://bkimsg.sharepoint.com/sites/BKIMCenter/Request%20Document/Forms/AllItems.aspx?id=%2Fsites%2FBKIMCenter%2FRequest%20Document%2F"&varSharePointLink)
             Text: |-
                 ="SharePoint Folder: " & varSharePointLink
-            Width: =257
-            X: =16
-            Y: =511
+            Width: =424
+            X: =201
+            Y: =371
             ZIndex: =9
+
+        TextInput4 As text:
+            Default: =""
+            HintText: ="Attachment 1"
+            X: =17
+            Y: =427
+            ZIndex: =10
+
+        TextInput4_1 As text:
+            Default: =""
+            HintText: ="Attachment 2"
+            X: =17
+            Y: =489
+            ZIndex: =11
 
     Button6 As button:
         OnSelect: =Set(boolSharePointVisible,true)
