@@ -31,11 +31,11 @@ New As screen:
                 =If(
                     IsBlank(Dropdown2_Case.SelectedText),
                     Filter(
-                        BKIM_REQ_Expenditure_Approval,
+                        Expenditure_Approval,
                         Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
                     ),
                     Filter(
-                        BKIM_REQ_Expenditure_Approval,
+                        Expenditure_Approval,
                         Dropdown2_Case.SelectedText.Value = Exp_Case
                     )
                 )
@@ -56,7 +56,7 @@ New As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Level_Exp
+                Text: =ThisItem.DoA_Type
                 ZIndex: =1
 
             type_of_approval As label:
