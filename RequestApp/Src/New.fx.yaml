@@ -109,7 +109,6 @@ New As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2.Height
-                Size: =15
                 Text: ="Level"
                 ZIndex: =1
 
@@ -121,7 +120,6 @@ New As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2.Height
-                Size: =15
                 Text: ="Type of Approval"
                 Width: =(Container2.Width - Label9_Level.Width)/2 
                 ZIndex: =2
@@ -134,7 +132,6 @@ New As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2.Height
-                Size: =15
                 Text: ="Person in Charge"
                 Width: =(Container2.Width - Label9_Level.Width)/2
                 ZIndex: =3
