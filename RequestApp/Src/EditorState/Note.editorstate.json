@@ -93,6 +93,14 @@
           "InvariantPropertyName": "MaxAttachmentSize",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "6",
+          "InvariantPropertyName": "MaxAttachments",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -105,7 +113,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardValue8_2",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -126,6 +134,11 @@
         {
           "Category": "Data",
           "PropertyName": "MaxAttachmentSize",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MaxAttachments",
           "RuleProviderType": "Unknown"
         },
         {
