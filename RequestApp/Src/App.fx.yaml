@@ -3,7 +3,24 @@ App As appinfo:
     OnStart: |-
         =//Lay email cua nguoi dung
         
+        
         //Collection cho tat ca cac nguoi duyet cua nguoi dung
+        
+        
+        //Data cho cac nguoi duyet Request
+        ClearCollect(Expenditure_Approval,{Case:"Case",Type:"Type"});
+        ForAll(BKIM_REQ_Expenditure_Approval,Collect(Expenditure_Approval,
+        {
+            DoA_Type:DoA_Type,
+            Case: Exp_Case,
+            Type:Exp_Type,
+            CaseID:ID_Case,
+            Condition_Min:Condition_Min,
+            Condition_Max:Condition_Max,
+            Person_Approve:Person_Approve_Exp,
+            Level:Level_Exp,
+            Approve_Type:Approve_Type_Exp
+        }))
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

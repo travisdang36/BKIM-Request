@@ -177,7 +177,23 @@ Home As screen:
 
     Button1 As button:
         Fill: =RGBA(39, 113, 194, 1)
-        OnSelect: =Navigate(New)
+        OnSelect: |-
+            =Navigate(New);
+            
+            //Data cho cac nguoi duyet Request
+            ClearCollect(Expenditure_Approval,{Case:"Case",Type:"Type"});
+            ForAll(BKIM_REQ_Expenditure_Approval,Collect(Expenditure_Approval,
+            {
+                DoA_Type:DoA_Type,
+                Case: Exp_Case,
+                Type:Exp_Type,
+                CaseID:ID_Case,
+                Condition_Max:Condition_Max,
+                Condition_Min:Condition_Min,
+                Person_Approve:Person_Approve_Exp,
+                Level:Level_Exp,
+                Approve_Type:Approve_Type_Exp
+            }))
         Text: ="New"
         X: =1172
         Y: =700

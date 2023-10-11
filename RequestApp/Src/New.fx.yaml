@@ -24,6 +24,118 @@ New As screen:
         Y: =96
         ZIndex: =8
 
+        "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =Parent.Height - Container2.Height
+            Items: |-
+                =If(
+                    IsBlank(Dropdown2_Case.SelectedText),
+                    Filter(
+                        BKIM_REQ_Expenditure_Approval,
+                        Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
+                    ),
+                    Filter(
+                        BKIM_REQ_Expenditure_Approval,
+                        Dropdown2_Case.SelectedText.Value = Exp_Case
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =120
+            Width: =Parent.Width
+            Y: =70
+            ZIndex: =1
+
+            level As label:
+                Align: =Align.Center
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Gallery3.TemplateHeight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Level_Exp
+                ZIndex: =1
+
+            type_of_approval As label:
+                Align: =Align.Center
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Gallery3.TemplateHeight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Approve_Type_Exp.Value
+                Width: =248
+                X: =150
+                ZIndex: =2
+
+            text_person_in_charge As label:
+                Align: =Align.Center
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Gallery3.TemplateHeight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Person_Approve_Exp
+                Width: =250
+                X: =398
+                ZIndex: =3
+
+            Separator4 As rectangle:
+                Fill: =RGBA(39, 113, 194, 1)
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =5
+
+        Container2 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =70
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            Label9_Level As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =Container2.Height
+                Text: ="Level"
+                ZIndex: =1
+
+            Label9_type_approve As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =Container2.Height
+                Text: ="Type of Approval"
+                Width: =(Container2.Width - Label9_Level.Width)/2 
+                ZIndex: =2
+
+            Label9_person_in_charge As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =Container2.Height
+                Text: ="Person in Charge"
+                Width: =(Container2.Width - Label9_Level.Width)/2
+                ZIndex: =3
+
     Header_1 As group:
         Height: =5
         Width: =5
@@ -44,7 +156,7 @@ New As screen:
             FontWeight: =FontWeight.Semibold
             Height: =70
             Size: =16
-            Text: ="New"
+            Text: ="New Request"
             Width: =1366
             ZIndex: =2
 
@@ -85,7 +197,7 @@ New As screen:
         Y: =95
         ZIndex: =9
 
-        Dropdown2 As dropdown:
+        Dropdown2_DoA As dropdown:
             Default: =
             Items: =["DoA_Type"]
             Width: =Parent.Width/2.2
@@ -93,32 +205,32 @@ New As screen:
             Y: =12
             ZIndex: =1
 
-        TextInput4 As text:
+        TextInput4_Amount As text:
             Default: =""
             Height: =41
             HintText: ="Amount (VND)"
-            Width: =Parent.Width/2.2
+            Width: =Parent.Width/3.5
             X: =16
             Y: =73
             ZIndex: =2
 
-        Dropdown2_1 As dropdown:
+        Dropdown2_Type As dropdown:
             Default: =
-            Items: =["18 Loại"]
+            Items: =Distinct(Expenditure_Approval,Type)
             Width: =Parent.Width/2.2
             X: =332
             Y: =12
             ZIndex: =3
 
-        Dropdown2_2 As dropdown:
+        Dropdown2_Case As dropdown:
             Default: =
-            Items: =["40 Case"]
-            Width: =Parent.Width/2.2
-            X: =332
+            Items: =Distinct(Filter(Expenditure_Approval, Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
+            Width: =Parent.Width/1.59
+            X: =218
             Y: =73
             ZIndex: =4
 
-        TextInput8 As text:
+        TextInput8_Title As text:
             Default: =""
             HintText: ="Title"
             Width: =611
@@ -126,7 +238,7 @@ New As screen:
             Y: =133
             ZIndex: =5
 
-        TextInput8_1 As text:
+        TextInput8_1_Detail As text:
             Default: =""
             Height: =243
             HintText: ="Detail"
@@ -136,7 +248,7 @@ New As screen:
             Y: =195
             ZIndex: =6
 
-        TextInput4_1 As text:
+        TextInput4_1_Attachment As text:
             Default: =""
             Height: =41
             HintText: ="File đính kèm"
