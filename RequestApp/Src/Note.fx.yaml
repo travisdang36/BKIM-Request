@@ -98,9 +98,9 @@ Note As screen:
     DataCardValue8_2 As attachments:
         BorderColor: =
         DisplayMode: =
-        Height: =200
+        Height: =435
         IsInDataCard: =true
-        Items: =
+        Items: ='3000 Records'
         MaxAttachments: =100
         MaxAttachmentSize: =1000000000
         PaddingBottom: =5
