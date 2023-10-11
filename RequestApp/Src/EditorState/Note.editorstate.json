@@ -89,7 +89,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "10",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "MaxAttachmentSize",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
