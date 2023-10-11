@@ -124,14 +124,16 @@ New As screen:
                     )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
+                ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =80
+                TemplateSize: =120
                 Width: =250
                 X: =398
                 ZIndex: =5
 
                 Title2 As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    FontWeight: |
+                        =
                     Height: =45
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -146,7 +148,7 @@ New As screen:
                     ZIndex: =1
 
                 Separator2 As rectangle:
-                    Height: =8
+                    Height: =1
                     OnSelect: =Select(Parent)
                     Width: =Parent.TemplateWidth
                     Y: =Parent.TemplateHeight - Self.Height
