@@ -24,9 +24,9 @@ New As screen:
         Y: =96
         ZIndex: =8
 
-        "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =Parent.Height
+            Height: =Parent.Height - Container2.Height
             Items: |-
                 =If(
                     IsBlank(Dropdown2_Case.SelectedText),
@@ -42,81 +42,102 @@ New As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =104
+            TemplateSize: =116
             Width: =Parent.Width
+            Y: =70
             ZIndex: =1
 
-            Image1 As image:
-                Height: =72
-                OnSelect: =Select(Parent)
-                RadiusBottomLeft: =8
-                RadiusBottomRight: =8
-                RadiusTopLeft: =8
-                RadiusTopRight: =8
-                Width: =72
-                X: =16
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =1
-
-            Title2 As label:
+            level As label:
+                Align: =Align.Center
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
+                Height: =115
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Text: =ThisItem.Level_Exp
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 173
-                X: =103
-                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
-                ZIndex: =2
+                ZIndex: =1
 
-            Subtitle2 As label:
+            type_of_approval As label:
+                Align: =Align.Center
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
+                Height: =115
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.'Compliance Asset Id'
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Title2.Width
-                X: =Title2.X
-                Y: =Title2.Y + Title2.Height
+                Text: =ThisItem.Approve_Type_Exp.Value
+                Width: =248
+                X: =150
+                ZIndex: =2
+
+            text_person_in_charge As label:
+                Align: =Align.Center
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =115
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Person_Approve_Exp
+                Width: =250
+                X: =398
                 ZIndex: =3
 
-            NextArrow2 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =50
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Tooltip: ="View item details"
-                Width: =50
-                X: =Parent.TemplateWidth - Self.Width - 12
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =4
-
-            Separator2 As rectangle:
-                Height: =8
+            Separator4 As rectangle:
+                Fill: =RGBA(39, 113, 194, 1)
+                Height: =1
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =5
 
-            Rectangle2 As rectangle:
-                Height: =Parent.TemplateHeight - Separator2.Height
-                OnSelect: =Select(Parent)
-                Visible: =ThisItem.IsSelected
-                Width: =4
-                ZIndex: =6
+        Container2 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =70
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            Label9_Level As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =Container2.Height
+                Size: =15
+                Text: ="Level"
+                ZIndex: =1
+
+            Label9_type_approve As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =Container2.Height
+                Size: =15
+                Text: ="Type of Approval"
+                Width: =(Container2.Width - Label9_Level.Width)/2 
+                ZIndex: =2
+
+            Label9_person_in_charge As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =Container2.Height
+                Size: =15
+                Text: ="Person in Charge"
+                Width: =(Container2.Width - Label9_Level.Width)/2
+                ZIndex: =3
 
     Header_1 As group:
         Height: =5
