@@ -274,9 +274,11 @@ New As screen:
                     Title:"Test"
                 });
                 
+                //SharePoint Folder name
+                Set(varSharePointLink,"Request_"&Last(BKIM_REQ_List).ID);
                 
                 //Gen new folder in sharepoint
-                BKIM_REQ_SharePoint_GenFolder.Run("Request_"&Last(BKIM_REQ_List).ID)
+                BKIM_REQ_SharePoint_GenFolder.Run(varSharePointLink);
             Text: ="SharePoint"
             X: =17
             Y: =455
