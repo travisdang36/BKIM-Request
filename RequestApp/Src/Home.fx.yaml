@@ -180,7 +180,7 @@ Home As screen:
         OnSelect: |-
             =Navigate(New);
             
-            //Data cho
+            //Data cho cac nguoi duyet Request
             Clear(Expenditure_Approval);
             Collect(Expenditure_Approval,{Case:"Case",Type:"Type"});
             ForAll(BKIM_REQ_Expenditure_Approval,Collect(Expenditure_Approval,
