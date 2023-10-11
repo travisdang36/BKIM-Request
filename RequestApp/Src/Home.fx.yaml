@@ -183,7 +183,16 @@ Home As screen:
             //Data cho
             Clear(Expenditure_Approval);
             Collect(Expenditure_Approval,{Case:"Case",Type:"Type"});
-            ForAll(BKIM_REQ_Expenditure_Approval,Collect(Expenditure_Approval,{Case: Exp_Case,Type:Exp_Type,CaseID:ID_Case,Condition_Min:Condition_Min,Condition_Max:Condition_Max,Person_Approve_Exp:Person_Approve_Exp}))
+            ForAll(BKIM_REQ_Expenditure_Approval,Collect(Expenditure_Approval,
+            {
+                Case: Exp_Case,
+                Type:Exp_Type,
+                CaseID:ID_Case,
+                Condition_Min:Condition_Min,
+                Condition_Max:Condition_Max,
+                Person_Approve_Exp:Person_Approve_Exp,
+                Level_Exp:Level_Exp
+            }))
         Text: ="New"
         X: =1172
         Y: =700
