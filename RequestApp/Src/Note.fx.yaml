@@ -41,88 +41,6 @@ Note As screen:
         Y: =626
         ZIndex: =7
 
-    "Gallery3_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
-        DelayItemLoading: =true
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =Parent.Height - Container2.Height
-        Items: =Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP" = Department)
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateFill: |-
-            =If(
-                Mod(ThisItem.rowNum,2) = 0,
-                RGBA(240, 240, 240, 1),RGBA(255, 255, 255, 1)
-            )
-        TemplatePadding: =0
-        TemplateSize: =80
-        Width: =647
-        X: =110
-        Y: =42
-        ZIndex: =8
-
-        level_1 As label:
-            Align: =Align.Center
-            FontWeight: =
-            Height: =Gallery3_1.TemplateHeight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Title
-            ZIndex: =1
-
-        type_of_approval_1 As label:
-            Align: =Align.Center
-            FontWeight: =
-            Height: =Gallery3_1.TemplateHeight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Department
-            Width: =248
-            X: =150
-            ZIndex: =2
-
-        text_person_in_charge_1 As label:
-            Align: =Align.Center
-            FontWeight: =
-            Height: =Gallery3_1.TemplateHeight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: |-
-                =ThisItem.Email
-                /*
-                Switch(ThisItem.Person_Approve,
-                    "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
-                    "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
-                
-                
-                    "BP (BKIM Representative)", //LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Email),
-                    Filter(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Email)
-                    
-                    
-                
-                    "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
-                    
-                )*/
-            Width: =250
-            X: =398
-            ZIndex: =3
-
-        Separator4_1 As rectangle:
-            Fill: =RGBA(39, 113, 194, 1)
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
-
     Button7 As button:
         OnSelect: =Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP (BKIM Representative)" = Title)
         Text: ="Button"
@@ -132,9 +50,9 @@ Note As screen:
 
     Label4 As label:
         Height: =227
-        Text: =Concat(Gallery3_1.AllItems, Email,Char(10))
+        Text: =Concat(Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP" = Department), Email,Char(10))
         Width: =364
-        X: =806
-        Y: =306
+        X: =164
+        Y: =204
         ZIndex: =10
 
