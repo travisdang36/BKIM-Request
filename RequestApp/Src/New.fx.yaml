@@ -276,7 +276,7 @@ New As screen:
                 
                 
                 //Gen new folder in sharepoint
-                BKIM_REQ_SharePoint_GenFolder.Run("Request_")
+                BKIM_REQ_SharePoint_GenFolder.Run("Request_"&Last(BKIM_REQ_List).ID)
             Text: ="SharePoint"
             X: =17
             Y: =455
