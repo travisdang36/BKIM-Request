@@ -47,13 +47,9 @@ New As screen:
                 SortOrder.Ascending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateFill: |-
-                =If(
-                    Mod(ThisItem.rowNum,2) = 0,
-                    RGBA(240, 240, 240, 1),RGBA(255, 255, 255, 1)
-                )
+            TemplateFill: =If(Mod(Value(ThisItem.Level),2) = 0, RGBA(240,240,240,1),RGBA(255,255,255,1))
             TemplatePadding: =0
-            TemplateSize: =40
+            TemplateSize: =80
             Width: =Parent.Width
             Y: =70
             ZIndex: =1
