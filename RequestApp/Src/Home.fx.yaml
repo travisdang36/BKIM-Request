@@ -190,8 +190,9 @@ Home As screen:
                 CaseID:ID_Case,
                 Condition_Min:Condition_Min,
                 Condition_Max:Condition_Max,
-                Person_Approve_Exp:Person_Approve_Exp,
-                Level_Exp:Level_Exp
+                Person_Approve:Person_Approve_Exp,
+                Level:Level_Exp,
+                Approve_Type:Approve_Type_Exp
             }))
         Text: ="New"
         X: =1172
