@@ -68,7 +68,7 @@ New As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Approve_Type_Exp.Value
+                Text: =ThisItem.Approve_Type.Value
                 Width: =248
                 X: =150
                 ZIndex: =2
@@ -82,7 +82,7 @@ New As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Person_Approve_Exp
+                Text: =ThisItem.Person_Approve
                 Width: =250
                 X: =398
                 ZIndex: =3
