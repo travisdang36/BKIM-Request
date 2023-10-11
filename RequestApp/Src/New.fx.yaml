@@ -88,7 +88,9 @@ New As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Person_Approve
+                Text: |-
+                    =//ThisItem.Person_Approve
+                    LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,User())
                 Width: =250
                 X: =398
                 ZIndex: =3
@@ -258,8 +260,52 @@ New As screen:
             Default: =""
             Height: =41
             HintText: ="File đính kèm"
-            Width: =259
+            Visible: =false
+            Width: =425
             X: =16
             Y: =455
             ZIndex: =7
+
+        Button5 As button:
+            Fill: =RGBA(39, 113, 194, 1)
+            Height: =41
+            OnSelect: |-
+                =//Patch Request
+                Patch(BKIM_REQ_List,
+                {
+                    Title:"Test"
+                });
+                
+                //SharePoint Folder name
+                Set(varSharePointLink,"Request_"&Last(BKIM_REQ_List).ID);
+                
+                //Gen new folder in sharepoint
+                BKIM_REQ_SharePoint_GenFolder.Run(varSharePointLink);
+                
+                //Visible
+                Set(boolSharePointVisible, false);
+            Text: ="SharePoint"
+            Visible: =boolSharePointVisible
+            X: =17
+            Y: =455
+            ZIndex: =8
+
+        Label9_Link As label:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =48
+            OnSelect: |-
+                =Launch("https://bkimsg.sharepoint.com/sites/BKIMCenter/Request%20Document/Forms/AllItems.aspx?id=%2Fsites%2FBKIMCenter%2FRequest%20Document%2F"&varSharePointLink)
+            Text: |-
+                ="SharePoint Folder: " & varSharePointLink
+            Width: =257
+            X: =16
+            Y: =511
+            ZIndex: =9
+
+    Button6 As button:
+        OnSelect: =Set(boolSharePointVisible,true)
+        Text: ="Button"
+        X: =20
+        Y: =700
+        ZIndex: =10
 
