@@ -177,7 +177,7 @@ Home As screen:
 
     Button1 As button:
         Fill: =RGBA(39, 113, 194, 1)
-        OnSelect: |-
+        OnSelect: |
             =Navigate(New);
             
             //Data cho cac nguoi duyet Request
@@ -192,8 +192,8 @@ Home As screen:
                 Condition_Min:Condition_Min,
                 Person_Approve:Person_Approve_Exp,
                 Level:Level_Exp,
-                Approve_Type:Approve_Type_Exp
-            }))
+                Approve_Type:Approve_Type_Exp    
+            }));
         Text: ="New"
         X: =1172
         Y: =700

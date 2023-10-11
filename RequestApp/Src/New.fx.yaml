@@ -45,7 +45,7 @@ New As screen:
             TemplateFill: |-
                 =If(
                     Mod(ThisItem.rowNum,2) = 0,
-                   RGBA(240, 240, 240, 1),RGBA(255, 255, 255, 1)
+                    RGBA(240, 240, 240, 1),RGBA(255, 255, 255, 1)
                 )
             TemplatePadding: =0
             TemplateSize: =120
