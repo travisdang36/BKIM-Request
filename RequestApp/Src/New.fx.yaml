@@ -159,7 +159,7 @@ New As screen:
             FontWeight: =FontWeight.Semibold
             Height: =70
             Size: =16
-            Text: ="New"
+            Text: ="New Request"
             Width: =1366
             ZIndex: =2
 
