@@ -29,7 +29,8 @@ Note As screen:
         DisplayMode: =
         Height: =435
         IsInDataCard: =true
-        Items: ='3000 Records'
+        Items: |
+            =
         MaxAttachments: =100
         MaxAttachmentSize: =1000000000
         PaddingBottom: =5
@@ -44,6 +45,7 @@ Note As screen:
 
     Form1 As form:
         DataSource: ='3000 Records'
+        DefaultMode: =FormMode.New
         Width: =657
         X: =36
         Y: =77
@@ -252,7 +254,7 @@ Note As screen:
     Button2 As button:
         OnSelect: =SubmitForm(Form1)
         Text: ="Button"
-        X: =108
-        Y: =652
+        X: =40
+        Y: =626
         ZIndex: =7
 

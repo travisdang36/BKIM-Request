@@ -258,8 +258,16 @@ New As screen:
             Default: =""
             Height: =41
             HintText: ="File đính kèm"
-            Width: =259
+            Width: =425
             X: =16
             Y: =455
             ZIndex: =7
+
+        Button5 As button:
+            Fill: =RGBA(39, 113, 194, 1)
+            Height: =41
+            Text: ="SharePoint"
+            X: =465
+            Y: =455
+            ZIndex: =8
 
