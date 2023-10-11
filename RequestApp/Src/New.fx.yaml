@@ -43,7 +43,7 @@ New As screen:
                     )
                     
                 ),
-                Level,
+                "Level_Exp",
                 SortOrder.Ascending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
