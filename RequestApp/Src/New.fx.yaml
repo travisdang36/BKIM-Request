@@ -29,7 +29,8 @@ New As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height - Container2.Height
             Items: |-
-                =If(
+                =SortByColumns(
+                If(
                     
                     IsBlank(Dropdown2_Case.SelectedText),
                     Filter(
@@ -40,8 +41,10 @@ New As screen:
                         Expenditure_Approval,
                         Dropdown2_Case.SelectedText.Value = Case
                     )
-                    )
-                )
+                    
+                ),
+                level,
+                SortOrder.Ascending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateFill: |-
