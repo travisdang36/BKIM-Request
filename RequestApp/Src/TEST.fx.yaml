@@ -10,7 +10,7 @@ TEST As screen:
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =146
+        Height: =82
         Items: |-
             =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
             If(
@@ -28,7 +28,7 @@ TEST As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =90
-        Width: =1213
+        Width: =962
         X: =92
         Y: =178
         ZIndex: =1
@@ -206,4 +206,29 @@ TEST As screen:
         X: =442
         Y: =112
         ZIndex: =5
+
+    Form1 As form:
+        DataSource: ='3000 Records'
+        DefaultMode: =FormMode.New
+        Height: =77
+        Width: =960
+        X: =92
+        Y: =283
+        ZIndex: =6
+
+    Button4 As button:
+        OnSelect: =SubmitForm(Form1)
+        Text: ="Submit"
+        X: =1060
+        Y: =330
+        ZIndex: =7
+
+    Label9 As label:
+        BorderThickness: =1
+        Height: =48
+        Text: ="Text"
+        Width: =471
+        X: =76
+        Y: =448
+        ZIndex: =8
 
