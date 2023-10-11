@@ -5,12 +5,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "cefcc3df-98b2-4082-a847-a0cff2a56098": {
+          "value": "shared_sharepointonline"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "ff3135c5-e989-4d75-8e89-7d3126e4525a"
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "cefcc3df-98b2-4082-a847-a0cff2a56098"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "ff3135c5-e989-4d75-8e89-7d3126e4525a"
@@ -45,6 +51,9 @@
           "BKIM_REQ_Approval_Condition_Result": {
             "tableName": "73a5b433-326f-4e60-bcd3-fafbf1aa31ae"
           },
+          "BKIM_REQ_APPROVAL_PERSON_LIST": {
+            "tableName": "eb60464e-2ca8-40b4-832d-f5152b4d4633"
+          },
           "BKIM_REQ_Approval_Result": {
             "tableName": "5184b2f6-ceb2-4269-82c6-cf5fc41eb5e5"
           },
@@ -71,7 +80,8 @@
       "BKIM_REQ_List",
       "BKIM_REQ_Payment_Approval",
       "3000 Records",
-      "BKIM_REQ_Approval_Condition_Result"
+      "BKIM_REQ_Approval_Condition_Result",
+      "BKIM_REQ_APPROVAL_PERSON_LIST"
     ],
     "dependencies": {},
     "dependents": [
