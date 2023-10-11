@@ -104,7 +104,7 @@ New As screen:
 
         Dropdown2_1 As dropdown:
             Default: =
-            Items: =Distinct(BKIM_REQ_Expenditure_Approval,Exp_Type)
+            Items: =Distinct(Expenditure_Approval,Type)
             Width: =Parent.Width/2.2
             X: =332
             Y: =12
@@ -112,7 +112,7 @@ New As screen:
 
         Dropdown2_2 As dropdown:
             Default: =
-            Items: =Distinct(Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Exp_Case)
+            Items: =Distinct(Filter(Expenditure_Approval, Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
             Width: =Parent.Width/2.2
             X: =332
             Y: =73
