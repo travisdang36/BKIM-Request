@@ -90,7 +90,10 @@ New As screen:
                 PaddingTop: =0
                 Text: |-
                     =//ThisItem.Person_Approve
+                    If(ThisItem.Person_Approve = "Relevant Head of Department (Vietnam)",
                     LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName)
+                    
+                    )
                 Width: =250
                 X: =398
                 ZIndex: =3
