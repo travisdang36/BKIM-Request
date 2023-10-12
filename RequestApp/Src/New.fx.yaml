@@ -38,14 +38,14 @@ New As screen:
                 =SortByColumns(
                 If(
                     
-                    IsBlank(Dropdown2_Case.SelectedText),
+                    IsBlank(DropDown_CaseID.SelectedText),
                     Filter(
                         Expenditure_Approval,
                         Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
                     ),
                     Filter(
                         Expenditure_Approval,
-                        Dropdown2_Type.Selected.Value = Type And Dropdown2_Case.SelectedText.Value = Case
+                        Dropdown2_Type.Selected.Value = Type And CaseID.SelectedText.Value = Case
                     )
                     
                 ),
@@ -296,15 +296,20 @@ New As screen:
         Dropdown2_Type As dropdown:
             Default: =
             Items: =Distinct(Expenditure_Approval,Type)
+            OnChange: |-
+                =Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID);
+                
+                
+                ClearCollect(Col_Attach)
             Size: =10
             Width: =Parent.Width/2.2
             X: =332
             Y: =12
             ZIndex: =3
 
-        Dropdown2_Case As dropdown:
+        DropDown_CaseID As dropdown:
             Default: =
-            Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
+            Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),CaseID)
             Size: =10
             Width: =Parent.Width/3.5
             X: =442
@@ -424,7 +429,7 @@ New As screen:
             Text: =""
             Width: =35
             X: =591
-            Y: =380
+            Y: =381
             ZIndex: =15
 
         Icon2 As icon.Add:
