@@ -34,8 +34,9 @@ New As screen:
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height - Container2.Height
-            Items: |-
-                =SortByColumns(
+            Items: |
+                =/*
+                SortByColumns(
                 If(
                     
                     IsBlank(DropDown_CaseID.SelectedText),
@@ -51,6 +52,10 @@ New As screen:
                 ),
                 "Level_Exp",
                 SortOrder.Ascending)
+                
+                */
+                
+                Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateFill: =If(Mod(Value(ThisItem.Level_Exp),2) = 0, RGBA(240,240,240,1),RGBA(255,255,255,1))
@@ -69,7 +74,9 @@ New As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.Level_Exp
+                Text: |-
+                    =//ThisItem.Level_Exp
+                    ThisItem.Document_Name
                 ZIndex: =1
 
             type_of_approval As label:
@@ -244,7 +251,7 @@ New As screen:
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
             Height: =188
-            Items: =CustomGallerySample
+            Items: =Col_Attachment
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -275,7 +282,7 @@ New As screen:
 
             TextInput6_1 As text:
                 BorderThickness: =1
-                Default: =""
+                Default: =ThisItem.Document_Name
                 HintText: ="File name"
                 Italic: =true
                 Size: =10
