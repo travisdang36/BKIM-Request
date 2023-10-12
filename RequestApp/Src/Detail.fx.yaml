@@ -259,7 +259,7 @@ Detail As screen:
                     =//Approved by whom
                     //LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
                     Office365Users.UserProfile(
-                        User().Email
+                        LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp).'Person_Approved_Res (Person_Approved_Res0)'.Email
                     ).DisplayName
                     //Enter
                     & Char(10) & 
