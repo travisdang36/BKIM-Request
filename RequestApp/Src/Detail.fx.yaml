@@ -215,7 +215,7 @@ Detail As screen:
                 PaddingTop: =0
                 Size: =10
                 Text: =ThisItem.Approve_Type.Value
-                Width: =146
+                Width: =123
                 X: =68
                 ZIndex: =2
 
@@ -242,8 +242,8 @@ Detail As screen:
                         "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
                         
                     )
-                Width: =145
-                X: =214
+                Width: =168
+                X: =191
                 ZIndex: =3
 
             Separator4_1 As rectangle:
@@ -272,7 +272,7 @@ Detail As screen:
                     & Char(10) & 
                     //Date of approval
                     LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy"))
-                Width: =145
+                Width: =172
                 X: =359
                 ZIndex: =6
 
@@ -289,8 +289,8 @@ Detail As screen:
                 Text: |-
                     =//Lookup status duyet cua tung cap
                     LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value)
-                Width: =145
-                X: =503
+                Width: =117
+                X: =531
                 ZIndex: =7
 
         Container2_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -322,7 +322,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Type of Approval"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4 
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/4.8
                 ZIndex: =2
 
             Label9_person_in_charge_1 As label:
@@ -335,7 +335,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Person in Charge"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/3.4
                 ZIndex: =3
 
             Label9_person_in_charge_2 As label:
@@ -348,7 +348,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Approved by"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/3.4
                 ZIndex: =4
 
             Label9_person_in_charge_3 As label:
@@ -361,7 +361,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Status"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/5
                 ZIndex: =5
 
     Container3 As groupContainer.manualLayoutContainer:
