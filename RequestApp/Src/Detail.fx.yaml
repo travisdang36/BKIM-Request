@@ -76,43 +76,39 @@ Detail As screen:
 
         Dropdown2_DoA_1 As dropdown:
             Default: =
+            DisplayMode: =DisplayMode.View
             Items: =["DoA_Type"]
             Size: =10
-            Width: =Parent.Width/2.2
+            Width: =Parent.Width/3.5
             X: =16
             Y: =12
             ZIndex: =1
 
-        TextInput4_Amount_2 As text:
+        TextInput4_budget As text:
             Default: =""
+            DisplayMode: =DisplayMode.View
             Height: =41
             HintText: ="Budget for Project (VND)"
             Size: =10
+            Tooltip: ="Budget for Project (VND)"
             Width: =Parent.Width/3.5
-            X: =16
-            Y: =73
+            X: =229
+            Y: =12
             ZIndex: =2
 
         Dropdown2_Type_1 As dropdown:
             Default: =
+            DisplayMode: =DisplayMode.View
             Items: =Distinct(Expenditure_Approval,Type)
             Size: =10
-            Width: =Parent.Width/2.2
-            X: =332
-            Y: =12
-            ZIndex: =3
-
-        Dropdown2_Case_1 As dropdown:
-            Default: =
-            Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type_1.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount_2.Text) And Value(TextInput4_Amount_2.Text) < Condition_Max),Case)
-            Size: =10
             Width: =Parent.Width/3.5
-            X: =442
+            X: =16
             Y: =73
-            ZIndex: =4
+            ZIndex: =3
 
         TextInput8_Title_1 As text:
             Default: =""
+            DisplayMode: =DisplayMode.View
             HintText: ="Title"
             Size: =10
             Width: =611
@@ -122,6 +118,7 @@ Detail As screen:
 
         TextInput8_1_Detail_1 As text:
             Default: =""
+            DisplayMode: =DisplayMode.View
             Height: =164
             HintText: ="Detail"
             Mode: =TextMode.MultiLine
@@ -133,15 +130,39 @@ Detail As screen:
             Y: =195
             ZIndex: =6
 
-        TextInput4_Amount_3 As text:
+        TextInput4_AmountSpend As text:
             Default: =""
+            DisplayMode: =DisplayMode.View
             Height: =41
             HintText: ="Amount Spending (VND)"
             Size: =10
+            Tooltip: ="Amount Spending (VND)"
             Width: =Parent.Width/3.5
-            X: =230
-            Y: =73
+            X: =229
+            Y: =72
             ZIndex: =12
+
+        TextInput4_caseID As text:
+            Default: =""
+            DisplayMode: =DisplayMode.View
+            Height: =41
+            HintText: ="CaseID"
+            Size: =10
+            Width: =Parent.Width/3.5
+            X: =442
+            Y: =12
+            ZIndex: =13
+
+        TextInput4_caseName As text:
+            Default: =""
+            DisplayMode: =DisplayMode.View
+            Height: =41
+            HintText: ="Case Name"
+            Size: =10
+            Width: =Parent.Width/3.5
+            X: =442
+            Y: =72
+            ZIndex: =14
 
     Container2_Aprroval_Stage_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240, 255, 255, 1)
