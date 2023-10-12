@@ -261,7 +261,7 @@ Detail As screen:
                     //Enter
                     & Char(10) & 
                     //Date of approval
-                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Created)
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy"))
                 Width: =145
                 X: =359
                 ZIndex: =6
