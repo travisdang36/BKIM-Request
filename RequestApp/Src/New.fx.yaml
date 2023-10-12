@@ -243,7 +243,7 @@ New As screen:
 
         Dropdown2_Case As dropdown:
             Default: =
-            Items: =Distinct(Filter(Expenditure_Approval, Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
+            Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
             Width: =Parent.Width/3.5
             X: =442
             Y: =73
