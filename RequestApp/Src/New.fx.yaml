@@ -434,8 +434,9 @@ New As screen:
 
         LB_CaseID As label:
             BorderThickness: =1
+            Size: =10
             Text: |-
-                ="CaseID: " &LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).CaseID
+                ="CaseID: " & LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).CaseID
             Width: =185
             X: =449
             Y: =12
@@ -443,8 +444,9 @@ New As screen:
 
         LB_CaseID_1 As label:
             BorderThickness: =1
+            Size: =10
             Text: |-
-                ="Name: " 
+                ="Name: " & LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).Case
             Width: =185
             X: =449
             Y: =73
