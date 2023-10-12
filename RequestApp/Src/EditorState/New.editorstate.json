@@ -1805,7 +1805,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "Dropdown2_Case": {
+    "DropDown_CaseID": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1888,7 +1888,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Dropdown2_Case",
+      "Name": "DropDown_CaseID",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2080,12 +2080,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "ChevronFill",
+          "PropertyName": "SelectionColor",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "SelectionColor",
+          "PropertyName": "ChevronFill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2095,12 +2095,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "FocusedBorderColor",
+          "PropertyName": "HoverBorderColor",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "HoverBorderColor",
+          "PropertyName": "FocusedBorderColor",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -2479,7 +2479,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Dropdown2_Type",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2775,7 +2775,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery1",
-      "ParentIndex": 13,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3332,7 +3332,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon2",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5588,7 +5588,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_Level_4",
-      "ParentIndex": 9,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5873,7 +5873,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_Link",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7321,7 +7321,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
       "Name": "Separator2",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7926,7 +7926,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput4_Amount",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8223,7 +8223,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput4_Amount_1",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8782,7 +8782,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput6_1",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9081,7 +9081,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput8_1_Detail",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9367,7 +9367,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput8_Title",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
