@@ -2,23 +2,29 @@ New As screen:
 
     Button2_Cancel As button:
         Fill: =RGBA(39, 113, 194, 1)
+        Height: =30
         OnSelect: =Navigate(Home)
+        Size: =11
         Text: ="Cancel"
-        X: =997
-        Y: =700
+        Width: =120
+        X: =1075
+        Y: =720
         ZIndex: =6
 
     Button2_Submit As button:
         Fill: =RGBA(39, 113, 194, 1)
+        Height: =30
         OnSelect: =Navigate(Detail)
+        Size: =11
         Text: ="Submit"
-        X: =1183
-        Y: =700
+        Width: =120
+        X: =1223
+        Y: =720
         ZIndex: =7
 
     Container2_Aprroval_Stage As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240, 255, 255, 1)
-        Height: =577
+        Height: =600
         Width: =648
         X: =695
         Y: =96
@@ -128,6 +134,7 @@ New As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2.Height
+                Size: =10
                 Text: ="Level"
                 ZIndex: =1
 
@@ -139,6 +146,7 @@ New As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2.Height
+                Size: =10
                 Text: ="Type of Approval"
                 Width: =(Container2.Width - Label9_Level.Width)/2 
                 ZIndex: =2
@@ -151,9 +159,15 @@ New As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2.Height
+                Size: =10
                 Text: ="Person in Charge"
                 Width: =(Container2.Width - Label9_Level.Width)/2
                 ZIndex: =3
+
+            Container4 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =4
 
     Header_1 As group:
         Height: =5
@@ -210,7 +224,7 @@ New As screen:
 
     Container_Input As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240,240,240,0.8)
-        Height: =577
+        Height: =600
         Width: =648
         X: =20
         Y: =95
@@ -219,6 +233,7 @@ New As screen:
         Dropdown2_DoA As dropdown:
             Default: =
             Items: =["DoA_Type"]
+            Size: =10
             Width: =Parent.Width/2.2
             X: =16
             Y: =12
@@ -228,15 +243,15 @@ New As screen:
             BorderThickness: =1
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =139
+            Height: =181
             Items: =CustomGallerySample
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =50
+            TemplateSize: =60
             Width: =609
             X: =16
-            Y: =423
+            Y: =405
             ZIndex: =1
 
             Separator2 As rectangle:
@@ -255,25 +270,31 @@ New As screen:
                 ZIndex: =4
 
             TextInput6 As text:
-                Default: ="Text input"
-                Height: =35
+                BorderThickness: =1
+                Default: =""
+                HintText: ="Link file"
+                Italic: =true
+                Size: =10
                 Width: =Parent.Width/1.6
-                X: =211
-                Y: =6
+                X: =205
+                Y: =10
                 ZIndex: =5
 
             TextInput6_1 As text:
-                Default: ="Text input"
-                Height: =30
-                Width: =187
+                BorderThickness: =1
+                Default: =""
+                HintText: ="File name"
+                Italic: =true
+                Size: =10
+                Width: =173
                 X: =11
-                Y: =11
+                Y: =10
                 ZIndex: =6
 
         TextInput4_Amount As text:
             Default: =""
-            Height: =41
             HintText: ="Budget (VND)"
+            Size: =10
             Width: =Parent.Width/3.5
             X: =16
             Y: =73
@@ -282,6 +303,7 @@ New As screen:
         Dropdown2_Type As dropdown:
             Default: =
             Items: =Distinct(Expenditure_Approval,Type)
+            Size: =10
             Width: =Parent.Width/2.2
             X: =332
             Y: =12
@@ -290,6 +312,7 @@ New As screen:
         Dropdown2_Case As dropdown:
             Default: =
             Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
+            Size: =10
             Width: =Parent.Width/3.5
             X: =442
             Y: =73
@@ -298,26 +321,28 @@ New As screen:
         TextInput8_Title As text:
             Default: =""
             HintText: ="Title"
+            Size: =10
             Width: =611
             X: =16
-            Y: =133
+            Y: =130
             ZIndex: =5
 
         TextInput8_1_Detail As text:
             Default: =""
-            Height: =150
+            Height: =120
             HintText: ="Detail"
             Mode: =TextMode.MultiLine
             PaddingLeft: =10
             PaddingTop: =7
+            Size: =10
             Width: =611
             X: =16
-            Y: =195
+            Y: =188
             ZIndex: =6
 
         Button5 As button:
             Fill: =RGBA(39, 113, 194, 1)
-            Height: =41
+            Height: =30
             OnSelect: |-
                 =//Patch Request
                 Patch(BKIM_REQ_List,
@@ -333,39 +358,98 @@ New As screen:
                 
                 //Visible
                 Set(boolSharePointVisible, false);
-            Size: =12
-            Text: ="Attachment Folder"
+            Size: =10
+            Text: ="Attachment"
             Visible: =boolSharePointVisible
-            X: =17
-            Y: =364
+            Width: =185
+            X: =16
+            Y: =330
             ZIndex: =8
 
         Label9_Link As label:
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =41
+            Height: =35
             Italic: =true
             OnSelect: |-
                 =Launch("https://bkimsg.sharepoint.com/sites/BKIMCenter/Request%20Document/Forms/AllItems.aspx?id=%2Fsites%2FBKIMCenter%2FRequest%20Document%2F"&varSharePointLink)
+            Size: =10
             Text: |-
                 ="SharePoint Folder: " & varSharePointLink
-            Width: =424
-            X: =201
-            Y: =364
+            Width: =395
+            X: =230
+            Y: =325
             ZIndex: =9
 
         TextInput4_Amount_1 As text:
             Default: =""
-            Height: =41
             HintText: ="Amount (VND)"
+            Size: =10
             Width: =Parent.Width/3.5
             X: =230
             Y: =73
             ZIndex: =12
 
+        Label9_Level_2 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(39, 113, 194, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: ="File name"
+            Width: =199
+            X: =16
+            Y: =380
+            ZIndex: =13
+
+        Label9_Level_3 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(39, 113, 194, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: ="Link file"
+            Width: =376
+            X: =215
+            Y: =380
+            ZIndex: =14
+
+        Label9_Level_4 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(39, 113, 194, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: =""
+            Width: =35
+            X: =591
+            Y: =380
+            ZIndex: =15
+
+        Icon2 As icon.Add:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =22
+            Icon: =Icon.Add
+            Width: =22
+            X: =597
+            Y: =382
+            ZIndex: =16
+
     Button6 As button:
+        Height: =30
         OnSelect: =Set(boolSharePointVisible,true)
+        Size: =10
         Text: ="Button"
+        Width: =120
         X: =20
-        Y: =700
+        Y: =720
         ZIndex: =10
 
