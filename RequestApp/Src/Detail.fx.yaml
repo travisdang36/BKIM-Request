@@ -55,11 +55,13 @@ Detail As screen:
 
     Button3 As button:
         Fill: =RGBA(39, 113, 194, 1)
+        Height: =30
         OnSelect: =Navigate(Home)
+        Size: =10
         Text: ="Back"
-        Width: =130
-        X: =1216
-        Y: =710
+        Width: =120
+        X: =1226
+        Y: =717
         ZIndex: =11
 
     Container_Input_1 As groupContainer.manualLayoutContainer:
@@ -377,53 +379,58 @@ Detail As screen:
                 ZIndex: =5
 
     Container3 As groupContainer.manualLayoutContainer:
-        Height: =155
-        Width: =583
+        Height: =85
+        Width: =647
         X: =699
         Y: =581
         ZIndex: =14
 
         Label10 As label:
-            Align: =Align.Center
             Height: =50
+            PaddingLeft: =8
             Size: =10
             Text: =User().FullName
-            Width: =272
-            Y: =105
+            Width: =240
+            X: =80
+            Y: =18
             ZIndex: =1
 
         Image1 As image:
             Fill: =RGBA(0, 0, 0, 1)
+            Height: =73
             Image: =User().Image
             RadiusBottomLeft: =50
             RadiusBottomRight: =50
             RadiusTopLeft: =050
             RadiusTopRight: =50
-            X: =86
-            Y: =5
+            Width: =73
+            X: =7
+            Y: =7
             ZIndex: =2
 
         Button8 As button:
-            Fill: =RGBA(39, 113, 194, 1)
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =30
             Size: =10
             Text: ="Approve"
-            Width: =130
-            X: =279
-            Y: =60
+            Width: =120
+            X: =350
+            Y: =28
             ZIndex: =3
 
         Button8_1 As button:
-            Fill: =RGBA(39, 113, 194, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Height: =30
             Size: =10
             Text: ="Reject"
-            Width: =130
-            X: =425
-            Y: =60
+            Width: =120
+            X: =500
+            Y: =28
             ZIndex: =4
 
     Container3_1 As groupContainer.manualLayoutContainer:
         Height: =100
-        Width: =525
+        Width: =648
         X: =20
         Y: =96
         ZIndex: =15
@@ -432,7 +439,7 @@ Detail As screen:
             Height: =Container3_1.Height/3
             PaddingTop: =7
             Size: =10
-            Text: =User().FullName
+            Text: =varItem.'Created By'.DisplayName
             Width: =369
             X: =139
             ZIndex: =1
@@ -456,23 +463,23 @@ Detail As screen:
             Y: =Label10_1.Height
             ZIndex: =4
 
-        Label10_4 As label:
-            Height: =Container3_1.Height/3
-            PaddingTop: =7
-            Size: =10
-            Text: =User().FullName
-            Width: =369
-            X: =139
-            Y: =Label10_1.Height
-            ZIndex: =5
-
         Label10_5 As label:
-            Height: =Container3_1.Height/3
+            Height: =33
             PaddingLeft: =25
             Size: =10
             Text: |
                 ="Created date: " & varItem.Created
-            Width: =508
+            Width: =238
             Y: =Label10_1.Height+Label10_3.Height
             ZIndex: =6
+
+        Label10_4 As label:
+            Height: =Container3_1.Height/3
+            PaddingTop: =7
+            Size: =10
+            Text: =varItem.'Created By'.Department
+            Width: =369
+            X: =139
+            Y: =33
+            ZIndex: =7
 
