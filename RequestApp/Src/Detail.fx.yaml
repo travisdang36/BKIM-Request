@@ -257,7 +257,7 @@ Detail As screen:
                 Size: =10
                 Text: |-
                     =//Approved by whom
-                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve", Email_Approved_Res)
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
                 Width: =145
                 X: =359
                 ZIndex: =6
