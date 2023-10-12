@@ -156,7 +156,8 @@ Detail As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height - Container2_1.Height
             Items: |-
-                =SortByColumns(
+                =/*
+                SortByColumns(
                 If(
                     
                     IsBlank(Dropdown2_Case_1.SelectedText),
@@ -172,9 +173,24 @@ Detail As screen:
                 ),
                 "Level_Exp",
                 SortOrder.Ascending)
+                */
+                BKIM_REQ_Approval_Result
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateFill: =If(Mod(Value(ThisItem.Level_Exp),2) = 0, RGBA(240,240,240,1),RGBA(255,255,255,1))
+            TemplateFill: |-
+                =If(text_person_status_Approve.Text = "Approve",
+                    //true
+                    RGBA(100,200,0, 0.6),
+                    //false "Reject"
+                    If(text_person_status_Approve.Text = "Reject",
+                    //true "Reject"
+                    RGBA(139,0,0,0.6),
+                    //else
+                    If(text_person_status_Approve.Text = "Pending",
+                    //true "Pending" 
+                    RGBA( 240, 230, 140, 1 ),
+                    //false
+                    RGBA(255,255,255,1))))
             TemplatePadding: =0
             TemplateSize: =80
             Width: =Parent.Width
@@ -191,7 +207,7 @@ Detail As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =10
-                Text: =ThisItem.Level_Exp
+                Text: =ThisItem.Level_Res
                 Width: =68
                 ZIndex: =1
 
@@ -205,8 +221,8 @@ Detail As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =10
-                Text: =ThisItem.Approve_Type.Value
-                Width: =146
+                Text: =ThisItem.Approve_Type_Res.Value
+                Width: =123
                 X: =68
                 ZIndex: =2
 
@@ -221,9 +237,11 @@ Detail As screen:
                 PaddingTop: =0
                 Size: =10
                 Text: |-
-                    =//ThisItem.Person_Approve
+                    =ThisItem.Person_Approved_Res
+                    /*
                     Switch(ThisItem.Person_Approve,
                         "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
+                        
                         "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
                     
                     
@@ -233,8 +251,9 @@ Detail As screen:
                         "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
                         
                     )
-                Width: =145
-                X: =214
+                    */
+                Width: =168
+                X: =191
                 ZIndex: =3
 
             Separator4_1 As rectangle:
@@ -245,7 +264,7 @@ Detail As screen:
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =5
 
-            text_person_in_charge_2 As label:
+            text_person_approved_time As label:
                 Align: =Align.Center
                 FontWeight: =
                 Height: =Gallery3_1.TemplateHeight
@@ -255,18 +274,39 @@ Detail As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =10
-                Text: |-
+                Text: |
                     =//Approved by whom
-                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
+                    If(ThisItem.Approve_Type_Res.Value = "Approve",
+                    ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy"),
+                    If(ThisItem.Approve_Type_Res.Value = "Reject",
+                    ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy")
+                    )
+                    )
+                    //LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
+                    /*
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,'Person_Approved_Res (Person_Approved_Res0)'.DisplayName),
+                    //false
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Reject",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp,'Person_Approved_Res (Person_Approved_Res0)'.DisplayName)))
                     //Enter
                     & Char(10) & 
                     //Date of approval
-                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy"))
-                Width: =145
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy")),
+                    //false
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Reject",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy"))))
+                    */
+                Width: =172
                 X: =359
                 ZIndex: =6
 
-            text_person_in_charge_3 As label:
+            text_person_status_Approve As label:
                 Align: =Align.Center
                 FontWeight: =
                 Height: =Gallery3_1.TemplateHeight
@@ -277,20 +317,23 @@ Detail As screen:
                 PaddingTop: =0
                 Size: =10
                 Text: |-
-                    =//ThisItem.Person_Approve
-                    Switch(ThisItem.Person_Approve,
-                        "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
-                        "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
+                    =//Lookup status duyet cua tung cap
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value),
+                    //false
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Reject",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value),
+                    //false
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Pending" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Pending",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Pending" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value)
+                    )))
                     
-                    
-                        "BP (BKIM Representative)", Concat(Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP" = Department), Email,Char(10)),
-                    
-                        
-                        "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
-                        
-                    )
-                Width: =145
-                X: =503
+                    //Them kha nang patch tu dong va hien len sau khi da approve
+                Width: =117
+                X: =531
                 ZIndex: =7
 
         Container2_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -322,7 +365,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Type of Approval"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4 
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/4.8
                 ZIndex: =2
 
             Label9_person_in_charge_1 As label:
@@ -335,7 +378,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Person in Charge"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/3.4
                 ZIndex: =3
 
             Label9_person_in_charge_2 As label:
@@ -348,7 +391,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Approved by"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/3.4
                 ZIndex: =4
 
             Label9_person_in_charge_3 As label:
@@ -361,7 +404,7 @@ Detail As screen:
                 Height: =Container2_1.Height
                 Size: =10
                 Text: ="Status"
-                Width: =(Container2_1.Width - Label9_Level_1.Width)/4
+                Width: =(Container2_1.Width - Label9_Level_1.Width)/5
                 ZIndex: =5
 
     Container3 As groupContainer.manualLayoutContainer:
