@@ -276,7 +276,11 @@ Detail As screen:
                 Size: =10
                 Text: |
                     =//Approved by whom
+                    If(ThisItem.Approve_Type_Res.Value = "Approve",
+                    ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy"),
+                    If(ThisItem.Approve_Type_Res.Value = "Reject",
                     ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy")
+                    )
                     //LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
                     /*
                     If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
