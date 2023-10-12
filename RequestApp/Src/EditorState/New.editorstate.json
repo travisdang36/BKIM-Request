@@ -53,22 +53,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Width",
+        "Height",
         "ZIndex",
         "RadiusTopLeft",
         "RadiusTopRight",
@@ -76,14 +62,7 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -346,22 +325,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Width",
+        "Height",
         "ZIndex",
         "RadiusTopLeft",
         "RadiusTopRight",
@@ -369,14 +334,7 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -624,30 +582,9 @@
         "Align",
         "VerticalAlign",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
+        "Width",
+        "Height",
         "ZIndex",
         {
           "AFDDataSourceName": "",
@@ -729,7 +666,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button5",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -951,65 +888,16 @@
         "VerticalAlign",
         "X",
         "Y",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Width",
+        "Height",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "RadiusTopLeft",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "RadiusTopRight",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "RadiusBottomLeft",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "RadiusBottomRight",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "RadiusTopLeft",
+        "RadiusTopRight",
+        "RadiusBottomLeft",
+        "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -1235,14 +1123,7 @@
         "X",
         "Y",
         "Width",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "DisplayMode",
         "LayoutMode",
         "LayoutDirection",
@@ -1589,14 +1470,7 @@
         "X",
         "Y",
         "Width",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "DisplayMode",
         "LayoutMode",
         "LayoutDirection",
@@ -1995,14 +1869,7 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -2297,14 +2164,7 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -2599,14 +2459,7 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -2882,14 +2735,7 @@
         "PressedFill",
         "HoverFill",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         "Width",
         "Height",
         "ZIndex",
@@ -2929,7 +2775,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery1",
-      "ParentIndex": 13,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3288,45 +3134,6 @@
         }
       ],
       "StyleName": "defaultGalleryStyle",
-      "Type": "ControlInfo"
-    },
-    "galleryTemplate1": {
-      "AllowAccessToGlobals": true,
-      "ControlPropertyState": [
-        "ItemAccessibleLabel",
-        "TemplateFill",
-        "OnSelect"
-      ],
-      "HasDynamicProperties": false,
-      "IsAutoGenerated": false,
-      "IsComponentDefinition": false,
-      "IsDataControl": true,
-      "IsFromScreenLayout": false,
-      "IsGroupControl": false,
-      "IsLocked": false,
-      "LayoutName": "",
-      "MetaDataIDKey": "",
-      "Name": "galleryTemplate1",
-      "ParentIndex": 0,
-      "PersistMetaDataIDKey": false,
-      "Properties": [
-        {
-          "Category": "Data",
-          "PropertyName": "ItemAccessibleLabel",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "TemplateFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
-          "RuleProviderType": "Unknown"
-        }
-      ],
-      "StyleName": "defaultGalleryTemplateStyle",
       "Type": "ControlInfo"
     },
     "galleryTemplate6": {
@@ -5991,36 +5798,15 @@
         },
         "VerticalAlign",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         "Width",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "DisplayMode",
         "ZIndex",
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -6048,7 +5834,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_Link",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7619,7 +7405,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
       "Name": "Separator2",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8201,14 +7987,7 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -8505,14 +8284,7 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -8740,14 +8512,7 @@
     "TextInput6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Default",
         "Mode",
         "Format",
         "VirtualKeyboardMode",
@@ -8796,7 +8561,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "26",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -8807,41 +8572,12 @@
         "RadiusTopRight",
         "RadiusBottomLeft",
         "RadiusBottomRight",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BorderThickness",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Italic",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
+        "Italic",
         "Underline",
-        "Strikethrough",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "HintText",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "Strikethrough"
       ],
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
@@ -8864,11 +8600,6 @@
         {
           "Category": "Data",
           "PropertyName": "DelayOutput",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "HintText",
           "RuleProviderType": "Unknown"
         },
         {
@@ -9058,14 +8789,7 @@
     "TextInput6_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Default",
         "Mode",
         "Format",
         "VirtualKeyboardMode",
@@ -9111,63 +8835,19 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "DisplayMode",
         "ZIndex",
         "RadiusTopLeft",
         "RadiusTopRight",
         "RadiusBottomLeft",
         "RadiusBottomRight",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BorderThickness",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Italic",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
+        "Italic",
         "Underline",
-        "Strikethrough",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "HintText",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "PaddingTop",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "Strikethrough"
       ],
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
@@ -9179,7 +8859,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput6_1",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9190,11 +8870,6 @@
         {
           "Category": "Data",
           "PropertyName": "DelayOutput",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "HintText",
           "RuleProviderType": "Unknown"
         },
         {
@@ -9376,11 +9051,6 @@
           "Category": "Design",
           "PropertyName": "Strikethrough",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PaddingTop",
-          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultTextStyle",
@@ -9444,14 +9114,7 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -9462,9 +9125,7 @@
           "InvariantPropertyName": "HintText",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        "PaddingTop",
-        "PaddingLeft"
+        }
       ],
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
@@ -9492,16 +9153,6 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PaddingLeft",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PaddingTop",
           "RuleProviderType": "Unknown"
         },
         {
@@ -9721,14 +9372,7 @@
         "FontWeight",
         "Align",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         "Width",
         {
           "AFDDataSourceName": "",
@@ -9746,14 +9390,7 @@
         "RadiusBottomRight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",

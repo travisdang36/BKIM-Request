@@ -55,24 +55,29 @@ Detail As screen:
 
     Button3 As button:
         Fill: =RGBA(39, 113, 194, 1)
+        Height: =30
         OnSelect: =Navigate(Home)
+        Size: =10
         Text: ="Back"
-        Width: =130
-        X: =1216
-        Y: =710
+        Width: =120
+        X: =1226
+        Y: =717
         ZIndex: =11
 
     Container_Input_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(219, 219, 219, 1)
+        BorderThickness: =1
         Fill: =RGBA(240,240,240,0.8)
-        Height: =470
+        Height: =500
         Width: =648
         X: =20
-        Y: =96
+        Y: =166
         ZIndex: =12
 
         Dropdown2_DoA_1 As dropdown:
             Default: =
             Items: =["DoA_Type"]
+            Size: =10
             Width: =Parent.Width/2.2
             X: =16
             Y: =12
@@ -82,6 +87,7 @@ Detail As screen:
             Default: =""
             Height: =41
             HintText: ="Budget (VND)"
+            Size: =10
             Width: =Parent.Width/3.5
             X: =16
             Y: =73
@@ -90,6 +96,7 @@ Detail As screen:
         Dropdown2_Type_1 As dropdown:
             Default: =
             Items: =Distinct(Expenditure_Approval,Type)
+            Size: =10
             Width: =Parent.Width/2.2
             X: =332
             Y: =12
@@ -98,6 +105,7 @@ Detail As screen:
         Dropdown2_Case_1 As dropdown:
             Default: =
             Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type_1.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount_2.Text) And Value(TextInput4_Amount_2.Text) < Condition_Max),Case)
+            Size: =10
             Width: =Parent.Width/3.5
             X: =442
             Y: =73
@@ -106,6 +114,7 @@ Detail As screen:
         TextInput8_Title_1 As text:
             Default: =""
             HintText: ="Title"
+            Size: =10
             Width: =611
             X: =16
             Y: =133
@@ -118,25 +127,17 @@ Detail As screen:
             Mode: =TextMode.MultiLine
             PaddingLeft: =10
             PaddingTop: =7
+            Size: =10
             Width: =611
             X: =16
             Y: =195
             ZIndex: =6
 
-        TextInput4_1_Attachment_1 As text:
-            Default: =""
-            Height: =41
-            HintText: ="File đính kèm"
-            Visible: =false
-            Width: =425
-            X: =16
-            Y: =455
-            ZIndex: =7
-
         TextInput4_Amount_3 As text:
             Default: =""
             Height: =41
             HintText: ="Amount (VND)"
+            Size: =10
             Width: =Parent.Width/3.5
             X: =230
             Y: =73
@@ -189,6 +190,7 @@ Detail As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =10
                 Text: =ThisItem.Level_Exp
                 Width: =68
                 ZIndex: =1
@@ -202,6 +204,7 @@ Detail As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =10
                 Text: =ThisItem.Approve_Type.Value
                 Width: =146
                 X: =68
@@ -216,6 +219,7 @@ Detail As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =10
                 Text: |-
                     =//ThisItem.Person_Approve
                     Switch(ThisItem.Person_Approve,
@@ -250,19 +254,10 @@ Detail As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =10
                 Text: |-
-                    =//ThisItem.Person_Approve
-                    Switch(ThisItem.Person_Approve,
-                        "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
-                        "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
-                    
-                    
-                        "BP (BKIM Representative)", Concat(Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP" = Department), Email,Char(10)),
-                    
-                        
-                        "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
-                        
-                    )
+                    =//Approved by whom
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve", Email_Approved_Res)
                 Width: =145
                 X: =359
                 ZIndex: =6
@@ -276,6 +271,7 @@ Detail As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =10
                 Text: |-
                     =//ThisItem.Person_Approve
                     Switch(ThisItem.Person_Approve,
@@ -307,6 +303,7 @@ Detail As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2_1.Height
+                Size: =10
                 Text: ="Level"
                 Width: =70
                 ZIndex: =1
@@ -319,6 +316,7 @@ Detail As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2_1.Height
+                Size: =10
                 Text: ="Type of Approval"
                 Width: =(Container2_1.Width - Label9_Level_1.Width)/4 
                 ZIndex: =2
@@ -331,6 +329,7 @@ Detail As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2_1.Height
+                Size: =10
                 Text: ="Person in Charge"
                 Width: =(Container2_1.Width - Label9_Level_1.Width)/4
                 ZIndex: =3
@@ -343,6 +342,7 @@ Detail As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2_1.Height
+                Size: =10
                 Text: ="Approved by"
                 Width: =(Container2_1.Width - Label9_Level_1.Width)/4
                 ZIndex: =4
@@ -355,93 +355,112 @@ Detail As screen:
                 Fill: =RGBA(39, 113, 194, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =Container2_1.Height
+                Size: =10
                 Text: ="Status"
                 Width: =(Container2_1.Width - Label9_Level_1.Width)/4
                 ZIndex: =5
 
     Container3 As groupContainer.manualLayoutContainer:
-        Height: =155
-        Width: =583
+        Height: =85
+        Width: =647
         X: =699
         Y: =581
         ZIndex: =14
 
         Label10 As label:
-            Align: =Align.Center
             Height: =50
+            PaddingLeft: =8
+            Size: =10
             Text: =User().FullName
-            Width: =272
-            Y: =105
+            Width: =240
+            X: =80
+            Y: =18
             ZIndex: =1
 
         Image1 As image:
             Fill: =RGBA(0, 0, 0, 1)
+            Height: =73
             Image: =User().Image
             RadiusBottomLeft: =50
             RadiusBottomRight: =50
             RadiusTopLeft: =050
             RadiusTopRight: =50
-            X: =86
-            Y: =5
+            Width: =73
+            X: =7
+            Y: =7
             ZIndex: =2
 
         Button8 As button:
-            Fill: =RGBA(39, 113, 194, 1)
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =30
+            Size: =10
             Text: ="Approve"
-            Width: =130
-            X: =279
-            Y: =60
+            Width: =120
+            X: =350
+            Y: =28
             ZIndex: =3
 
         Button8_1 As button:
-            Fill: =RGBA(39, 113, 194, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Height: =30
+            Size: =10
             Text: ="Reject"
-            Width: =130
-            X: =425
-            Y: =60
+            Width: =120
+            X: =500
+            Y: =28
             ZIndex: =4
 
     Container3_1 As groupContainer.manualLayoutContainer:
-        Height: =155
-        Width: =583
+        BorderColor: =RGBA(219, 219, 219, 1)
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(237, 237, 237, 0.8)
+        Height: =70
+        Width: =648
         X: =20
-        Y: =588
+        Y: =96
         ZIndex: =15
 
-        Label10_1 As label:
-            Height: =50
-            PaddingTop: =7
-            Text: =User().FullName
-            Width: =369
-            X: =114
-            Y: =2
-            ZIndex: =1
-
-        Image1_1 As image:
-            Fill: =RGBA(0, 0, 0, 1)
-            Image: =User().Image
-            RadiusBottomLeft: =50
-            RadiusBottomRight: =50
-            RadiusTopLeft: =050
-            RadiusTopRight: =50
-            X: =483
-            Y: =2
-            ZIndex: =2
-
         Label10_2 As label:
-            Align: =Align.Center
-            Height: =52
+            Height: =35
+            PaddingLeft: =10
+            Size: =10
             Text: |
-                ="Created by:"
-            Width: =114
+                ="Created by: " & varItem.'Created By'.DisplayName
+            Width: =398
             ZIndex: =3
 
         Label10_3 As label:
-            Align: =Align.Center
-            Height: =50
+            Align: =Align.Right
+            Height: =Container3_1.Height/2
+            PaddingRight: =10
+            Size: =10
             Text: |-
-                ="Ticket ID: " & varItem.ID
-            Width: =114
-            Y: =52
+                ="Request ID: " & varItem.ID
+            Width: =139
+            X: =508
+            Y: =33
             ZIndex: =4
+
+        Label10_5 As label:
+            Align: =Align.Right
+            Height: =Container3_1.Height/2
+            PaddingRight: =10
+            Size: =10
+            Text: |
+                ="Created date: " & varItem.Created
+            Width: =250
+            X: =398
+            ZIndex: =6
+
+        Label10_4 As label:
+            Height: =Container3_1.Height/2
+            PaddingLeft: =10
+            PaddingTop: =7
+            Size: =10
+            Text: |-
+                ="Department: " &varItem.'Created By'.Department
+            Width: =369
+            Y: =33
+            ZIndex: =7
 
