@@ -25,43 +25,6 @@ Payment As screen:
             Y: =92
             ZIndex: =1
 
-            Label2 As label:
-                Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
-                AutoHeight: =true
-                FontWeight: =FontWeight.Semibold
-                Height: =28
-                OnSelect: =Select(Parent)
-                Text: =ThisItem.'Created By'.DisplayName
-                Width: =493
-                ZIndex: =1
-
-            Label2_2 As label:
-                Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
-                AutoHeight: =true
-                Height: =30
-                OnSelect: =Select(Parent)
-                Text: =ThisItem.Created
-                Width: =494
-                Y: =Label2.Height + HtmlText1.Height
-                ZIndex: =3
-
-            HtmlText1 As htmlViewer:
-                AutoHeight: =true
-                Height: =119
-                HtmlText: |-
-                    =//ThisItem.Chat
-                    If(
-                        ThisItem.'Created By'.Email = User().Email,
-                        "<p style='text-align:right'>" & ThisItem.Chat & "</p>",
-                        "<p style='text-align:left'>" & ThisItem.Chat & "</p>"
-                    )
-                OnSelect: =Select(Parent)
-                Size: =13
-                Width: =451
-                X: =22
-                Y: =28
-                ZIndex: =4
-
         TextInput2 As text:
             Default: =""
             Height: =102
