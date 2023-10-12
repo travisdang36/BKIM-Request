@@ -1,0 +1,106 @@
+{
+  "10590b5e-5249-4164-ba0c-46bf9b0d8c77": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "cefcc3df-98b2-4082-a847-a0cff2a56098": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ff3135c5-e989-4d75-8e89-7d3126e4525a"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "cefcc3df-98b2-4082-a847-a0cff2a56098"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ff3135c5-e989-4d75-8e89-7d3126e4525a"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "BKIM_REQ_SharePoint_GenFolder"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "cefcc3df-98b2-4082-a847-a0cff2a56098"
+    },
+    "dependents": [],
+    "id": "10590b5e-5249-4164-ba0c-46bf9b0d8c77"
+  },
+  "4248efca-ae32-46f5-9de3-729987c19a76": {
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1659/1.0.1659.3459/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4248efca-ae32-46f5-9de3-729987c19a76"
+  },
+  "cefcc3df-98b2-4082-a847-a0cff2a56098": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/master/1.0.1653.3400/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://bkimsg.sharepoint.com/sites/BKIMCenter": {
+        "dataSources": {
+          "3000 Records": {
+            "tableName": "74c700b5-7db3-4e20-8f29-c85cd09a9426"
+          },
+          "BKIM_REQ_Approval_Condition": {
+            "tableName": "574a4e76-3ffe-4da7-8a57-fae7fb0902f3"
+          },
+          "BKIM_REQ_Approval_Condition_Result": {
+            "tableName": "73a5b433-326f-4e60-bcd3-fafbf1aa31ae"
+          },
+          "BKIM_REQ_APPROVAL_PERSON_LIST": {
+            "tableName": "eb60464e-2ca8-40b4-832d-f5152b4d4633"
+          },
+          "BKIM_REQ_Approval_Result": {
+            "tableName": "5184b2f6-ceb2-4269-82c6-cf5fc41eb5e5"
+          },
+          "BKIM_REQ_Chat_List": {
+            "tableName": "ba5cae04-b2e4-4c51-9bf9-ebf580c08c63"
+          },
+          "BKIM_REQ_Expenditure_Approval": {
+            "tableName": "a3743268-89dc-48fc-9933-465c6f4556f6"
+          },
+          "BKIM_REQ_List": {
+            "tableName": "a0516745-9e68-496b-a868-a6fec4918013"
+          },
+          "BKIM_REQ_Payment_Approval": {
+            "tableName": "9b39e11a-3ad3-4d2a-a8c8-f5715a60fe26"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BKIM_REQ_Approval_Condition",
+      "BKIM_REQ_Approval_Result",
+      "BKIM_REQ_Chat_List",
+      "BKIM_REQ_Expenditure_Approval",
+      "BKIM_REQ_List",
+      "BKIM_REQ_Payment_Approval",
+      "3000 Records",
+      "BKIM_REQ_Approval_Condition_Result",
+      "BKIM_REQ_APPROVAL_PERSON_LIST"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "10590b5e-5249-4164-ba0c-46bf9b0d8c77"
+    ],
+    "id": "cefcc3df-98b2-4082-a847-a0cff2a56098"
+  }
+}

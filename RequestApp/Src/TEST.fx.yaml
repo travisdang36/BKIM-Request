@@ -1,0 +1,234 @@
+TEST As screen:
+
+    TextInput3 As text:
+        Default: =""
+        HintText: ="Amount of money"
+        X: =92
+        Y: =46
+        ZIndex: =1
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderThickness: =1
+        DelayItemLoading: =true
+        Height: =82
+        Items: |-
+            =///LookUp(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) <Condition_Max )
+            If(
+                IsBlank(Dropdown1.SelectedText),
+                LookUp(
+                    BKIM_REQ_Expenditure_Approval,
+                    Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max
+                ),
+                LookUp(
+                    BKIM_REQ_Expenditure_Approval,
+                    Dropdown1.SelectedText.Value = Exp_Case
+                )
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =90
+        Width: =962
+        X: =92
+        Y: =178
+        ZIndex: =1
+
+        Title3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Exp_Type
+            VerticalAlign: =VerticalAlign.Top
+            Width: =194
+            X: =10
+            Y: =32
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Align: =Align.Center
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ID_Case
+            VerticalAlign: =VerticalAlign.Top
+            Width: =51
+            X: =204
+            Y: =36
+            ZIndex: =2
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        Rectangle3 As rectangle:
+            Height: =Parent.TemplateHeight - Separator3.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
+        Subtitle3_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =Text(ThisItem.Condition_Min,"[$-en-US]#,#")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =128
+            X: =289
+            Y: =36
+            ZIndex: =6
+
+        Subtitle3_2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =Text(ThisItem.Condition_Max,"[$-en-US]#,#")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =122
+            X: =448
+            Y: =36
+            ZIndex: =7
+
+        Subtitle3_3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Level_Exp
+            VerticalAlign: =VerticalAlign.Top
+            Width: =80
+            X: =642
+            Y: =36
+            ZIndex: =8
+
+        Subtitle3_4 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Person_Approve_Exp
+            VerticalAlign: =VerticalAlign.Top
+            Width: =248
+            X: =722
+            Y: =36
+            ZIndex: =9
+
+        Subtitle3_5 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Approve_Type_Exp
+            VerticalAlign: =VerticalAlign.Top
+            Width: =122
+            X: =1010
+            Y: =36
+            ZIndex: =10
+
+    Label1 As label:
+        Text: ="Filter dua tren text input de ra duoc >=5%"
+        Width: =282
+        X: =442
+        Y: =46
+        ZIndex: =2
+
+    Dropdown1 As dropdown:
+        Items: |-
+            =//Distinct(BKIM_REQ_Expenditure_Approval,Exp_Case)
+            Distinct(Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max),Exp_Case)
+        Width: =330
+        X: =724
+        Y: =46
+        ZIndex: =3
+
+    Dropdown1_1 As dropdown:
+        Items: |-
+            =Distinct(BKIM_REQ_Expenditure_Approval,Exp_Type)
+            //Distinct(Filter(BKIM_REQ_Expenditure_Approval, Condition_Min < Value(TextInput3.Text) And Value(TextInput3.Text) < Condition_Max),Exp_Case)
+        Width: =330
+        X: =724
+        Y: =112
+        ZIndex: =4
+
+    Label3 As label:
+        Text: |-
+            =LookUp(
+                    BKIM_REQ_Expenditure_Approval,
+                    Exp_Case = Dropdown1.SelectedText.Value
+                ).ID_Case
+        Width: =253
+        X: =442
+        Y: =112
+        ZIndex: =5
+
+    Form1 As form:
+        DataSource: ='3000 Records'
+        DefaultMode: =FormMode.New
+        Height: =77
+        Width: =960
+        X: =92
+        Y: =283
+        ZIndex: =6
+
+    Button4 As button:
+        OnSelect: =SubmitForm(Form1)
+        Text: ="Submit"
+        X: =1060
+        Y: =330
+        ZIndex: =7
+
+    Label9 As label:
+        BorderThickness: =1
+        Height: =48
+        Text: ="Text"
+        Width: =471
+        X: =76
+        Y: =448
+        ZIndex: =8
+
