@@ -156,7 +156,8 @@ Detail As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height - Container2_1.Height
             Items: |-
-                =SortByColumns(
+                =/*
+                SortByColumns(
                 If(
                     
                     IsBlank(Dropdown2_Case_1.SelectedText),
@@ -172,6 +173,8 @@ Detail As screen:
                 ),
                 "Level_Exp",
                 SortOrder.Ascending)
+                */
+                BKIM_REQ_Approval_Result
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateFill: |-
@@ -237,6 +240,7 @@ Detail As screen:
                     =//ThisItem.Person_Approve
                     Switch(ThisItem.Person_Approve,
                         "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
+                        
                         "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
                     
                     
