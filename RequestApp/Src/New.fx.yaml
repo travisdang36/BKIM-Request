@@ -236,7 +236,7 @@ New As screen:
             Default: =
             Items: =["DoA_Type"]
             Size: =10
-            Width: =169
+            Width: =Parent.Width/3.5
             X: =16
             Y: =12
             ZIndex: =1
@@ -251,7 +251,7 @@ New As screen:
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =60
-            Width: =609
+            Width: =618
             X: =16
             Y: =408
             ZIndex: =1
@@ -295,7 +295,7 @@ New As screen:
                 
             Size: =10
             Width: =Parent.Width/3.5
-            X: =228
+            X: =232
             Y: =12
             ZIndex: =2
 
@@ -308,7 +308,7 @@ New As screen:
                 
                 
             Size: =10
-            Width: =169
+            Width: =Parent.Width/3.5
             X: =16
             Y: =71
             ZIndex: =3
@@ -318,15 +318,16 @@ New As screen:
             Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),CaseID)
             Size: =10
             Width: =Parent.Width/3.5
-            X: =435
+            X: =449
             Y: =12
             ZIndex: =4
 
         TextInput8_Title As text:
             Default: =""
+            Height: =36
             HintText: ="Title"
             Size: =10
-            Width: =611
+            Width: =618
             X: =16
             Y: =130
             ZIndex: =5
@@ -339,7 +340,7 @@ New As screen:
             PaddingLeft: =10
             PaddingTop: =7
             Size: =10
-            Width: =611
+            Width: =618
             X: =16
             Y: =188
             ZIndex: =6
@@ -372,16 +373,16 @@ New As screen:
 
         Label9_Link As label:
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =35
+            Height: =30
             Italic: =true
             OnSelect: |-
                 =Launch("https://bkimsg.sharepoint.com/sites/BKIMCenter/Request%20Document/Forms/AllItems.aspx?id=%2Fsites%2FBKIMCenter%2FRequest%20Document%2F"&varSharePointLink)
             Size: =10
             Text: |-
                 ="SharePoint Folder: " & varSharePointLink
-            Width: =395
+            Width: =404
             X: =230
-            Y: =325
+            Y: =330
             ZIndex: =9
 
         TextInput4_Amount_1 As text:
@@ -390,7 +391,7 @@ New As screen:
             OnChange: =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID))
             Size: =10
             Width: =Parent.Width/3.5
-            X: =230
+            X: =232
             Y: =73
             ZIndex: =12
 
@@ -419,29 +420,17 @@ New As screen:
             Height: =25
             Size: =10
             Text: ="Link file"
-            Width: =376
+            Width: =394
             X: =215
             Y: =381
             ZIndex: =14
 
-        Label9_Level_4 As label:
-            Align: =Align.Center
+        Icon2 As icon.Add:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(39, 113, 194, 1)
-            FontWeight: =FontWeight.Semibold
+            Fill: =RGBA(56, 96, 178, 1)
             Height: =25
-            Size: =10
-            Text: =""
-            Width: =35
-            X: =591
-            Y: =381
-            ZIndex: =15
-
-        Icon2 As icon.Add:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =20
             Icon: =Icon.Add
             OnSelect: |-
                 =Collect(
@@ -450,9 +439,9 @@ New As screen:
                         Case_ID:""
                     }
                 )
-            Width: =22
-            X: =598
-            Y: =384
+            Width: =25
+            X: =609
+            Y: =381
             ZIndex: =16
 
         DropDown_CaseID_1 As dropdown:
@@ -460,7 +449,7 @@ New As screen:
             Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),CaseID)
             Size: =10
             Width: =Parent.Width/3.5
-            X: =435
+            X: =449
             Y: =73
             ZIndex: =17
 
