@@ -216,6 +216,14 @@ New As screen:
         Y: =95
         ZIndex: =9
 
+        Dropdown2_DoA As dropdown:
+            Default: =
+            Items: =["DoA_Type"]
+            Width: =Parent.Width/2.2
+            X: =16
+            Y: =12
+            ZIndex: =1
+
         "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
             BorderThickness: =1
             DelayItemLoading: =true
@@ -262,14 +270,6 @@ New As screen:
                 Y: =11
                 ZIndex: =6
 
-        Dropdown2_DoA As dropdown:
-            Default: =
-            Items: =["DoA_Type"]
-            Width: =Parent.Width/2.2
-            X: =16
-            Y: =12
-            ZIndex: =1
-
         TextInput4_Amount As text:
             Default: =""
             Height: =41
@@ -308,6 +308,8 @@ New As screen:
             Height: =150
             HintText: ="Detail"
             Mode: =TextMode.MultiLine
+            PaddingLeft: =10
+            PaddingTop: =7
             Width: =611
             X: =16
             Y: =195
