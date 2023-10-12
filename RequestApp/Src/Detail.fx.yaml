@@ -307,7 +307,12 @@ Detail As screen:
                     //false
                     If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Reject",
                     //true
-                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value)))
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value),
+                    //false
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Pending" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Pending",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Pending" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value)
+                    ))
                 Width: =117
                 X: =531
                 ZIndex: =7
