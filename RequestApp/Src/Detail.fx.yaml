@@ -207,7 +207,7 @@ Detail As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =10
-                Text: =ThisItem.Level_Exp
+                Text: =ThisItem.Level_Res
                 Width: =68
                 ZIndex: =1
 
@@ -221,7 +221,7 @@ Detail As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =10
-                Text: =ThisItem.Approve_Type.Value
+                Text: =ThisItem.Approve_Type_Res.Value
                 Width: =123
                 X: =68
                 ZIndex: =2
@@ -237,7 +237,8 @@ Detail As screen:
                 PaddingTop: =0
                 Size: =10
                 Text: |-
-                    =//ThisItem.Person_Approve
+                    =ThisItem.Person_Approved_Res
+                    /*
                     Switch(ThisItem.Person_Approve,
                         "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
                         
@@ -250,6 +251,7 @@ Detail As screen:
                         "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
                         
                     )
+                    */
                 Width: =168
                 X: =191
                 ZIndex: =3
