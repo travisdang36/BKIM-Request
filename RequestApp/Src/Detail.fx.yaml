@@ -183,7 +183,11 @@ Detail As screen:
                     //true "Reject"
                     RGBA(139,0,0,0.6),
                     //else
-                    If(Mod(Value(ThisItem.Level_Exp),2) = 0, RGBA(240,240,240,1),RGBA(255,255,255,1))))
+                    If(text_person_status_Approve.Text = "Pending",
+                    //true "Pending" 
+                    RGBA(240,240,240,1),
+                    //false
+                    RGBA(255,255,255,1))))
             TemplatePadding: =0
             TemplateSize: =80
             Width: =Parent.Width
@@ -300,7 +304,6 @@ Detail As screen:
                 Size: =10
                 Text: |-
                     =//Lookup status duyet cua tung cap
-                    
                     If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
                     //true
                     LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value),
@@ -312,7 +315,9 @@ Detail As screen:
                     If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Pending" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Pending",
                     //true
                     LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Pending" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value)
-                    ))
+                    )))
+                    
+                    //Them kha nang patch tu dong va hien len sau khi da approve
                 Width: =117
                 X: =531
                 ZIndex: =7
