@@ -225,9 +225,10 @@ New As screen:
 
         Dropdown2_DoA As dropdown:
             Default: =
+            Height: =36
             Items: =["DoA_Type"]
             Size: =10
-            Width: =Parent.Width/3.5
+            Width: =185
             X: =16
             Y: =12
             ZIndex: =1
@@ -241,10 +242,10 @@ New As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =60
+            TemplateSize: =50
             Width: =618
             X: =16
-            Y: =408
+            Y: =429
             ZIndex: =1
 
             Separator2 As rectangle:
@@ -258,27 +259,30 @@ New As screen:
             TextInput6 As text:
                 BorderThickness: =1
                 Default: =""
+                Height: =35
                 HintText: ="Link file"
                 Italic: =true
                 Size: =10
                 Width: =Parent.Width/1.6
-                X: =205
-                Y: =10
+                X: =211
+                Y: =8
                 ZIndex: =5
 
             TextInput6_1 As text:
                 BorderThickness: =1
                 Default: =ThisItem.Document_Name
+                Height: =35
                 HintText: ="File name"
                 Italic: =true
                 Size: =10
                 Width: =173
                 X: =11
-                Y: =10
+                Y: =8
                 ZIndex: =6
 
         TextInput4_Amount As text:
             Default: =""
+            Height: =36
             HintText: ="Budget for Project (VND)"
             OnChange: |+
                 =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
@@ -286,33 +290,33 @@ New As screen:
                 
             Size: =10
             Tooltip: ="Budget for Project (VND)"
-            Width: =Parent.Width/3.5
-            X: =232
+            Width: =404
+            X: =230
             Y: =12
             ZIndex: =2
 
         Dropdown2_Type As dropdown:
             Default: =
-            Height: =42
+            Height: =35
             Items: =Distinct(Expenditure_Approval,Type)
             OnChange: |+
                 =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
                 
                 
             Size: =10
-            Width: =Parent.Width/3.5
+            Width: =185
             X: =16
-            Y: =71
+            Y: =68
             ZIndex: =3
 
         TextInput8_Title As text:
             Default: =""
-            Height: =36
+            Height: =35
             HintText: ="Title"
             Size: =10
             Width: =618
             X: =16
-            Y: =130
+            Y: =172
             ZIndex: =5
 
         TextInput8_1_Detail As text:
@@ -325,7 +329,7 @@ New As screen:
             Size: =10
             Width: =618
             X: =16
-            Y: =188
+            Y: =223
             ZIndex: =6
 
         Button5 As button:
@@ -351,7 +355,7 @@ New As screen:
             Visible: =boolSharePointVisible
             Width: =185
             X: =16
-            Y: =330
+            Y: =360
             ZIndex: =8
 
         Label9_Link As label:
@@ -365,18 +369,19 @@ New As screen:
                 ="SharePoint Folder: " & varSharePointLink
             Width: =404
             X: =230
-            Y: =330
+            Y: =360
             ZIndex: =9
 
         TextInput4_Amount_1 As text:
             Default: =
+            Height: =35
             HintText: ="Amount Spending (VND)"
             OnChange: =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
             Size: =10
             Tooltip: ="Amount Spending (VND)"
-            Width: =Parent.Width/3.5
-            X: =449
-            Y: =12
+            Width: =404
+            X: =230
+            Y: =68
             ZIndex: =12
 
         Label9_Level_2 As label:
@@ -391,7 +396,7 @@ New As screen:
             Text: ="File name"
             Width: =199
             X: =16
-            Y: =381
+            Y: =402
             ZIndex: =13
 
         Label9_Level_3 As label:
@@ -406,7 +411,7 @@ New As screen:
             Text: ="Link file"
             Width: =384
             X: =215
-            Y: =381
+            Y: =402
             ZIndex: =14
 
         Icon2 As icon.Add:
@@ -429,26 +434,30 @@ New As screen:
             PaddingTop: =3
             Width: =35
             X: =599
-            Y: =381
+            Y: =402
             ZIndex: =16
 
-        LB_CaseID As label:
-            BorderThickness: =1
+        LB_CaseID As text:
+            Default: =LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).CaseID
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            HintText: ="Case ID"
             Size: =10
-            Text: =LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).CaseID
-            Width: =110
-            X: =232
-            Y: =73
-            ZIndex: =17
+            Width: =185
+            X: =16
+            Y: =121
+            ZIndex: =19
 
-        LB_CaseID_1 As label:
-            BorderThickness: =1
+        TextInput7 As text:
+            Default: =LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).Case
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            HintText: ="Case Name"
             Size: =10
-            Text: =LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).Case
-            Width: =265
-            X: =369
-            Y: =73
-            ZIndex: =18
+            Width: =404
+            X: =230
+            Y: =121
+            ZIndex: =20
 
     Button6 As button:
         Height: =30
