@@ -18,7 +18,7 @@ App As appinfo:
             Condition_Min:Condition_Min,
             Condition_Max:Condition_Max,
             Person_Approve:Person_Approve_Exp,
-            Level:Level_Exp,
+            Level_Exp:Level_Exp,
             Approve_Type:Approve_Type_Exp
         }));
         

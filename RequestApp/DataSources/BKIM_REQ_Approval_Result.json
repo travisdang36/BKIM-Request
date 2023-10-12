@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-09-14T16:54:37.9020000Z",
+      "LastChangedTimeString": "2023-08-21T16:59:42.7570000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -36,10 +36,9 @@
       "Level_Result": "Level_Res",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "Person_Approved_Res": "Email_Approved_Res",
+      "Person_Approved_Res": "Person_Approved_Res",
       "Title": "Title",
-      "Type_Approve_Res": "Approve_Type_Res",
-      "Type_Approve_Res#Id": "Approve_Type_Res Id"
+      "Type_Approve_Res": "Approve_Type_Res"
     },
     "DatasetName": "https://bkimsg.sharepoint.com/sites/BKIMCenter",
     "EncodeDataset": true,
