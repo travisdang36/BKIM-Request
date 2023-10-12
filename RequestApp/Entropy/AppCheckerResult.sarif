@@ -55,19 +55,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.TextInput4_AmountSpend"
+                "type": "Detail.Container3_left.Container_Input_1.TextInput4_AmountSpend"
               }
             }
           ],
@@ -85,19 +85,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_caseID.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_caseID.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_caseID.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_caseID.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.TextInput4_caseID"
+                "type": "Detail.Container3_left.Container_Input_1.TextInput4_caseID"
               }
             }
           ],
@@ -115,19 +115,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_budget.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_budget.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_budget.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_budget.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.TextInput4_budget"
+                "type": "Detail.Container3_left.Container_Input_1.TextInput4_budget"
               }
             }
           ],
@@ -145,19 +145,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Dropdown2_DoA_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Dropdown2_DoA_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Dropdown2_DoA_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Dropdown2_DoA_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Dropdown2_DoA_1"
+                "type": "Detail.Container3_left.Container_Input_1.Dropdown2_DoA_1"
               }
             }
           ],
@@ -175,19 +175,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Container6.Gallery1_1"
+                "type": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1"
               }
             }
           ],
@@ -205,19 +205,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TextInput6_2.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TextInput6_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TextInput6_2.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TextInput6_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TextInput6_2"
+                "type": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TextInput6_2"
               }
             }
           ],
@@ -235,19 +235,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Label9_Link_1.TabIndex"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Label9_Link_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Label9_Link_1.TabIndex",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Label9_Link_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Label9_Link_1"
+                "type": "Detail.Container3_left.Container_Input_1.Label9_Link_1"
               }
             }
           ],
@@ -265,19 +265,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Label9_Link_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Label9_Link_1.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Label9_Link_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Label9_Link_1.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Label9_Link_1"
+                "type": "Detail.Container3_left.Container_Input_1.Label9_Link_1"
               }
             }
           ],
@@ -295,19 +295,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput8_1_Detail_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput8_1_Detail_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput8_1_Detail_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput8_1_Detail_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.TextInput8_1_Detail_1"
+                "type": "Detail.Container3_left.Container_Input_1.TextInput8_1_Detail_1"
               }
             }
           ],
@@ -325,19 +325,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput8_Title_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput8_Title_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput8_Title_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput8_Title_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.TextInput8_Title_1"
+                "type": "Detail.Container3_left.Container_Input_1.TextInput8_Title_1"
               }
             }
           ],
@@ -355,19 +355,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Dropdown2_Type_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Dropdown2_Type_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Dropdown2_Type_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Dropdown2_Type_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Dropdown2_Type_1"
+                "type": "Detail.Container3_left.Container_Input_1.Dropdown2_Type_1"
               }
             }
           ],
@@ -385,19 +385,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_caseName.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_caseName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.TextInput4_caseName.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.TextInput4_caseName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.TextInput4_caseName"
+                "type": "Detail.Container3_left.Container_Input_1.TextInput4_caseName"
               }
             }
           ],
@@ -1525,19 +1525,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container5.Container2_Aprroval_Stage_1.Gallery3_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container5_right.Container2_Aprroval_Stage_1.Gallery3_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container5.Container2_Aprroval_Stage_1.Gallery3_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container5_right.Container2_Aprroval_Stage_1.Gallery3_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container5.Container2_Aprroval_Stage_1.Gallery3_1"
+                "type": "Detail.Container5_right.Container2_Aprroval_Stage_1.Gallery3_1"
               }
             }
           ],
@@ -1555,19 +1555,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TextInput6_3.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TextInput6_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TextInput6_3.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TextInput6_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TextInput6_3"
+                "type": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TextInput6_3"
               }
             }
           ],
@@ -1585,19 +1585,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TabIndex"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Gallery1_1.TabIndex",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Container6.Gallery1_1"
+                "type": "Detail.Container3_left.Container_Input_1.Container6.Gallery1_1"
               }
             }
           ],
@@ -1615,19 +1615,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container5.Container2_Aprroval_Stage_1.Gallery3_1.TabIndex"
+                  "fullyQualifiedName": "Detail.Container5_right.Container2_Aprroval_Stage_1.Gallery3_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container5.Container2_Aprroval_Stage_1.Gallery3_1.TabIndex",
+                  "fullyQualifiedName": "Detail.Container5_right.Container2_Aprroval_Stage_1.Gallery3_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Detail",
-                "type": "Detail.Container5.Container2_Aprroval_Stage_1.Gallery3_1"
+                "type": "Detail.Container5_right.Container2_Aprroval_Stage_1.Gallery3_1"
               }
             }
           ],
@@ -1645,19 +1645,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Icon2_1.TabIndex"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Icon2_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Icon2_1.TabIndex",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Icon2_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Container6.Icon2_1"
+                "type": "Detail.Container3_left.Container_Input_1.Container6.Icon2_1"
               }
             }
           ],
@@ -1675,19 +1675,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Icon2_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Icon2_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container3.Container_Input_1.Container6.Icon2_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container3_left.Container_Input_1.Container6.Icon2_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container3.Container_Input_1.Container6.Icon2_1"
+                "type": "Detail.Container3_left.Container_Input_1.Container6.Icon2_1"
               }
             }
           ],
