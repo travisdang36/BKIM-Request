@@ -34,24 +34,15 @@ New As screen:
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height - Container2.Height
-            Items: |+
+            Items: |-
                 =SortByColumns(
-                If(
-                    
-                    IsBlank(DropDown_CaseID.SelectedText),
                     Filter(
                         Expenditure_Approval,
-                        DropDown_CaseID.Selected.Value = CaseID And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
+                        LB_CaseID.Text = CaseID
                     ),
-                    Filter(
-                        Expenditure_Approval,
-                        DropDown_CaseID.Selected.Value = CaseID
-                    )
-                    
-                ),
-                "Level_Exp",
-                SortOrder.Ascending)
-                
+                    "Level_Exp",
+                    SortOrder.Ascending
+                )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateFill: =If(Mod(Value(ThisItem.Level_Exp),2) = 0, RGBA(240,240,240,1),RGBA(255,255,255,1))
@@ -288,12 +279,13 @@ New As screen:
 
         TextInput4_Amount As text:
             Default: =""
-            HintText: ="Budget (VND)"
+            HintText: ="Budget for Project (VND)"
             OnChange: |+
-                =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID))
+                =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
                 
                 
             Size: =10
+            Tooltip: ="Budget for Project (VND)"
             Width: =Parent.Width/3.5
             X: =232
             Y: =12
@@ -304,7 +296,7 @@ New As screen:
             Height: =42
             Items: =Distinct(Expenditure_Approval,Type)
             OnChange: |+
-                =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID))
+                =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
                 
                 
             Size: =10
@@ -312,15 +304,6 @@ New As screen:
             X: =16
             Y: =71
             ZIndex: =3
-
-        DropDown_CaseID As dropdown:
-            Default: =
-            Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),CaseID)
-            Size: =10
-            Width: =Parent.Width/3.5
-            X: =449
-            Y: =12
-            ZIndex: =4
 
         TextInput8_Title As text:
             Default: =""
@@ -387,9 +370,10 @@ New As screen:
 
         TextInput4_Amount_1 As text:
             Default: =
-            HintText: ="Amount (VND)"
-            OnChange: =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID))
+            HintText: ="Amount Spending (VND)"
+            OnChange: =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
             Size: =10
+            Tooltip: ="Amount Spending (VND)"
             Width: =Parent.Width/3.5
             X: =232
             Y: =73
@@ -420,7 +404,7 @@ New As screen:
             Height: =25
             Size: =10
             Text: ="Link file"
-            Width: =394
+            Width: =384
             X: =215
             Y: =381
             ZIndex: =14
@@ -439,19 +423,32 @@ New As screen:
                         Case_ID:""
                     }
                 )
-            Width: =25
-            X: =609
+            PaddingBottom: =3
+            PaddingLeft: =3
+            PaddingRight: =3
+            PaddingTop: =3
+            Width: =35
+            X: =599
             Y: =381
             ZIndex: =16
 
-        DropDown_CaseID_1 As dropdown:
-            Default: =
-            Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),CaseID)
-            Size: =10
-            Width: =Parent.Width/3.5
+        LB_CaseID As label:
+            BorderThickness: =1
+            Text: |-
+                ="CaseID: " &LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).CaseID
+            Width: =185
+            X: =449
+            Y: =12
+            ZIndex: =17
+
+        LB_CaseID_1 As label:
+            BorderThickness: =1
+            Text: |-
+                ="Name: " 
+            Width: =185
             X: =449
             Y: =73
-            ZIndex: =17
+            ZIndex: =18
 
     Button6 As button:
         Height: =30

@@ -10041,7 +10041,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput4_caseName",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10340,7 +10340,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput8_1_Detail_1",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
