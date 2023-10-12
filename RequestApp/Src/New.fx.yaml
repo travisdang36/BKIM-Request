@@ -295,7 +295,8 @@ New As screen:
                 
                 //Visible
                 Set(boolSharePointVisible, false);
-            Text: ="SharePoint"
+            Size: =12
+            Text: ="Attachment Folder"
             Visible: =boolSharePointVisible
             X: =17
             Y: =371
