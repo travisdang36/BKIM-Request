@@ -623,29 +623,28 @@ Detail As screen:
             Size: =10
             Text: |
                 ="Created by: " & varItem.'Created By'.DisplayName & " - " & varItem.'Created By'.Department
-            Width: =433
-            X: =215
+            Width: =457
+            X: =191
             ZIndex: =3
 
         Label10_3 As label:
-            Align: =Align.Right
             Height: =35
+            PaddingLeft: =10
             PaddingRight: =10
             Size: =10
             Text: |-
                 ="ID: " & varItem.ID
-            Width: =50
+            Width: =65
             ZIndex: =4
 
         Label10_5 As label:
-            Align: =Align.Right
             Height: =35
             PaddingRight: =10
             Size: =10
             Text: |
                 ="Date: " & Text(varItem.Created,"dd/mm/yyyy")
-            Width: =165
-            X: =50
+            Width: =126
+            X: =65
             ZIndex: =6
 
     Button3_1 As button:
