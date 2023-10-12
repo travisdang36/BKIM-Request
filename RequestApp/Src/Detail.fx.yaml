@@ -68,15 +68,16 @@ Detail As screen:
         BorderColor: =RGBA(219, 219, 219, 1)
         BorderThickness: =1
         Fill: =RGBA(240,240,240,0.8)
-        Height: =500
+        Height: =581
         Width: =648
         X: =20
-        Y: =166
+        Y: =131
         ZIndex: =12
 
         Dropdown2_DoA_1 As dropdown:
             Default: =
             DisplayMode: =DisplayMode.View
+            Height: =35
             Items: =["DoA_Type"]
             Size: =10
             Width: =Parent.Width/3.5
@@ -87,11 +88,11 @@ Detail As screen:
         TextInput4_budget As text:
             Default: =""
             DisplayMode: =DisplayMode.View
-            Height: =41
+            Height: =35
             HintText: ="Budget for Project (VND)"
             Size: =10
             Tooltip: ="Budget for Project (VND)"
-            Width: =Parent.Width/3.5
+            Width: =398
             X: =229
             Y: =12
             ZIndex: =2
@@ -99,27 +100,29 @@ Detail As screen:
         Dropdown2_Type_1 As dropdown:
             Default: =
             DisplayMode: =DisplayMode.View
+            Height: =35
             Items: =Distinct(Expenditure_Approval,Type)
             Size: =10
             Width: =Parent.Width/3.5
             X: =16
-            Y: =73
+            Y: =59
             ZIndex: =3
 
         TextInput8_Title_1 As text:
             Default: =""
             DisplayMode: =DisplayMode.View
+            Height: =35
             HintText: ="Title"
             Size: =10
             Width: =611
             X: =16
-            Y: =133
+            Y: =147
             ZIndex: =5
 
         TextInput8_1_Detail_1 As text:
             Default: =""
             DisplayMode: =DisplayMode.View
-            Height: =164
+            Height: =120
             HintText: ="Detail"
             Mode: =TextMode.MultiLine
             PaddingLeft: =10
@@ -133,36 +136,157 @@ Detail As screen:
         TextInput4_AmountSpend As text:
             Default: =""
             DisplayMode: =DisplayMode.View
-            Height: =41
+            Height: =35
             HintText: ="Amount Spending (VND)"
             Size: =10
             Tooltip: ="Amount Spending (VND)"
-            Width: =Parent.Width/3.5
+            Width: =398
             X: =229
-            Y: =72
+            Y: =59
             ZIndex: =12
 
         TextInput4_caseID As text:
             Default: =""
             DisplayMode: =DisplayMode.View
-            Height: =41
+            Height: =35
             HintText: ="CaseID"
             Size: =10
             Width: =Parent.Width/3.5
-            X: =442
-            Y: =12
+            X: =16
+            Y: =102
             ZIndex: =13
 
         TextInput4_caseName As text:
             Default: =""
             DisplayMode: =DisplayMode.View
-            Height: =41
+            Height: =35
             HintText: ="Case Name"
             Size: =10
-            Width: =Parent.Width/3.5
-            X: =442
-            Y: =72
+            Width: =398
+            X: =229
+            Y: =102
             ZIndex: =14
+
+        Label9_Link_1 As label:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =35
+            Italic: =true
+            OnSelect: |-
+                =Launch("https://bkimsg.sharepoint.com/sites/BKIMCenter/Request%20Document/Forms/AllItems.aspx?id=%2Fsites%2FBKIMCenter%2FRequest%20Document%2F"&varSharePointLink)
+            Size: =10
+            Text: |-
+                ="SharePoint Folder: " & varSharePointLink
+            Width: =611
+            X: =16
+            Y: =326
+            ZIndex: =19
+
+        Group2_1 As group:
+            Height: =5
+            Width: =5
+            X: =14
+            Y: =-362
+            ZIndex: =19
+
+            "Gallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                BorderThickness: =1
+                DelayItemLoading: =true
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =166
+                Items: =Col_Attachment
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =50
+                Width: =611
+                X: =16
+                Y: =400
+                ZIndex: =15
+
+                Separator2_1 As rectangle:
+                    Fill: =RGBA(238, 204, 204, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =3
+
+                TextInput6_3 As text:
+                    BorderThickness: =1
+                    Default: =""
+                    Height: =35
+                    HintText: ="Link file"
+                    Italic: =true
+                    Size: =10
+                    Width: =Parent.Width/1.6
+                    X: =211
+                    Y: =8
+                    ZIndex: =5
+
+                TextInput6_2 As text:
+                    BorderThickness: =1
+                    Default: =ThisItem.Document_Name
+                    Height: =35
+                    HintText: ="File name"
+                    Italic: =true
+                    Size: =10
+                    Width: =173
+                    X: =11
+                    Y: =8
+                    ZIndex: =6
+
+            Label9_Level_4 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =25
+                Size: =10
+                Text: ="File name"
+                Width: =197
+                X: =16
+                Y: =373
+                ZIndex: =16
+
+            Label9_Level_5 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(39, 113, 194, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =25
+                Size: =10
+                Text: ="Link file"
+                Width: =380
+                X: =213
+                Y: =373
+                ZIndex: =17
+
+            Icon2_1 As icon.Add:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(56, 96, 178, 1)
+                Height: =25
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =Collect(
+                        Col_Attachment,
+                        {
+                            Case_ID:""
+                        }
+                    )
+                PaddingBottom: =3
+                PaddingLeft: =3
+                PaddingRight: =3
+                PaddingTop: =3
+                Width: =35
+                X: =592
+                Y: =373
+                ZIndex: =18
 
     Container2_Aprroval_Stage_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240, 255, 255, 1)
@@ -486,54 +610,43 @@ Detail As screen:
         BorderThickness: =1
         DropShadow: =DropShadow.None
         Fill: =RGBA(237, 237, 237, 0.8)
-        Height: =70
+        Height: =35
         Width: =648
         X: =20
         Y: =96
         ZIndex: =15
 
         Label10_2 As label:
+            Align: =Align.Right
             Height: =35
             PaddingLeft: =10
             Size: =10
             Text: |
-                ="Created by: " & varItem.'Created By'.DisplayName
-            Width: =398
+                ="Created by: " & varItem.'Created By'.DisplayName & " - " & varItem.'Created By'.Department
+            Width: =433
+            X: =215
             ZIndex: =3
 
         Label10_3 As label:
             Align: =Align.Right
-            Height: =Container3_1.Height/2
+            Height: =35
             PaddingRight: =10
             Size: =10
             Text: |-
-                ="Request ID: " & varItem.ID
-            Width: =110
-            X: =538
-            Y: =33
+                ="ID: " & varItem.ID
+            Width: =50
             ZIndex: =4
 
         Label10_5 As label:
             Align: =Align.Right
-            Height: =Container3_1.Height/2
+            Height: =35
             PaddingRight: =10
             Size: =10
             Text: |
-                ="Created date: " & varItem.Created
-            Width: =250
-            X: =398
+                ="Date: " & Text(varItem.Created,"dd/mm/yyyy")
+            Width: =165
+            X: =50
             ZIndex: =6
-
-        Label10_4 As label:
-            Height: =Container3_1.Height/2
-            PaddingLeft: =10
-            PaddingTop: =7
-            Size: =10
-            Text: |-
-                ="Department: " &varItem.'Created By'.Department
-            Width: =369
-            Y: =33
-            ZIndex: =7
 
     Button3_1 As button:
         Fill: =RGBA(149, 149, 149, 1)
