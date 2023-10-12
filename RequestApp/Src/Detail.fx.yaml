@@ -174,7 +174,8 @@ Detail As screen:
                 "Level_Exp",
                 SortOrder.Ascending)
                 */
-                BKIM_REQ_Approval_Result
+                SortByColumns(
+                BKIM_REQ_Approval_Result,"Level_Result",SortOrder.Ascending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateFill: |-
@@ -486,8 +487,8 @@ Detail As screen:
             Size: =10
             Text: |-
                 ="Request ID: " & varItem.ID
-            Width: =139
-            X: =508
+            Width: =110
+            X: =538
             Y: =33
             ZIndex: =4
 
