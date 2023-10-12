@@ -375,8 +375,8 @@ New As screen:
             Size: =10
             Tooltip: ="Amount Spending (VND)"
             Width: =Parent.Width/3.5
-            X: =232
-            Y: =73
+            X: =449
+            Y: =12
             ZIndex: =12
 
         Label9_Level_2 As label:
@@ -434,19 +434,21 @@ New As screen:
 
         LB_CaseID As label:
             BorderThickness: =1
+            Size: =10
             Text: |-
-                ="CaseID: " &LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).CaseID
-            Width: =185
-            X: =449
-            Y: =12
+                ="CaseID: " & LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).CaseID
+            Width: =110
+            X: =232
+            Y: =73
             ZIndex: =17
 
         LB_CaseID_1 As label:
             BorderThickness: =1
+            Size: =10
             Text: |-
-                ="Name: " 
-            Width: =185
-            X: =449
+                ="Case Name: " & LookUp(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max).Case
+            Width: =265
+            X: =369
             Y: =73
             ZIndex: =18
 
