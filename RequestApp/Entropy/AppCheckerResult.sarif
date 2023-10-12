@@ -265,36 +265,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput4_1_Attachment_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput4_1_Attachment_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Detail",
-                "type": "Detail.Container_Input_1.TextInput4_1_Attachment_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Detail.Container2_Aprroval_Stage_1.Gallery3_1.AccessibleLabel"
                 }
               ],

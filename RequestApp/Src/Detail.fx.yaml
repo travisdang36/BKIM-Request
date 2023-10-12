@@ -65,6 +65,8 @@ Detail As screen:
         ZIndex: =11
 
     Container_Input_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(219, 219, 219, 1)
+        BorderThickness: =1
         Fill: =RGBA(240,240,240,0.8)
         Height: =500
         Width: =648
@@ -130,16 +132,6 @@ Detail As screen:
             X: =16
             Y: =195
             ZIndex: =6
-
-        TextInput4_1_Attachment_1 As text:
-            Default: =""
-            Height: =41
-            HintText: ="File đính kèm"
-            Visible: =false
-            Width: =425
-            X: =16
-            Y: =455
-            ZIndex: =7
 
         TextInput4_Amount_3 As text:
             Default: =""
@@ -429,6 +421,10 @@ Detail As screen:
             ZIndex: =4
 
     Container3_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(219, 219, 219, 1)
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(237, 237, 237, 0.8)
         Height: =70
         Width: =648
         X: =20
