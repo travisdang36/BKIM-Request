@@ -1,0 +1,84 @@
+Payment As screen:
+
+    Group1_Chat As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+        Gallery4 As gallery.variableTemplateHeightGallery:
+            BorderColor: =RGBA(39, 113, 194, 1)
+            BorderThickness: =1
+            DelayItemLoading: =true
+            Height: =505
+            Items: =Sort(Filter(BKIM_REQ_Chat_List, Req_ID = varItem.ID), Created, SortOrder.Descending)
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            ShowNavigation: =true
+            ShowScrollbar: =false
+            TemplateFill: =If(ThisItem.'Created By'.Email = User().Email, Color.White,RGBA( 169, 169, 169, 10%))
+            TemplatePadding: =4
+            TemplateSize: =207
+            Width: =502
+            X: =778
+            Y: =92
+            ZIndex: =1
+
+            Label2 As label:
+                Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =28
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.'Created By'.DisplayName
+                Width: =493
+                ZIndex: =1
+
+            Label2_2 As label:
+                Align: =If(ThisItem.'Created By'.Email = User().Email, Align.Right, Align.Left)
+                AutoHeight: =true
+                Height: =30
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.Created
+                Width: =494
+                Y: =Label2.Height + HtmlText1.Height
+                ZIndex: =3
+
+            HtmlText1 As htmlViewer:
+                AutoHeight: =true
+                Height: =119
+                HtmlText: |-
+                    =//ThisItem.Chat
+                    If(
+                        ThisItem.'Created By'.Email = User().Email,
+                        "<p style='text-align:right'>" & ThisItem.Chat & "</p>",
+                        "<p style='text-align:left'>" & ThisItem.Chat & "</p>"
+                    )
+                OnSelect: =Select(Parent)
+                Size: =13
+                Width: =451
+                X: =22
+                Y: =28
+                ZIndex: =4
+
+        TextInput2 As text:
+            Default: =""
+            Height: =102
+            HintText: ="Messages goes here"
+            Mode: =TextMode.MultiLine
+            Width: =502
+            X: =778
+            Y: =597
+            ZIndex: =2
+
+        Icon1 As icon.NextArrow:
+            Height: =45
+            Icon: =Icon.NextArrow
+            OnSelect: |
+                =If(!IsBlank(TextInput2), Patch(BKIM_REQ_Chat_List, Defaults(BKIM_REQ_Chat_List), {Chat: TextInput2.Text, Req_ID:varItem.ID});Reset(TextInput2), Notify("Input Message"))
+            Width: =45
+            X: =1213
+            Y: =625
+            ZIndex: =3
+
