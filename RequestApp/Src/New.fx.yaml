@@ -262,6 +262,8 @@ New As screen:
             Height: =164
             HintText: ="Detail"
             Mode: =TextMode.MultiLine
+            PaddingLeft: =10
+            PaddingTop: =7
             Width: =611
             X: =16
             Y: =195
