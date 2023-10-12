@@ -264,7 +264,7 @@ Detail As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =10
-                Text: |-
+                Text: |
                     =//Approved by whom
                     //LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
                     If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
@@ -277,7 +277,13 @@ Detail As screen:
                     //Enter
                     & Char(10) & 
                     //Date of approval
-                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy"))
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy")),
+                    //false
+                    If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Reject",
+                    //true
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Reject" && Level_Res = ThisItem.Level_Exp, Text(Created,"dd/mm/yyyy"))))
                 Width: =172
                 X: =359
                 ZIndex: =6
