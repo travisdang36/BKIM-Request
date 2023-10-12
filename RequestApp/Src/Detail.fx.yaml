@@ -278,18 +278,8 @@ Detail As screen:
                 PaddingTop: =0
                 Size: =10
                 Text: |-
-                    =//ThisItem.Person_Approve
-                    Switch(ThisItem.Person_Approve,
-                        "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
-                        "CEO (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName),
-                    
-                    
-                        "BP (BKIM Representative)", Concat(Filter(BKIM_REQ_APPROVAL_PERSON_LIST,"BP" = Department), Email,Char(10)),
-                    
-                        
-                        "KTG (BKIM Representative)",LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,ThisItem.Person_Approve = Title,Person.DisplayName)
-                        
-                    )
+                    =//Lookup status duyet cua tung cap
+                    LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value)
                 Width: =145
                 X: =503
                 ZIndex: =7
