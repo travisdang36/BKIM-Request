@@ -41,11 +41,11 @@ New As screen:
                     IsBlank(DropDown_CaseID.SelectedText),
                     Filter(
                         Expenditure_Approval,
-                        Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
+                        DropDown_CaseID.Selected.Value = CaseID And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
                     ),
                     Filter(
                         Expenditure_Approval,
-                        Dropdown2_Type.Selected.Value = Type And CaseID.SelectedText.Value = Case
+                        DropDown_CaseID.Selected.Value = CaseID
                     )
                     
                 ),
@@ -236,7 +236,7 @@ New As screen:
             Default: =
             Items: =["DoA_Type"]
             Size: =10
-            Width: =Parent.Width/2.2
+            Width: =169
             X: =16
             Y: =12
             ZIndex: =1
@@ -295,21 +295,22 @@ New As screen:
                 
             Size: =10
             Width: =Parent.Width/3.5
-            X: =16
-            Y: =73
+            X: =228
+            Y: =12
             ZIndex: =2
 
         Dropdown2_Type As dropdown:
             Default: =
+            Height: =42
             Items: =Distinct(Expenditure_Approval,Type)
             OnChange: |+
                 =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID))
                 
                 
             Size: =10
-            Width: =Parent.Width/2.2
-            X: =332
-            Y: =12
+            Width: =169
+            X: =16
+            Y: =71
             ZIndex: =3
 
         DropDown_CaseID As dropdown:
@@ -317,8 +318,8 @@ New As screen:
             Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),CaseID)
             Size: =10
             Width: =Parent.Width/3.5
-            X: =442
-            Y: =73
+            X: =435
+            Y: =12
             ZIndex: =4
 
         TextInput8_Title As text:
@@ -453,6 +454,15 @@ New As screen:
             X: =598
             Y: =384
             ZIndex: =16
+
+        DropDown_CaseID_1 As dropdown:
+            Default: =
+            Items: =Distinct(Filter(Expenditure_Approval, Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),CaseID)
+            Size: =10
+            Width: =Parent.Width/3.5
+            X: =435
+            Y: =73
+            ZIndex: =17
 
     Button6 As button:
         Height: =30
