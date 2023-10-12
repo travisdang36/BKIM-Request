@@ -228,7 +228,7 @@ New As screen:
             Default: =""
             Height: =41
             HintText: ="Amount (VND)"
-            Width: =Parent.Width/3.5
+            Width: =Parent.Width/3
             X: =16
             Y: =73
             ZIndex: =2
@@ -244,8 +244,8 @@ New As screen:
         Dropdown2_Case As dropdown:
             Default: =
             Items: =Distinct(Filter(Expenditure_Approval, Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max),Case)
-            Width: =Parent.Width/1.59
-            X: =218
+            Width: =Parent.Width/3
+            X: =410
             Y: =73
             ZIndex: =4
 
