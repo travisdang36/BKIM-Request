@@ -258,6 +258,8 @@ Detail As screen:
                 Text: |-
                     =//Approved by whom
                     LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
+                    
+                    & Char(10) & "test"
                 Width: =145
                 X: =359
                 ZIndex: =6
