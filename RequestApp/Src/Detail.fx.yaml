@@ -318,7 +318,7 @@ Detail As screen:
                 Size: =10
                 Text: |-
                     =//Lookup status duyet cua tung cap
-                    ThisItem.Approve_Type_Res.Value
+                    ThisItem.Approve_Result.Value
                     /*
                     If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
                     //true
