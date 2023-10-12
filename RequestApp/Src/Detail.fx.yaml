@@ -477,7 +477,8 @@ Detail As screen:
             Height: =Container3_1.Height/3
             PaddingTop: =7
             Size: =10
-            Text: =varItem.'Created By'.Department
+            Text: |-
+                ="Department: " &varItem.'Created By'.Department
             Width: =369
             X: =139
             Y: =33
