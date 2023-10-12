@@ -53,16 +53,6 @@ Detail As screen:
             Y: =4
             ZIndex: =6
 
-    Label10 As label:
-        Align: =Align.Center
-        Fill: =RGBA(39, 113, 194, 1)
-        Height: =36
-        Text: =varItem.Title
-        Width: =648
-        X: =20
-        Y: =96
-        ZIndex: =10
-
     Button3 As button:
         OnSelect: =Navigate(Home)
         Text: ="Back"
@@ -72,10 +62,10 @@ Detail As screen:
 
     Container_Input_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240,240,240,0.8)
-        Height: =464
+        Height: =470
         Width: =648
         X: =20
-        Y: =132
+        Y: =96
         ZIndex: =12
 
         Dropdown2_DoA_1 As dropdown:
@@ -124,6 +114,8 @@ Detail As screen:
             Height: =164
             HintText: ="Detail"
             Mode: =TextMode.MultiLine
+            PaddingLeft: =10
+            PaddingTop: =7
             Width: =611
             X: =16
             Y: =195
@@ -150,7 +142,7 @@ Detail As screen:
 
     Container2_Aprroval_Stage_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240, 255, 255, 1)
-        Height: =500
+        Height: =470
         Width: =648
         X: =698
         Y: =96
@@ -164,14 +156,14 @@ Detail As screen:
                 =SortByColumns(
                 If(
                     
-                    IsBlank(Dropdown2_Case.SelectedText),
+                    IsBlank(Dropdown2_Case_1.SelectedText),
                     Filter(
                         Expenditure_Approval,
-                        Dropdown2_Type.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount.Text) And Value(TextInput4_Amount.Text) < Condition_Max
+                        Dropdown2_Type_1.Selected.Value = Type And Condition_Min < Value(TextInput4_Amount_3.Text) And Value(TextInput4_Amount_3.Text) < Condition_Max
                     ),
                     Filter(
                         Expenditure_Approval,
-                        Dropdown2_Type.Selected.Value = Type And Dropdown2_Case.SelectedText.Value = Case
+                        Dropdown2_Type_1.Selected.Value = Type And Dropdown2_Case_1.SelectedText.Value = Case
                     )
                     
                 ),
