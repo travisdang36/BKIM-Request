@@ -257,9 +257,10 @@ Detail As screen:
                 Size: =10
                 Text: |-
                     =//Approved by whom
-                    Office365Users.UserProfileV2({
-                        LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Person_Approved_Res)
-                    })
+                    //LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
+                    Office365Users.UserProfile(
+                        User().Email
+                    ).DisplayName
                     //Enter
                     & Char(10) & 
                     //Date of approval
