@@ -237,7 +237,7 @@ Detail As screen:
                 PaddingTop: =0
                 Size: =10
                 Text: |-
-                    =ThisItem.Person_Approved_Res
+                    =ThisItem.Email_Approved_Res
                     /*
                     Switch(ThisItem.Person_Approve,
                         "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
@@ -277,9 +277,9 @@ Detail As screen:
                 Text: |
                     =//Approved by whom
                     If(ThisItem.Approve_Type_Res.Value = "Approve",
-                    ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy"),
+                    ThisItem.Email_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy"),
                     If(ThisItem.Approve_Type_Res.Value = "Reject",
-                    ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy")
+                    ThisItem.Email_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy")
                     )
                     )
                     //LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)

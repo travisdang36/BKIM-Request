@@ -296,11 +296,10 @@ New As screen:
         Dropdown2_Type As dropdown:
             Default: =
             Items: =Distinct(Expenditure_Approval,Type)
-            OnChange: |-
-                =Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID);
+            OnChange: |+
+                =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,DropDown_CaseID.SelectedText.Value = Case_ID))
                 
                 
-                ClearCollect(Col_Attach)
             Size: =10
             Width: =Parent.Width/2.2
             X: =332
