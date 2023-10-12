@@ -39,7 +39,7 @@ New As screen:
                     ),
                     Filter(
                         Expenditure_Approval,
-                        Dropdown2_Case.SelectedText.Value = Case
+                        Dropdown2_Type.Selected.Value = Type And Dropdown2_Case.SelectedText.Value = Case
                     )
                     
                 ),
