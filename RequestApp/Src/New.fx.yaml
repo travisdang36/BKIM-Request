@@ -236,7 +236,7 @@ New As screen:
             BorderThickness: =1
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =188
+            Height: =166
             Items: =Col_Attachment
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
