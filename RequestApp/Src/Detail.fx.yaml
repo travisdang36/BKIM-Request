@@ -409,11 +409,12 @@ Detail As screen:
         ZIndex: =15
 
         Label10_1 As label:
-            Align: =Align.Center
             Height: =50
+            PaddingTop: =7
             Text: =User().FullName
-            Width: =272
-            Y: =105
+            Width: =369
+            X: =114
+            Y: =2
             ZIndex: =1
 
         Image1_1 As image:
@@ -423,17 +424,24 @@ Detail As screen:
             RadiusBottomRight: =50
             RadiusTopLeft: =050
             RadiusTopRight: =50
-            X: =172
-            Y: =5
+            X: =483
+            Y: =2
             ZIndex: =2
 
         Label10_2 As label:
             Align: =Align.Center
-            Height: =105
-            Text: |-
-                ="This ticket was created by:
-                
-                Ticket ID: " & varItem.ID
-            Width: =172
+            Height: =52
+            Text: |
+                ="Created by:"
+            Width: =114
             ZIndex: =3
+
+        Label10_3 As label:
+            Align: =Align.Center
+            Height: =50
+            Text: |-
+                ="Ticket ID: " & varItem.ID
+            Width: =114
+            Y: =52
+            ZIndex: =4
 
