@@ -66,10 +66,10 @@ Detail As screen:
 
     Container_Input_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(240,240,240,0.8)
-        Height: =470
+        Height: =500
         Width: =648
         X: =20
-        Y: =196
+        Y: =166
         ZIndex: =12
 
         Dropdown2_DoA_1 As dropdown:
@@ -429,58 +429,52 @@ Detail As screen:
             ZIndex: =4
 
     Container3_1 As groupContainer.manualLayoutContainer:
-        Height: =100
+        Height: =70
         Width: =648
         X: =20
         Y: =96
         ZIndex: =15
 
-        Label10_1 As label:
-            Height: =Container3_1.Height/3
-            PaddingTop: =7
-            Size: =10
-            Text: =varItem.'Created By'.DisplayName
-            Width: =369
-            X: =139
-            ZIndex: =1
-
         Label10_2 As label:
-            Align: =Align.Center
-            Height: =Container3_1.Height/3
+            Height: =35
+            PaddingLeft: =10
             Size: =10
             Text: |
-                ="Created by:"
-            Width: =139
+                ="Created by: " & varItem.'Created By'.DisplayName
+            Width: =398
             ZIndex: =3
 
         Label10_3 As label:
-            Align: =Align.Center
-            Height: =Container3_1.Height/3
+            Align: =Align.Right
+            Height: =Container3_1.Height/2
+            PaddingRight: =10
             Size: =10
             Text: |-
                 ="Request ID: " & varItem.ID
             Width: =139
-            Y: =Label10_1.Height
+            X: =508
+            Y: =33
             ZIndex: =4
 
         Label10_5 As label:
-            Height: =33
-            PaddingLeft: =25
+            Align: =Align.Right
+            Height: =Container3_1.Height/2
+            PaddingRight: =10
             Size: =10
             Text: |
                 ="Created date: " & varItem.Created
-            Width: =238
-            Y: =Label10_1.Height+Label10_3.Height
+            Width: =250
+            X: =398
             ZIndex: =6
 
         Label10_4 As label:
-            Height: =Container3_1.Height/3
+            Height: =Container3_1.Height/2
+            PaddingLeft: =10
             PaddingTop: =7
             Size: =10
             Text: |-
                 ="Department: " &varItem.'Created By'.Department
             Width: =369
-            X: =139
             Y: =33
             ZIndex: =7
 
