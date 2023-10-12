@@ -20,7 +20,10 @@ App As appinfo:
             Person_Approve:Person_Approve_Exp,
             Level:Level_Exp,
             Approve_Type:Approve_Type_Exp
-        }))
+        }));
+        
+        //Mo nut SharePoint
+        Set(boolSharePointVisible,true)
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
