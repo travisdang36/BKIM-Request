@@ -145,36 +145,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container_Input_1.Dropdown2_Type_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Detail.Container_Input_1.Dropdown2_Type_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Detail",
-                "type": "Detail.Container_Input_1.Dropdown2_Type_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Detail.Container_Input_1.TextInput4_budget.AccessibleLabel"
                 }
               ],
@@ -188,36 +158,6 @@
                 "member": "AccessibleLabel",
                 "module": "Detail",
                 "type": "Detail.Container_Input_1.TextInput4_budget"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Detail",
-                "type": "Detail.Container_Input_1.TextInput4_AmountSpend"
               }
             }
           ],
@@ -265,19 +205,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput8_Title_1.AccessibleLabel"
+                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput8_Title_1.AccessibleLabel",
+                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput4_AmountSpend.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Detail",
-                "type": "Detail.Container_Input_1.TextInput8_Title_1"
+                "type": "Detail.Container_Input_1.TextInput4_AmountSpend"
               }
             }
           ],
@@ -308,6 +248,66 @@
                 "member": "AccessibleLabel",
                 "module": "Detail",
                 "type": "Detail.Container_Input_1.TextInput4_caseName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Detail.Container_Input_1.Dropdown2_Type_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Detail.Container_Input_1.Dropdown2_Type_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Detail",
+                "type": "Detail.Container_Input_1.Dropdown2_Type_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput8_Title_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Detail.Container_Input_1.TextInput8_Title_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Detail",
+                "type": "Detail.Container_Input_1.TextInput8_Title_1"
               }
             }
           ],
@@ -595,36 +595,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Type.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Type.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New",
-                "type": "New.Container_Input.Dropdown2_Type"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "New.Container_Input.TextInput4_Amount.AccessibleLabel"
                 }
               ],
@@ -668,6 +638,36 @@
                 "member": "AccessibleLabel",
                 "module": "New",
                 "type": "New.Container_Input.TextInput4_Amount_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Type.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "New.Container_Input.Dropdown2_Type.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New",
+                "type": "New.Container_Input.Dropdown2_Type"
               }
             }
           ],

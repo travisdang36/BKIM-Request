@@ -279,6 +279,7 @@ New As screen:
 
         TextInput4_Amount As text:
             Default: =""
+            Format: =TextFormat.Number
             HintText: ="Budget for Project (VND)"
             OnChange: |+
                 =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
@@ -370,6 +371,7 @@ New As screen:
 
         TextInput4_Amount_1 As text:
             Default: =
+            Format: =TextFormat.Number
             HintText: ="Amount Spending (VND)"
             OnChange: =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
             Size: =10
