@@ -185,7 +185,7 @@ Detail As screen:
                     //else
                     If(text_person_status_Approve.Text = "Pending",
                     //true "Pending" 
-                    RGBA(240,240,240,1),
+                    RGBA( 240, 230, 140, 1 ),
                     //false
                     RGBA(255,255,255,1))))
             TemplatePadding: =0
