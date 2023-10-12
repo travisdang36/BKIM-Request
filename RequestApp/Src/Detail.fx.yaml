@@ -174,7 +174,7 @@ Detail As screen:
                 SortOrder.Ascending)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateFill: =If(Mod(Value(ThisItem.Level_Exp),2) = 0, RGBA(240,240,240,1),RGBA(255,255,255,1))
+            TemplateFill: =If(text_person_status_Approve.Text = "Approve",RGBA(100,200,0, 0.6),If(Mod(Value(ThisItem.Level_Exp),2) = 0, RGBA(240,240,240,1),RGBA(255,255,255,1)))
             TemplatePadding: =0
             TemplateSize: =80
             Width: =Parent.Width
@@ -245,7 +245,7 @@ Detail As screen:
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =5
 
-            text_person_in_charge_2 As label:
+            text_person_approved_time As label:
                 Align: =Align.Center
                 FontWeight: =
                 Height: =Gallery3_1.TemplateHeight
@@ -267,7 +267,7 @@ Detail As screen:
                 X: =359
                 ZIndex: =6
 
-            text_person_in_charge_3 As label:
+            text_person_status_Approve As label:
                 Align: =Align.Center
                 FontWeight: =
                 Height: =Gallery3_1.TemplateHeight
