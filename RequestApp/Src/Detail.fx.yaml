@@ -237,7 +237,7 @@ Detail As screen:
                 PaddingTop: =0
                 Size: =10
                 Text: |-
-                    =ThisItem.Person_Approved_Res
+                    =ThisItem.Email_Approved_Res
                     /*
                     Switch(ThisItem.Person_Approve,
                         "Relevant Head of Department (Vietnam)", LookUp(BKIM_REQ_APPROVAL_PERSON_LIST,Department = Office365Users.UserProfile(User().Email).Department,Person.DisplayName),
@@ -276,10 +276,10 @@ Detail As screen:
                 Size: =10
                 Text: |
                     =//Approved by whom
-                    If(ThisItem.Approve_Type_Res.Value = "Approve",
-                    ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy"),
-                    If(ThisItem.Approve_Type_Res.Value = "Reject",
-                    ThisItem.Person_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy")
+                    If(ThisItem.Approve_Result.Value = "Approve",
+                    ThisItem.Email_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy"),
+                    If(ThisItem.Approve_Result.Value = "Reject",
+                    ThisItem.Email_Approved_Res & Char(10) & Text(ThisItem.Created,"dd/mm/yyyy")
                     )
                     )
                     //LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Email_Approved_Res)
@@ -318,6 +318,8 @@ Detail As screen:
                 Size: =10
                 Text: |-
                     =//Lookup status duyet cua tung cap
+                    ThisItem.Approve_Type_Res.Value
+                    /*
                     If(LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp,Approve_Result.Value) = "Approve",
                     //true
                     LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Approve" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value),
@@ -330,7 +332,7 @@ Detail As screen:
                     //true
                     LookUp(BKIM_REQ_Approval_Result,varItem.ID = Case_ID_Res && Approve_Result.Value = "Pending" && Level_Res = ThisItem.Level_Exp, Approve_Result.Value)
                     )))
-                    
+                    */
                     //Them kha nang patch tu dong va hien len sau khi da approve
                 Width: =117
                 X: =531
