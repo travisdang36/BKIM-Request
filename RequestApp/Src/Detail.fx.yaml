@@ -67,6 +67,7 @@ Detail As screen:
     Button3_1 As button:
         Fill: =RGBA(149, 149, 149, 1)
         Height: =30
+        HoverFill: =RGBA(219, 219, 219, 1)
         OnSelect: =Print()
         Size: =10
         Text: ="Print"
