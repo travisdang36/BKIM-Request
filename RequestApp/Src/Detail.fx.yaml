@@ -387,6 +387,7 @@ Detail As screen:
             Button8 As button:
                 Fill: =RGBA(152, 208, 70, 1)
                 Height: =30
+                HoverFill: =RGBA(209, 232, 178, 1)
                 Size: =10
                 Text: ="Approve"
                 Width: =120
@@ -397,6 +398,7 @@ Detail As screen:
             Button8_1 As button:
                 Fill: =RGBA(255, 0, 0, 1)
                 Height: =30
+                HoverFill: =RGBA(250, 155, 112, 1)
                 Size: =10
                 Text: ="Reject"
                 Width: =120
