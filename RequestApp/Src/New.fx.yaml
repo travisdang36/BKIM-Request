@@ -296,7 +296,7 @@ New As screen:
                     //Visible
                     Set(boolSharePointVisible, false);
                 Size: =10
-                Text: ="AttachmentAN"
+                Text: ="AttachmentHải"
                 Visible: =boolSharePointVisible
                 Width: =185
                 X: =15
