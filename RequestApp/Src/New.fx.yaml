@@ -260,8 +260,8 @@ New As screen:
                     HintText: ="Link file"
                     Italic: =true
                     Size: =10
-                    Width: =Parent.Width/1.6
-                    X: =211
+                    Width: =387
+                    X: =208
                     Y: =8
                     ZIndex: =5
 
@@ -272,7 +272,7 @@ New As screen:
                     HintText: ="File name"
                     Italic: =true
                     Size: =10
-                    Width: =173
+                    Width: =178
                     X: =11
                     Y: =8
                     ZIndex: =6
@@ -370,7 +370,7 @@ New As screen:
                 Y: =57
                 ZIndex: =6
 
-        Container3_input As groupContainer.manualLayoutContainer:
+        Container3_inputMoney As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =350
             Width: =648
@@ -378,7 +378,7 @@ New As screen:
 
             Dropdown2_DoA As dropdown:
                 Default: =
-                Height: =36
+                Height: =35
                 Items: =["DoA_Type"]
                 Size: =10
                 Width: =185
@@ -407,7 +407,8 @@ New As screen:
                 Height: =35
                 Items: =Distinct(Expenditure_Approval,Type)
                 OnChange: |+
-                    =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID))
+                    =ClearCollect(Col_Attachment, Filter(BKIM_REQ_Approval_Condition,LB_CaseID.Text = Case_ID));
+                    LookUp(BKIM_REQ_Expenditure_Approval, Exp_Type = Dropdown2_Type.Selected.Value).Auto;
                     
                     
                 Size: =10
@@ -473,6 +474,15 @@ New As screen:
                 X: =229
                 Y: =119
                 ZIndex: =8
+
+            Dropdown2 As dropdown:
+                Height: =34
+                Items: =DropDownSample
+                Size: =10
+                Width: =404
+                X: =229
+                Y: =12
+                ZIndex: =9
 
     Button6 As button:
         Height: =30
